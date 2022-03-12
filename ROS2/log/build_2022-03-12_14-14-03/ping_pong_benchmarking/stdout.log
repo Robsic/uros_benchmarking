@@ -1,0 +1,24 @@
+[35m[1mScanning dependencies of target ping[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/ping.dir/src/ping.cpp.o[0m
+[ 66%] [32m[1mLinking CXX executable ping[0m
+[100%] Built target ping
+-- Install configuration: ""
+-- Installing: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/lib/ping_pong_benchmarking/ping
+-- Set runtime path of "/home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/lib/ping_pong_benchmarking/ping" to ""
+-- Installing: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/include
+-- Installing: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/include/ping_node.hpp
+-- Installing: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ament_index/resource_index/package_run_dependencies/ping_pong_benchmarking
+-- Installing: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ament_index/resource_index/parent_prefix_path/ping_pong_benchmarking
+-- Installing: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/environment/ament_prefix_path.sh
+-- Installing: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/environment/ament_prefix_path.dsv
+-- Installing: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/environment/path.sh
+-- Installing: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/environment/path.dsv
+-- Installing: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/local_setup.bash
+-- Installing: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/local_setup.sh
+-- Installing: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/local_setup.zsh
+-- Installing: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/local_setup.dsv
+-- Installing: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/package.dsv
+-- Installing: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ament_index/resource_index/packages/ping_pong_benchmarking
+-- Installing: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/cmake/ping_pong_benchmarkingConfig.cmake
+-- Installing: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/cmake/ping_pong_benchmarkingConfig-version.cmake
+-- Installing: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/package.xml

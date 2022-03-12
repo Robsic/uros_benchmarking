@@ -1,0 +1,634 @@
+[0.000000] (-) TimerEvent: {}
+[0.000691] (ping_pong_benchmarking) JobQueued: {'identifier': 'ping_pong_benchmarking', 'dependencies': OrderedDict()}
+[0.000766] (ping_pong_benchmarking) JobStarted: {'identifier': 'ping_pong_benchmarking'}
+[0.015992] (ping_pong_benchmarking) JobProgress: {'identifier': 'ping_pong_benchmarking', 'progress': 'cmake'}
+[0.037482] (ping_pong_benchmarking) JobProgress: {'identifier': 'ping_pong_benchmarking', 'progress': 'build'}
+[0.037546] (ping_pong_benchmarking) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking', '--', '-j12', '-l12'], 'cwd': '/home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking', 'env': OrderedDict([('KDE_FULL_SESSION', 'true'), ('PROFILEHOME', ''), ('LANGUAGE', ''), ('LC_TIME', 'pt_BR.UTF-8'), ('PAM_KWALLET5_LOGIN', '/run/user/1000/kwallet5.socket'), ('USER', 'toffanetto'), ('QT_SCREEN_SCALE_FACTORS', 'eDP-1=1;DP-1=1;HDMI-1=1;HDMI-1-2=1;'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1309'), ('XDG_SESSION_TYPE', 'x11'), ('KONSOLE_VERSION', '191203'), ('SHLVL', '1'), ('XCURSOR_SIZE', '24'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/toffanetto'), ('OLDPWD', '/home/toffanetto'), ('LESS', '-R'), ('DESKTOP_SESSION', 'plasma'), ('ZSH', '/home/toffanetto/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('KDE_SESSION_VERSION', '5'), ('SHELL_SESSION_ID', 'e7f777ef415c47b6b688352a140b1210'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('KONSOLE_DBUS_SESSION', '/Sessions/1'), ('LC_MONETARY', 'pt_BR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('P9K_TTY', 'old'), ('COLORTERM', 'truecolor'), ('KONSOLE_DBUS_WINDOW', '/Windows/1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'toffanetto'), ('QT_AUTO_SCREEN_SCALE_FACTOR', '0'), ('WINDOWID', '104857607'), ('_', '/usr/bin/colcon'), ('COLORFGBG', '0;15'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/toffanetto-G3:@/tmp/.ICE-unix/1371,unix/toffanetto-G3:/tmp/.ICE-unix/1371'), ('LC_ADDRESS', 'pt_BR.UTF-8'), ('XCURSOR_THEME', 'breeze_cursors'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session1'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'pt_BR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'KDE'), ('XAUTHORITY', '/home/toffanetto/.Xauthority'), ('XDG_SESSION_DESKTOP', 'KDE'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/tmp/ssh-FZvZcXi37SRe/agent.1265'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('LC_NAME', 'pt_BR.UTF-8'), ('SHELL', '/usr/bin/zsh'), ('QT_ACCESSIBILITY', '1'), ('KONSOLE_DBUS_SERVICE', ':1.1345'), ('LC_MEASUREMENT', 'pt_BR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'pt_BR.UTF-8'), ('P9K_SSH', '0'), ('XDG_VTNR', '1'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-plasma:/etc/xdg:/usr/share/kubuntu-default-settings/kf5-settings'), ('XDG_DATA_DIRS', '/usr/share/plasma:/usr/local/share/:/usr/share/'), ('_P9K_TTY', '/dev/pts/2'), ('LC_NUMERIC', 'pt_BR.UTF-8'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('KDE_SESSION_UID', '1000'), ('LC_PAPER', 'pt_BR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.074389] (ping_pong_benchmarking) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ping\x1b[0m\n'}
+[0.099765] (-) TimerEvent: {}
+[0.200612] (-) TimerEvent: {}
+[0.232785] (ping_pong_benchmarking) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/ping.dir/src/ping.cpp.o\x1b[0m\n'}
+[0.217088] (ping_pong_benchmarking) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/ping.dir/src/ping_node.cpp.o\x1b[0m\n'}
+[0.300756] (-) TimerEvent: {}
+[0.401237] (-) TimerEvent: {}
+[0.501514] (-) TimerEvent: {}
+[0.601832] (-) TimerEvent: {}
+[0.702156] (-) TimerEvent: {}
+[0.802538] (-) TimerEvent: {}
+[0.902827] (-) TimerEvent: {}
+[1.003148] (-) TimerEvent: {}
+[1.103474] (-) TimerEvent: {}
+[1.203800] (-) TimerEvent: {}
+[1.260878] (ping_pong_benchmarking) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:8\x1b[m\x1b[K:\n'}
+[1.261552] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:24:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.261758] (ping_pong_benchmarking) StderrLine: {'line': b'   24 |         rclcpp::Subscription<std::\x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K::Int32>::SharedPtr pong_sub;\n'}
+[1.261942] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.262112] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:24:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Ksuggested alternatives:\n'}
+[1.262217] (ping_pong_benchmarking) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/builtin_interfaces/msg/duration.hpp:7\x1b[m\x1b[K,\n'}
+[1.262323] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/duration.hpp:20\x1b[m\x1b[K,\n'}
+[1.262425] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/qos.hpp:20\x1b[m\x1b[K,\n'}
+[1.262527] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node_interfaces/node_graph_interface.hpp:31\x1b[m\x1b[K,\n'}
+[1.262630] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/client.hpp:34\x1b[m\x1b[K,\n'}
+[1.262732] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23\x1b[m\x1b[K,\n'}
+[1.262833] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[1.263024] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[1.263192] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[1.263334] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[1.263477] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[1.263887] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:5\x1b[m\x1b[K:\n'}
+[1.264549] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__struct.hpp:26:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kbuiltin_interfaces::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.264683] (ping_pong_benchmarking) StderrLine: {'line': b'   26 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[1.264832] (ping_pong_benchmarking) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.264928] (ping_pong_benchmarking) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/statistics_msgs/msg/detail/metrics_message__struct.hpp:22\x1b[m\x1b[K,\n'}
+[1.265039] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/statistics_msgs/msg/metrics_message.hpp:7\x1b[m\x1b[K,\n'}
+[1.265148] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/libstatistics_collector/collector/generate_statistics_message.hpp:21\x1b[m\x1b[K,\n'}
+[1.265256] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23\x1b[m\x1b[K,\n'}
+[1.265364] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/subscription.hpp:50\x1b[m\x1b[K,\n'}
+[1.265514] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:25\x1b[m\x1b[K,\n'}
+[1.265627] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[1.265735] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[1.265842] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[1.265948] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[1.266054] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:5\x1b[m\x1b[K:\n'}
+[1.266320] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:26:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstatistics_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.266268] (ping_pong_benchmarking) StderrLine: {'line': b'   26 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[1.266373] (ping_pong_benchmarking) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.266478] (ping_pong_benchmarking) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rcl_interfaces/msg/list_parameters_result.hpp:7\x1b[m\x1b[K,\n'}
+[1.266592] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node.hpp:34\x1b[m\x1b[K,\n'}
+[1.266702] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[1.266809] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[1.266932] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[1.267024] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:6\x1b[m\x1b[K:\n'}
+[1.267130] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:26:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Krcl_interfaces::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.267244] (ping_pong_benchmarking) StderrLine: {'line': b'   26 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[1.267350] (ping_pong_benchmarking) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.267462] (ping_pong_benchmarking) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/std_msgs/msg/int32.hpp:7\x1b[m\x1b[K,\n'}
+[1.267569] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:3\x1b[m\x1b[K,\n'}
+[1.267675] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:8\x1b[m\x1b[K:\n'}
+[1.267782] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/std_msgs/msg/detail/int32__struct.hpp:26:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.267890] (ping_pong_benchmarking) StderrLine: {'line': b'   26 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[1.267996] (ping_pong_benchmarking) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.268131] (ping_pong_benchmarking) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:8\x1b[m\x1b[K:\n'}
+[1.268235] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:24:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.268338] (ping_pong_benchmarking) StderrLine: {'line': b'   24 |         rclcpp::Subscription<std::\x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K::Int32>::SharedPtr pong_sub;\n'}
+[1.269023] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.269135] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:24:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Ksuggested alternatives:\n'}
+[1.269293] (ping_pong_benchmarking) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/builtin_interfaces/msg/duration.hpp:7\x1b[m\x1b[K,\n'}
+[1.269396] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/duration.hpp:20\x1b[m\x1b[K,\n'}
+[1.269497] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/qos.hpp:20\x1b[m\x1b[K,\n'}
+[1.269599] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node_interfaces/node_graph_interface.hpp:31\x1b[m\x1b[K,\n'}
+[1.269700] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/client.hpp:34\x1b[m\x1b[K,\n'}
+[1.269808] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23\x1b[m\x1b[K,\n'}
+[1.269910] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[1.270011] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[1.270112] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[1.270212] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[1.270313] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[1.270413] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:5\x1b[m\x1b[K:\n'}
+[1.270513] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__struct.hpp:26:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kbuiltin_interfaces::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.270615] (ping_pong_benchmarking) StderrLine: {'line': b'   26 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[1.270714] (ping_pong_benchmarking) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.270814] (ping_pong_benchmarking) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/statistics_msgs/msg/detail/metrics_message__struct.hpp:22\x1b[m\x1b[K,\n'}
+[1.270914] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/statistics_msgs/msg/metrics_message.hpp:7\x1b[m\x1b[K,\n'}
+[1.271014] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/libstatistics_collector/collector/generate_statistics_message.hpp:21\x1b[m\x1b[K,\n'}
+[1.271114] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23\x1b[m\x1b[K,\n'}
+[1.271220] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/subscription.hpp:50\x1b[m\x1b[K,\n'}
+[1.271321] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:25\x1b[m\x1b[K,\n'}
+[1.271421] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[1.271522] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[1.273222] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[1.271721] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[1.271822] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:5\x1b[m\x1b[K:\n'}
+[1.271923] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:26:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstatistics_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.272024] (ping_pong_benchmarking) StderrLine: {'line': b'   26 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[1.272140] (ping_pong_benchmarking) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.272242] (ping_pong_benchmarking) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rcl_interfaces/msg/list_parameters_result.hpp:7\x1b[m\x1b[K,\n'}
+[1.272350] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node.hpp:34\x1b[m\x1b[K,\n'}
+[1.272451] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[1.272556] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[1.272657] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[1.272758] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:6\x1b[m\x1b[K:\n'}
+[1.272862] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:26:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Krcl_interfaces::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.272964] (ping_pong_benchmarking) StderrLine: {'line': b'   26 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[1.273065] (ping_pong_benchmarking) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.273325] (ping_pong_benchmarking) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/std_msgs/msg/int32.hpp:7\x1b[m\x1b[K,\n'}
+[1.273265] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:3\x1b[m\x1b[K,\n'}
+[1.273365] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:8\x1b[m\x1b[K:\n'}
+[1.273498] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/std_msgs/msg/detail/int32__struct.hpp:26:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.273628] (ping_pong_benchmarking) StderrLine: {'line': b'   26 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[1.273796] (ping_pong_benchmarking) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.273882] (ping_pong_benchmarking) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:8\x1b[m\x1b[K:\n'}
+[1.273953] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:24:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.274024] (ping_pong_benchmarking) StderrLine: {'line': b'   24 |         rclcpp::Subscription<std::msg::Int32\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr pong_sub;\n'}
+[1.274093] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.274322] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:24:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 3 is invalid\n'}
+[1.274231] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:24:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[1.274302] (ping_pong_benchmarking) StderrLine: {'line': b'   24 |         rclcpp::Subscription<std::msg::Int32>::\x1b[01;31m\x1b[KSharedPtr\x1b[m\x1b[K pong_sub;\n'}
+[1.274378] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                                \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.274448] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                                         \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[1.274517] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:24:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpong_sub\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.274588] (ping_pong_benchmarking) StderrLine: {'line': b'   24 |         rclcpp::Subscription<std::msg::Int32>::SharedPtr \x1b[01;31m\x1b[Kpong_sub\x1b[m\x1b[K;\n'}
+[1.274657] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.274804] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:25:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.274945] (ping_pong_benchmarking) StderrLine: {'line': b'   25 |         rclcpp::Publisher<std::\x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K::Int32>::SharedPtr ping_pub;\n'}
+[1.275055] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.275197] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:25:32:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Ksuggested alternatives:\n'}
+[1.275271] (ping_pong_benchmarking) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/builtin_interfaces/msg/duration.hpp:7\x1b[m\x1b[K,\n'}
+[1.275344] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/duration.hpp:20\x1b[m\x1b[K,\n'}
+[1.275432] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/qos.hpp:20\x1b[m\x1b[K,\n'}
+[1.275488] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node_interfaces/node_graph_interface.hpp:31\x1b[m\x1b[K,\n'}
+[1.275559] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/client.hpp:34\x1b[m\x1b[K,\n'}
+[1.275630] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23\x1b[m\x1b[K,\n'}
+[1.275702] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[1.275773] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[1.275845] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[1.275918] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[1.275994] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[1.276073] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:5\x1b[m\x1b[K:\n'}
+[1.276153] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__struct.hpp:26:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kbuiltin_interfaces::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.276230] (ping_pong_benchmarking) StderrLine: {'line': b'   26 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[1.276303] (ping_pong_benchmarking) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.276375] (ping_pong_benchmarking) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/statistics_msgs/msg/detail/metrics_message__struct.hpp:22\x1b[m\x1b[K,\n'}
+[1.276447] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/statistics_msgs/msg/metrics_message.hpp:7\x1b[m\x1b[K,\n'}
+[1.276518] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/libstatistics_collector/collector/generate_statistics_message.hpp:21\x1b[m\x1b[K,\n'}
+[1.276590] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23\x1b[m\x1b[K,\n'}
+[1.276661] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/subscription.hpp:50\x1b[m\x1b[K,\n'}
+[1.276731] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:25\x1b[m\x1b[K,\n'}
+[1.276801] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[1.276871] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[1.276941] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[1.277012] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[1.277082] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:5\x1b[m\x1b[K:\n'}
+[1.277154] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:26:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstatistics_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.277226] (ping_pong_benchmarking) StderrLine: {'line': b'   26 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[1.277348] (ping_pong_benchmarking) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.277444] (ping_pong_benchmarking) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rcl_interfaces/msg/list_parameters_result.hpp:7\x1b[m\x1b[K,\n'}
+[1.277523] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node.hpp:34\x1b[m\x1b[K,\n'}
+[1.277597] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[1.277671] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[1.277744] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[1.277817] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:6\x1b[m\x1b[K:\n'}
+[1.277892] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:26:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Krcl_interfaces::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.277972] (ping_pong_benchmarking) StderrLine: {'line': b'   26 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[1.278049] (ping_pong_benchmarking) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.278121] (ping_pong_benchmarking) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/std_msgs/msg/int32.hpp:7\x1b[m\x1b[K,\n'}
+[1.278194] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:3\x1b[m\x1b[K,\n'}
+[1.278266] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:8\x1b[m\x1b[K:\n'}
+[1.278339] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/std_msgs/msg/detail/int32__struct.hpp:26:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.278413] (ping_pong_benchmarking) StderrLine: {'line': b'   26 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[1.278485] (ping_pong_benchmarking) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.278558] (ping_pong_benchmarking) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:8\x1b[m\x1b[K:\n'}
+[1.278630] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:25:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.278705] (ping_pong_benchmarking) StderrLine: {'line': b'   25 |         rclcpp::Publisher<std::\x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K::Int32>::SharedPtr ping_pub;\n'}
+[1.278777] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.278849] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:25:32:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Ksuggested alternatives:\n'}
+[1.278922] (ping_pong_benchmarking) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/builtin_interfaces/msg/duration.hpp:7\x1b[m\x1b[K,\n'}
+[1.278995] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/duration.hpp:20\x1b[m\x1b[K,\n'}
+[1.279067] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/qos.hpp:20\x1b[m\x1b[K,\n'}
+[1.279140] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node_interfaces/node_graph_interface.hpp:31\x1b[m\x1b[K,\n'}
+[1.279217] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/client.hpp:34\x1b[m\x1b[K,\n'}
+[1.279291] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23\x1b[m\x1b[K,\n'}
+[1.279367] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[1.279439] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[1.279510] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[1.279582] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[1.279654] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[1.279731] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:5\x1b[m\x1b[K:\n'}
+[1.279803] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__struct.hpp:26:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kbuiltin_interfaces::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.279877] (ping_pong_benchmarking) StderrLine: {'line': b'   26 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[1.279949] (ping_pong_benchmarking) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.280022] (ping_pong_benchmarking) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/statistics_msgs/msg/detail/metrics_message__struct.hpp:22\x1b[m\x1b[K,\n'}
+[1.280107] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/statistics_msgs/msg/metrics_message.hpp:7\x1b[m\x1b[K,\n'}
+[1.280181] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/libstatistics_collector/collector/generate_statistics_message.hpp:21\x1b[m\x1b[K,\n'}
+[1.280254] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23\x1b[m\x1b[K,\n'}
+[1.280326] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/subscription.hpp:50\x1b[m\x1b[K,\n'}
+[1.280399] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:25\x1b[m\x1b[K,\n'}
+[1.280473] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[1.280546] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[1.280620] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[1.280692] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[1.280764] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:5\x1b[m\x1b[K:\n'}
+[1.280840] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:26:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstatistics_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.280914] (ping_pong_benchmarking) StderrLine: {'line': b'   26 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[1.280988] (ping_pong_benchmarking) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.281062] (ping_pong_benchmarking) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rcl_interfaces/msg/list_parameters_result.hpp:7\x1b[m\x1b[K,\n'}
+[1.281135] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node.hpp:34\x1b[m\x1b[K,\n'}
+[1.281208] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[1.281280] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[1.281352] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[1.281424] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:6\x1b[m\x1b[K:\n'}
+[1.281500] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:26:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Krcl_interfaces::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.281574] (ping_pong_benchmarking) StderrLine: {'line': b'   26 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[1.283246] (ping_pong_benchmarking) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.281719] (ping_pong_benchmarking) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/std_msgs/msg/int32.hpp:7\x1b[m\x1b[K,\n'}
+[1.281792] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:3\x1b[m\x1b[K,\n'}
+[1.281865] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:8\x1b[m\x1b[K:\n'}
+[1.281938] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/std_msgs/msg/detail/int32__struct.hpp:26:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.282012] (ping_pong_benchmarking) StderrLine: {'line': b'   26 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[1.282084] (ping_pong_benchmarking) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.282157] (ping_pong_benchmarking) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:8\x1b[m\x1b[K:\n'}
+[1.282231] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:25:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.282305] (ping_pong_benchmarking) StderrLine: {'line': b'   25 |         rclcpp::Publisher<std::msg::Int32\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr ping_pub;\n'}
+[1.282383] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.282455] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:25:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[1.282534] (ping_pong_benchmarking) StderrLine: {'line': b'   25 |         rclcpp::Publisher<std::msg::Int32>::\x1b[01;31m\x1b[KSharedPtr\x1b[m\x1b[K ping_pub;\n'}
+[1.282608] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.282681] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                                      \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[1.282753] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:25:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredeclaration of \xe2\x80\x98\x1b[01m\x1b[Kint Ping::SharedPtr\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.282826] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:24:48:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[Kint Ping::SharedPtr\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.282899] (ping_pong_benchmarking) StderrLine: {'line': b'   24 |         rclcpp::Subscription<std::msg::Int32>::\x1b[01;36m\x1b[KSharedPtr\x1b[m\x1b[K pong_sub;\n'}
+[1.282972] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                                \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.283050] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:25:55:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kping_pub\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.283125] (ping_pong_benchmarking) StderrLine: {'line': b'   25 |         rclcpp::Publisher<std::msg::Int32>::SharedPtr \x1b[01;31m\x1b[Kping_pub\x1b[m\x1b[K;\n'}
+[1.283198] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                                       \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.283270] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:37:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd_msg\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.283344] (ping_pong_benchmarking) StderrLine: {'line': b'   37 |         void onPongCallback(const \x1b[01;31m\x1b[Kstd_msg\x1b[m\x1b[K::msg::Int32::SharedPtr msg);\n'}
+[1.283417] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.283492] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                   \x1b[32m\x1b[Kstd_msgs\x1b[m\x1b[K\n'}
+[1.283564] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:37:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[1.283638] (ping_pong_benchmarking) StderrLine: {'line': b'   37 |         void onPongCallback(const std_msgs::msg\x1b[01;31m\x1b[K::\x1b[m\x1b[KInt32::SharedPtr msg);\n'}
+[1.283711] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[1.283784] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:37:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[1.283856] (ping_pong_benchmarking) StderrLine: {'line': b'   37 |         void onPongCallback\x1b[34m\x1b[K(\x1b[m\x1b[Kconst std_msgs::msg\x1b[01;31m\x1b[K:\x1b[m\x1b[K\x1b[32m\x1b[K:\x1b[m\x1b[KInt32::SharedPtr msg);\n'}
+[1.283930] (ping_pong_benchmarking) StderrLine: {'line': b'      |                            \x1b[34m\x1b[K~\x1b[m\x1b[K                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~\x1b[m\x1b[K\n'}
+[1.284002] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                               \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[1.284081] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:37:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[1.284157] (ping_pong_benchmarking) StderrLine: {'line': b'   37 |         void onPongCallback(const std_msgs::\x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K::Int32::SharedPtr msg);\n'}
+[1.284230] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.284302] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                               \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[1.284374] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:37:49:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KInt32\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Kint32_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.284454] (ping_pong_benchmarking) StderrLine: {'line': b'   37 |         void onPongCallback(const std_msgs::msg::\x1b[01;31m\x1b[KInt32\x1b[m\x1b[K::SharedPtr msg);\n'}
+[1.284527] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.284600] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                                 \x1b[32m\x1b[Kint32_t\x1b[m\x1b[K\n'}
+[1.284671] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.284743] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:15:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunable to find numeric literal operator \xe2\x80\x98\x1b[01m\x1b[Koperator""s\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.284832] (ping_pong_benchmarking) StderrLine: {'line': b'   15 |     const std::chrono::seconds experiment_time = \x1b[01;31m\x1b[K10s\x1b[m\x1b[K;\n'}
+[1.284889] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.287326] (ping_pong_benchmarking) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2\x1b[m\x1b[K:\n'}
+[1.287518] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:24:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.287605] (ping_pong_benchmarking) StderrLine: {'line': b'   24 |         rclcpp::Subscription<std::\x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K::Int32>::SharedPtr pong_sub;\n'}
+[1.287681] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.288086] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:24:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Ksuggested alternatives:\n'}
+[1.288170] (ping_pong_benchmarking) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/builtin_interfaces/msg/duration.hpp:7\x1b[m\x1b[K,\n'}
+[1.288244] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/duration.hpp:20\x1b[m\x1b[K,\n'}
+[1.288315] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/qos.hpp:20\x1b[m\x1b[K,\n'}
+[1.288386] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node_interfaces/node_graph_interface.hpp:31\x1b[m\x1b[K,\n'}
+[1.288454] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/client.hpp:34\x1b[m\x1b[K,\n'}
+[1.288522] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23\x1b[m\x1b[K,\n'}
+[1.288589] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[1.288657] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[1.288724] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[1.288792] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[1.288869] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[1.288938] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[1.289005] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[1.289072] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[1.289139] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2\x1b[m\x1b[K,\n'}
+[1.289206] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2\x1b[m\x1b[K:\n'}
+[1.289275] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__struct.hpp:26:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kbuiltin_interfaces::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.289349] (ping_pong_benchmarking) StderrLine: {'line': b'   26 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[1.289474] (ping_pong_benchmarking) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.289557] (ping_pong_benchmarking) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/statistics_msgs/msg/detail/metrics_message__struct.hpp:22\x1b[m\x1b[K,\n'}
+[1.289679] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/statistics_msgs/msg/metrics_message.hpp:7\x1b[m\x1b[K,\n'}
+[1.289754] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/libstatistics_collector/collector/generate_statistics_message.hpp:21\x1b[m\x1b[K,\n'}
+[1.290032] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23\x1b[m\x1b[K,\n'}
+[1.290179] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/subscription.hpp:50\x1b[m\x1b[K,\n'}
+[1.290251] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:25\x1b[m\x1b[K,\n'}
+[1.290532] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[1.290705] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[1.290778] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[1.290849] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[1.290919] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[1.290990] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[1.291059] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[1.291129] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2\x1b[m\x1b[K,\n'}
+[1.291215] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2\x1b[m\x1b[K:\n'}
+[1.291291] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:26:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstatistics_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.291367] (ping_pong_benchmarking) StderrLine: {'line': b'   26 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[1.291436] (ping_pong_benchmarking) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.291505] (ping_pong_benchmarking) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rcl_interfaces/msg/list_parameters_result.hpp:7\x1b[m\x1b[K,\n'}
+[1.291574] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node.hpp:34\x1b[m\x1b[K,\n'}
+[1.293247] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[1.291732] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[1.291785] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[1.291853] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2\x1b[m\x1b[K,\n'}
+[1.291922] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2\x1b[m\x1b[K:\n'}
+[1.292027] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:26:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Krcl_interfaces::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.292107] (ping_pong_benchmarking) StderrLine: {'line': b'   26 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[1.292177] (ping_pong_benchmarking) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.292246] (ping_pong_benchmarking) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/std_msgs/msg/int32.hpp:7\x1b[m\x1b[K,\n'}
+[1.292315] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:3\x1b[m\x1b[K,\n'}
+[1.292388] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2\x1b[m\x1b[K:\n'}
+[1.292457] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/std_msgs/msg/detail/int32__struct.hpp:26:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.292528] (ping_pong_benchmarking) StderrLine: {'line': b'   26 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[1.292597] (ping_pong_benchmarking) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.292666] (ping_pong_benchmarking) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2\x1b[m\x1b[K:\n'}
+[1.292736] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:24:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.292809] (ping_pong_benchmarking) StderrLine: {'line': b'   24 |         rclcpp::Subscription<std::\x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K::Int32>::SharedPtr pong_sub;\n'}
+[1.292885] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.292953] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:24:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Ksuggested alternatives:\n'}
+[1.293023] (ping_pong_benchmarking) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/builtin_interfaces/msg/duration.hpp:7\x1b[m\x1b[K,\n'}
+[1.293094] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/duration.hpp:20\x1b[m\x1b[K,\n'}
+[1.293324] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/qos.hpp:20\x1b[m\x1b[K,\n'}
+[1.293235] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node_interfaces/node_graph_interface.hpp:31\x1b[m\x1b[K,\n'}
+[1.293304] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/client.hpp:34\x1b[m\x1b[K,\n'}
+[1.293373] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23\x1b[m\x1b[K,\n'}
+[1.293443] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[1.293511] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[1.293580] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[1.293648] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[1.293732] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[1.293787] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[1.293856] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[1.293926] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[1.293995] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2\x1b[m\x1b[K,\n'}
+[1.294067] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2\x1b[m\x1b[K:\n'}
+[1.294137] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__struct.hpp:26:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kbuiltin_interfaces::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.294207] (ping_pong_benchmarking) StderrLine: {'line': b'   26 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[1.294276] (ping_pong_benchmarking) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.294345] (ping_pong_benchmarking) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/statistics_msgs/msg/detail/metrics_message__struct.hpp:22\x1b[m\x1b[K,\n'}
+[1.294432] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/statistics_msgs/msg/metrics_message.hpp:7\x1b[m\x1b[K,\n'}
+[1.294492] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/libstatistics_collector/collector/generate_statistics_message.hpp:21\x1b[m\x1b[K,\n'}
+[1.294565] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23\x1b[m\x1b[K,\n'}
+[1.294832] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/subscription.hpp:50\x1b[m\x1b[K,\n'}
+[1.294901] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:25\x1b[m\x1b[K,\n'}
+[1.294970] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[1.295039] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[1.295150] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[1.295221] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[1.295296] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[1.295367] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[1.295436] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[1.295505] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2\x1b[m\x1b[K,\n'}
+[1.295573] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2\x1b[m\x1b[K:\n'}
+[1.295641] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:26:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstatistics_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.295714] (ping_pong_benchmarking) StderrLine: {'line': b'   26 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[1.295782] (ping_pong_benchmarking) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.295851] (ping_pong_benchmarking) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rcl_interfaces/msg/list_parameters_result.hpp:7\x1b[m\x1b[K,\n'}
+[1.295920] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node.hpp:34\x1b[m\x1b[K,\n'}
+[1.295990] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[1.296065] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[1.296150] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[1.296215] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2\x1b[m\x1b[K,\n'}
+[1.296281] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2\x1b[m\x1b[K:\n'}
+[1.296347] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:26:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Krcl_interfaces::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.296457] (ping_pong_benchmarking) StderrLine: {'line': b'   26 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[1.296540] (ping_pong_benchmarking) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.296607] (ping_pong_benchmarking) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/std_msgs/msg/int32.hpp:7\x1b[m\x1b[K,\n'}
+[1.296673] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:3\x1b[m\x1b[K,\n'}
+[1.296740] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2\x1b[m\x1b[K:\n'}
+[1.296806] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/std_msgs/msg/detail/int32__struct.hpp:26:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.296873] (ping_pong_benchmarking) StderrLine: {'line': b'   26 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[1.296938] (ping_pong_benchmarking) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.297003] (ping_pong_benchmarking) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2\x1b[m\x1b[K:\n'}
+[1.297069] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:24:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.297136] (ping_pong_benchmarking) StderrLine: {'line': b'   24 |         rclcpp::Subscription<std::msg::Int32\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr pong_sub;\n'}
+[1.297202] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.297269] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:24:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 3 is invalid\n'}
+[1.297336] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:24:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[1.297403] (ping_pong_benchmarking) StderrLine: {'line': b'   24 |         rclcpp::Subscription<std::msg::Int32>::\x1b[01;31m\x1b[KSharedPtr\x1b[m\x1b[K pong_sub;\n'}
+[1.297469] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                                \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.297534] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                                         \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[1.297605] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:24:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpong_sub\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.297676] (ping_pong_benchmarking) StderrLine: {'line': b'   24 |         rclcpp::Subscription<std::msg::Int32>::SharedPtr \x1b[01;31m\x1b[Kpong_sub\x1b[m\x1b[K;\n'}
+[1.297743] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.297808] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:25:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.297883] (ping_pong_benchmarking) StderrLine: {'line': b'   25 |         rclcpp::Publisher<std::\x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K::Int32>::SharedPtr ping_pub;\n'}
+[1.297950] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.298032] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:25:32:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Ksuggested alternatives:\n'}
+[1.298082] (ping_pong_benchmarking) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/builtin_interfaces/msg/duration.hpp:7\x1b[m\x1b[K,\n'}
+[1.298148] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/duration.hpp:20\x1b[m\x1b[K,\n'}
+[1.298214] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/qos.hpp:20\x1b[m\x1b[K,\n'}
+[1.298279] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node_interfaces/node_graph_interface.hpp:31\x1b[m\x1b[K,\n'}
+[1.298347] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/client.hpp:34\x1b[m\x1b[K,\n'}
+[1.298412] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23\x1b[m\x1b[K,\n'}
+[1.298477] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[1.298543] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[1.298609] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[1.298674] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[1.298740] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[1.298805] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[1.298871] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[1.298936] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[1.299004] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2\x1b[m\x1b[K,\n'}
+[1.299070] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2\x1b[m\x1b[K:\n'}
+[1.299138] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__struct.hpp:26:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kbuiltin_interfaces::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.299206] (ping_pong_benchmarking) StderrLine: {'line': b'   26 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[1.299273] (ping_pong_benchmarking) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.299339] (ping_pong_benchmarking) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/statistics_msgs/msg/detail/metrics_message__struct.hpp:22\x1b[m\x1b[K,\n'}
+[1.299406] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/statistics_msgs/msg/metrics_message.hpp:7\x1b[m\x1b[K,\n'}
+[1.299477] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/libstatistics_collector/collector/generate_statistics_message.hpp:21\x1b[m\x1b[K,\n'}
+[1.299542] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23\x1b[m\x1b[K,\n'}
+[1.299609] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/subscription.hpp:50\x1b[m\x1b[K,\n'}
+[1.299675] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:25\x1b[m\x1b[K,\n'}
+[1.299741] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[1.299807] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[1.299873] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[1.299939] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[1.300005] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[1.300098] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[1.300182] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[1.300248] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2\x1b[m\x1b[K,\n'}
+[1.300332] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2\x1b[m\x1b[K:\n'}
+[1.300387] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:26:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstatistics_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.300462] (ping_pong_benchmarking) StderrLine: {'line': b'   26 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[1.300530] (ping_pong_benchmarking) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.300596] (ping_pong_benchmarking) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rcl_interfaces/msg/list_parameters_result.hpp:7\x1b[m\x1b[K,\n'}
+[1.300664] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node.hpp:34\x1b[m\x1b[K,\n'}
+[1.300730] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[1.300796] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[1.300862] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[1.300928] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2\x1b[m\x1b[K,\n'}
+[1.300995] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2\x1b[m\x1b[K:\n'}
+[1.301061] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:26:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Krcl_interfaces::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.301133] (ping_pong_benchmarking) StderrLine: {'line': b'   26 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[1.301199] (ping_pong_benchmarking) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.301265] (ping_pong_benchmarking) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/std_msgs/msg/int32.hpp:7\x1b[m\x1b[K,\n'}
+[1.301331] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:3\x1b[m\x1b[K,\n'}
+[1.301397] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2\x1b[m\x1b[K:\n'}
+[1.301464] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/std_msgs/msg/detail/int32__struct.hpp:26:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.301531] (ping_pong_benchmarking) StderrLine: {'line': b'   26 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[1.301599] (ping_pong_benchmarking) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.303266] (ping_pong_benchmarking) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2\x1b[m\x1b[K:\n'}
+[1.301733] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:25:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.301801] (ping_pong_benchmarking) StderrLine: {'line': b'   25 |         rclcpp::Publisher<std::\x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K::Int32>::SharedPtr ping_pub;\n'}
+[1.301867] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.301933] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:25:32:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Ksuggested alternatives:\n'}
+[1.301999] (ping_pong_benchmarking) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/builtin_interfaces/msg/duration.hpp:7\x1b[m\x1b[K,\n'}
+[1.302065] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/duration.hpp:20\x1b[m\x1b[K,\n'}
+[1.302132] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/qos.hpp:20\x1b[m\x1b[K,\n'}
+[1.302198] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node_interfaces/node_graph_interface.hpp:31\x1b[m\x1b[K,\n'}
+[1.302265] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/client.hpp:34\x1b[m\x1b[K,\n'}
+[1.302331] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23\x1b[m\x1b[K,\n'}
+[1.302397] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[1.302463] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[1.302530] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[1.302595] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[1.302666] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[1.302734] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[1.302800] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[1.302867] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[1.302933] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2\x1b[m\x1b[K,\n'}
+[1.303000] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2\x1b[m\x1b[K:\n'}
+[1.303069] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__struct.hpp:26:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kbuiltin_interfaces::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.303137] (ping_pong_benchmarking) StderrLine: {'line': b'   26 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[1.303202] (ping_pong_benchmarking) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.303272] (ping_pong_benchmarking) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/statistics_msgs/msg/detail/metrics_message__struct.hpp:22\x1b[m\x1b[K,\n'}
+[1.303338] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/statistics_msgs/msg/metrics_message.hpp:7\x1b[m\x1b[K,\n'}
+[1.303408] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/libstatistics_collector/collector/generate_statistics_message.hpp:21\x1b[m\x1b[K,\n'}
+[1.303475] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23\x1b[m\x1b[K,\n'}
+[1.303542] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/subscription.hpp:50\x1b[m\x1b[K,\n'}
+[1.303608] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:25\x1b[m\x1b[K,\n'}
+[1.303673] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[1.303739] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[1.303804] (-) TimerEvent: {}
+[1.303932] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[1.304001] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[1.304080] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[1.304324] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[1.304230] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[1.304297] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2\x1b[m\x1b[K,\n'}
+[1.304368] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2\x1b[m\x1b[K:\n'}
+[1.304436] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:26:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstatistics_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.304504] (ping_pong_benchmarking) StderrLine: {'line': b'   26 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[1.304571] (ping_pong_benchmarking) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.304637] (ping_pong_benchmarking) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rcl_interfaces/msg/list_parameters_result.hpp:7\x1b[m\x1b[K,\n'}
+[1.304703] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node.hpp:34\x1b[m\x1b[K,\n'}
+[1.304769] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[1.304834] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[1.304902] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[1.304969] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2\x1b[m\x1b[K,\n'}
+[1.305036] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2\x1b[m\x1b[K:\n'}
+[1.305102] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:26:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Krcl_interfaces::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.305170] (ping_pong_benchmarking) StderrLine: {'line': b'   26 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[1.305237] (ping_pong_benchmarking) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.305302] (ping_pong_benchmarking) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/std_msgs/msg/int32.hpp:7\x1b[m\x1b[K,\n'}
+[1.305368] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:3\x1b[m\x1b[K,\n'}
+[1.305433] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2\x1b[m\x1b[K:\n'}
+[1.305499] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/std_msgs/msg/detail/int32__struct.hpp:26:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.305567] (ping_pong_benchmarking) StderrLine: {'line': b'   26 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[1.305633] (ping_pong_benchmarking) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.305699] (ping_pong_benchmarking) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2\x1b[m\x1b[K:\n'}
+[1.305765] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:25:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.305836] (ping_pong_benchmarking) StderrLine: {'line': b'   25 |         rclcpp::Publisher<std::msg::Int32\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr ping_pub;\n'}
+[1.305906] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.305971] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:25:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[1.306038] (ping_pong_benchmarking) StderrLine: {'line': b'   25 |         rclcpp::Publisher<std::msg::Int32>::\x1b[01;31m\x1b[KSharedPtr\x1b[m\x1b[K ping_pub;\n'}
+[1.306105] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.306170] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                                      \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[1.306241] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:25:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredeclaration of \xe2\x80\x98\x1b[01m\x1b[Kint Ping::SharedPtr\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.306312] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:24:48:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[Kint Ping::SharedPtr\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.306379] (ping_pong_benchmarking) StderrLine: {'line': b'   24 |         rclcpp::Subscription<std::msg::Int32>::\x1b[01;36m\x1b[KSharedPtr\x1b[m\x1b[K pong_sub;\n'}
+[1.306447] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                                \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.306513] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:25:55:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kping_pub\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.306579] (ping_pong_benchmarking) StderrLine: {'line': b'   25 |         rclcpp::Publisher<std::msg::Int32>::SharedPtr \x1b[01;31m\x1b[Kping_pub\x1b[m\x1b[K;\n'}
+[1.306645] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                                       \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.306711] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:37:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd_msg\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.306778] (ping_pong_benchmarking) StderrLine: {'line': b'   37 |         void onPongCallback(const \x1b[01;31m\x1b[Kstd_msg\x1b[m\x1b[K::msg::Int32::SharedPtr msg);\n'}
+[1.306844] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.306910] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                   \x1b[32m\x1b[Kstd_msgs\x1b[m\x1b[K\n'}
+[1.306977] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:37:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[1.307044] (ping_pong_benchmarking) StderrLine: {'line': b'   37 |         void onPongCallback(const std_msgs::msg\x1b[01;31m\x1b[K::\x1b[m\x1b[KInt32::SharedPtr msg);\n'}
+[1.307110] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[1.307176] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:37:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[1.307246] (ping_pong_benchmarking) StderrLine: {'line': b'   37 |         void onPongCallback\x1b[34m\x1b[K(\x1b[m\x1b[Kconst std_msgs::msg\x1b[01;31m\x1b[K:\x1b[m\x1b[K\x1b[32m\x1b[K:\x1b[m\x1b[KInt32::SharedPtr msg);\n'}
+[1.307311] (ping_pong_benchmarking) StderrLine: {'line': b'      |                            \x1b[34m\x1b[K~\x1b[m\x1b[K                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~\x1b[m\x1b[K\n'}
+[1.307377] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                               \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[1.307443] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:37:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[1.307510] (ping_pong_benchmarking) StderrLine: {'line': b'   37 |         void onPongCallback(const std_msgs::\x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K::Int32::SharedPtr msg);\n'}
+[1.307576] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.307644] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                               \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[1.307710] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:37:49:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KInt32\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Kint32_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.307780] (ping_pong_benchmarking) StderrLine: {'line': b'   37 |         void onPongCallback(const std_msgs::msg::\x1b[01;31m\x1b[KInt32\x1b[m\x1b[K::SharedPtr msg);\n'}
+[1.307845] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.307911] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                                 \x1b[32m\x1b[Kint32_t\x1b[m\x1b[K\n'}
+[1.326428] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KPing::Ping()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.326745] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:21:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpong_sub\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.326857] (ping_pong_benchmarking) StderrLine: {'line': b'   21 |     \x1b[01;31m\x1b[Kpong_sub\x1b[m\x1b[K = this->create_subscription<std_msgs::msg::Int32>("/pong", default_qos, std::bind(&Ping::onPongCallback, this, _1));\n'}
+[1.326998] (ping_pong_benchmarking) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.332272] (ping_pong_benchmarking) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/client.hpp:32\x1b[m\x1b[K,\n'}
+[1.332606] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23\x1b[m\x1b[K,\n'}
+[1.332734] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[1.332862] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[1.332993] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[1.333115] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[1.333184] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[1.333258] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[1.333327] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[1.333398] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[1.333467] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2\x1b[m\x1b[K,\n'}
+[1.333536] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2\x1b[m\x1b[K:\n'}
+[1.333606] (ping_pong_benchmarking) StderrLine: {'line': b'/opt/ros/foxy/include/rclcpp/function_traits.hpp: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kstruct rclcpp::function_traits::function_traits<std::_Bind<void (Ping::*(Ping*, std::_Placeholder<1>))(...)> >\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.333676] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/subscription_traits.hpp:97:8:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstruct rclcpp::subscription_traits::has_message_type<std::_Bind<void (Ping::*(Ping*, std::_Placeholder<1>))(...)>, std::allocator<void>, void, void, void, void>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.333753] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node.hpp:204:5:\x1b[m\x1b[K   required by substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class CallbackMessageT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<SubscriptionT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = std_msgs::msg::Int32_<std::allocator<void> >; CallbackT = std::_Bind<void (Ping::*(Ping*, std::_Placeholder<1>))(...)>; AllocatorT = std::allocator<void>; CallbackMessageT = <missing>; SubscriptionT = <missing>; MessageMemoryStrategyT = <missing>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.333828] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:21:128:\x1b[m\x1b[K   required from here\n'}
+[1.333897] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/function_traits.hpp:51:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kdecltype cannot resolve address of overloaded function\n'}
+[1.333965] (ping_pong_benchmarking) StderrLine: {'line': b'   51 |   using \x1b[01;31m\x1b[Karguments\x1b[m\x1b[K = typename tuple_tail<\n'}
+[1.334032] (ping_pong_benchmarking) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.334099] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/function_traits.hpp:57:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kdecltype cannot resolve address of overloaded function\n'}
+[1.334326] (ping_pong_benchmarking) StderrLine: {'line': b'   57 |   using \x1b[01;31m\x1b[Kargument_type\x1b[m\x1b[K = typename std::tuple_element<N, arguments>::type;\n'}
+[1.334234] (ping_pong_benchmarking) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.334301] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/function_traits.hpp:59:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kdecltype cannot resolve address of overloaded function\n'}
+[1.334376] (ping_pong_benchmarking) StderrLine: {'line': b'   59 |   using \x1b[01;31m\x1b[Kreturn_type\x1b[m\x1b[K = typename function_traits<decltype( &FunctionT::operator())>::return_type;\n'}
+[1.334444] (ping_pong_benchmarking) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.334512] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:21:128:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KPing::create_subscription<std_msgs::msg::Int32>(const char [6], rclcpp::QoS&, std::_Bind_helper<false, void (Ping::*)(...), Ping*, const std::_Placeholder<1>&>::type)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.334586] (ping_pong_benchmarking) StderrLine: {'line': b'   21 |     pong_sub = this->create_subscription<std_msgs::msg::Int32>("/pong", default_qos, std::bind(&Ping::onPongCallback, this, _1)\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[1.334655] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                                                                                                                \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.334722] (ping_pong_benchmarking) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[1.334790] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[1.334858] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[1.334986] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2\x1b[m\x1b[K,\n'}
+[1.335054] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2\x1b[m\x1b[K:\n'}
+[1.335129] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node.hpp:213:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class CallbackMessageT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<SubscriptionT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.335204] (ping_pong_benchmarking) StderrLine: {'line': b'  213 |   \x1b[01;36m\x1b[Kcreate_subscription\x1b[m\x1b[K(\n'}
+[1.335273] (ping_pong_benchmarking) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.335338] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node.hpp:213:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  substitution of deduced template arguments resulted in errors seen above\n'}
+[1.335408] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:22:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kping_pub\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.335475] (ping_pong_benchmarking) StderrLine: {'line': b'   22 |     \x1b[01;31m\x1b[Kping_pub\x1b[m\x1b[K = this->create_publisher<std_msgs::msg::Int32>("/ping", default_qos);\n'}
+[1.335541] (ping_pong_benchmarking) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.339433] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Ping::onTimerPing()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.339691] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:38:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmake_pair\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd::make_pair\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.339836] (ping_pong_benchmarking) StderrLine: {'line': b'   38 |     send_recive_data.push_back(\x1b[01;31m\x1b[Kmake_pair\x1b[m\x1b[K(now(),{0,0}));\n'}
+[1.339929] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.339998] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                \x1b[32m\x1b[Kstd::make_pair\x1b[m\x1b[K\n'}
+[1.340093] (ping_pong_benchmarking) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/bits/stl_algobase.h:64\x1b[m\x1b[K,\n'}
+[1.340186] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/memory:62\x1b[m\x1b[K,\n'}
+[1.340277] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144\x1b[m\x1b[K,\n'}
+[1.340392] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2\x1b[m\x1b[K,\n'}
+[1.340549] (ping_pong_benchmarking) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2\x1b[m\x1b[K:\n'}
+[1.340662] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_pair.h:524:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::make_pair\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[1.340777] (ping_pong_benchmarking) StderrLine: {'line': b'  524 |     \x1b[01;36m\x1b[Kmake_pair\x1b[m\x1b[K(_T1&& __x, _T2&& __y)\n'}
+[1.340848] (ping_pong_benchmarking) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.341879] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:40:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kping_pub\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.341987] (ping_pong_benchmarking) StderrLine: {'line': b'   40 |     \x1b[01;31m\x1b[Kping_pub\x1b[m\x1b[K->publish(msg);\n'}
+[1.342058] (ping_pong_benchmarking) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.342737] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:\x1b[m\x1b[K At global scope:\n'}
+[1.342828] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:44:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd_msg\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.342901] (ping_pong_benchmarking) StderrLine: {'line': b'   44 | void Ping::onPongCallback(const \x1b[01;31m\x1b[Kstd_msg\x1b[m\x1b[K::msg::Int32::SharedPtr msg){\n'}
+[1.342972] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.343042] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                 \x1b[32m\x1b[Kstd_msgs\x1b[m\x1b[K\n'}
+[1.343111] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:44:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[1.343187] (ping_pong_benchmarking) StderrLine: {'line': b'   44 | void Ping::onPongCallback(const std_msgs::msg\x1b[01;31m\x1b[K::\x1b[m\x1b[KInt32::SharedPtr msg){\n'}
+[1.343256] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[1.343326] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:44:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[1.343397] (ping_pong_benchmarking) StderrLine: {'line': b'   44 | void Ping::onPongCallback\x1b[34m\x1b[K(\x1b[m\x1b[Kconst std_msgs::msg\x1b[01;31m\x1b[K:\x1b[m\x1b[K\x1b[32m\x1b[K:\x1b[m\x1b[KInt32::SharedPtr msg){\n'}
+[1.343467] (ping_pong_benchmarking) StderrLine: {'line': b'      |                          \x1b[34m\x1b[K~\x1b[m\x1b[K                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~\x1b[m\x1b[K\n'}
+[1.343537] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                             \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[1.343607] (ping_pong_benchmarking) StderrLine: {'line': b'\x1b[01m\x1b[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:44:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected initializer before \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[1.343680] (ping_pong_benchmarking) StderrLine: {'line': b'   44 | void Ping::onPongCallback(const std_msgs::msg\x1b[01;31m\x1b[K::\x1b[m\x1b[KInt32::SharedPtr msg){\n'}
+[1.343754] (ping_pong_benchmarking) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[1.403936] (-) TimerEvent: {}
+[1.504302] (-) TimerEvent: {}
+[1.604624] (-) TimerEvent: {}
+[1.637622] (ping_pong_benchmarking) StderrLine: {'line': b'make[2]: *** [CMakeFiles/ping.dir/build.make:63: CMakeFiles/ping.dir/src/ping.cpp.o] Error 1\n'}
+[1.637853] (ping_pong_benchmarking) StderrLine: {'line': b'make[2]: *** Waiting for unfinished jobs....\n'}
+[1.704747] (-) TimerEvent: {}
+[1.805051] (-) TimerEvent: {}
+[1.905388] (-) TimerEvent: {}
+[2.005701] (-) TimerEvent: {}
+[2.028999] (ping_pong_benchmarking) StderrLine: {'line': b'make[2]: *** [CMakeFiles/ping.dir/build.make:76: CMakeFiles/ping.dir/src/ping_node.cpp.o] Error 1\n'}
+[2.029307] (ping_pong_benchmarking) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/ping.dir/all] Error 2\n'}
+[2.029510] (ping_pong_benchmarking) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[2.031210] (ping_pong_benchmarking) CommandEnded: {'returncode': 2}
+[2.062188] (ping_pong_benchmarking) JobEnded: {'identifier': 'ping_pong_benchmarking', 'rc': 2}
+[2.072594] (-) EventReactorShutdown: {}

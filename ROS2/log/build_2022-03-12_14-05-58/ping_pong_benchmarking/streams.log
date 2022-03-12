@@ -1,0 +1,76 @@
+[0.235s] Invoking command in '/home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking -- -j12 -l12
+[0.279s] [35m[1mScanning dependencies of target ping[0m
+[1.114s] [ 33%] [32mBuilding CXX object CMakeFiles/ping.dir/src/ping.cpp.o[0m
+[1.114s] [ 66%] [32mBuilding CXX object CMakeFiles/ping.dir/src/ping_node.cpp.o[0m
+[2.172s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[2.173s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:15:50:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[Kint[m[K’ to non-scalar type ‘[01m[Kconst seconds[m[K’ {aka ‘[01m[Kconst std::chrono::duration<long int>[m[K’} requested
+[2.173s]    15 |     const std::chrono::seconds experiment_time = [01;31m[K10[m[K;
+[2.173s]       |                                                  [01;31m[K^~[m[K
+[2.199s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:[m[K In member function ‘[01m[Kvoid Ping::onTimerPing()[m[K’:
+[2.200s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:38:53:[m[K [01;31m[Kerror: [m[K‘[01m[KTime[m[K’ was not declared in this scope
+[2.200s]    38 |     send_recive_data.push_back(std::make_pair(now(),[01;31m[KTime[m[K(0,0));
+[2.200s]       |                                                     [01;31m[K^~~~[m[K
+[2.200s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:38:53:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[2.200s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/clock.hpp:23[m[K,
+[2.200s]                  from [01m[K/opt/ros/foxy/include/rclcpp/timer.hpp:27[m[K,
+[2.200s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:27[m[K,
+[2.200s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[2.201s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[2.201s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[2.201s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[2.201s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[2.201s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[2.201s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[2.201s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.201s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2[m[K,
+[2.201s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[2.201s] [01m[K/opt/ros/foxy/include/rclcpp/time.hpp:31:7:[m[K [01;36m[Knote: [m[K  ‘[01m[Krclcpp::Time[m[K’
+[2.201s]    31 | class [01;36m[KTime[m[K
+[2.201s]       |       [01;36m[K^~~~[m[K
+[2.201s] In file included from [01m[K/opt/ros/foxy/include/builtin_interfaces/msg/time.hpp:7[m[K,
+[2.202s]                  from [01m[K/opt/ros/foxy/include/rclcpp/time.hpp:18[m[K,
+[2.202s]                  from [01m[K/opt/ros/foxy/include/rclcpp/clock.hpp:23[m[K,
+[2.202s]                  from [01m[K/opt/ros/foxy/include/rclcpp/timer.hpp:27[m[K,
+[2.202s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:27[m[K,
+[2.202s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[2.202s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[2.202s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[2.202s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[2.202s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[2.202s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[2.202s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[2.202s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.202s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2[m[K,
+[2.202s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[2.203s] [01m[K/opt/ros/foxy/include/builtin_interfaces/msg/detail/time__struct.hpp:135:7:[m[K [01;36m[Knote: [m[K  ‘[01m[Kbuiltin_interfaces::msg::Time[m[K’
+[2.203s]   135 | using [01;36m[KTime[m[K =
+[2.203s]       |       [01;36m[K^~~~[m[K
+[2.207s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:[m[K In member function ‘[01m[Kvoid Ping::onPongCallback(std_msgs::msg::Int32_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.207s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:45:28:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::vector<std::pair<rclcpp::Time, rclcpp::Time> >::at(const SharedPtr&)[m[K’
+[2.207s]    45 |     send_recive_data.at(msg[01;31m[K)[m[K.second = now();
+[2.207s]       |                            [01;31m[K^[m[K
+[2.207s] In file included from [01m[K/usr/include/c++/9/vector:67[m[K,
+[2.207s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:27[m[K,
+[2.207s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[2.207s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[2.207s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.207s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2[m[K,
+[2.208s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[2.208s] [01m[K/usr/include/c++/9/bits/stl_vector.h:1089:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::at(std::vector<_Tp, _Alloc>::size_type) [with _Tp = std::pair<rclcpp::Time, rclcpp::Time>; _Alloc = std::allocator<std::pair<rclcpp::Time, rclcpp::Time> >; std::vector<_Tp, _Alloc>::reference = std::pair<rclcpp::Time, rclcpp::Time>&; std::vector<_Tp, _Alloc>::size_type = long unsigned int][m[K’
+[2.208s]  1089 |       [01;36m[Kat[m[K(size_type __n)
+[2.208s]       |       [01;36m[K^~[m[K
+[2.208s] [01m[K/usr/include/c++/9/bits/stl_vector.h:1089:20:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<std_msgs::msg::Int32_<std::allocator<void> > >[m[K’} to ‘[01m[Kstd::vector<std::pair<rclcpp::Time, rclcpp::Time> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’}
+[2.208s]  1089 |       at([01;36m[Ksize_type __n[m[K)
+[2.208s]       |          [01;36m[K~~~~~~~~~~^~~[m[K
+[2.208s] [01m[K/usr/include/c++/9/bits/stl_vector.h:1107:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::const_reference std::vector<_Tp, _Alloc>::at(std::vector<_Tp, _Alloc>::size_type) const [with _Tp = std::pair<rclcpp::Time, rclcpp::Time>; _Alloc = std::allocator<std::pair<rclcpp::Time, rclcpp::Time> >; std::vector<_Tp, _Alloc>::const_reference = const std::pair<rclcpp::Time, rclcpp::Time>&; std::vector<_Tp, _Alloc>::size_type = long unsigned int][m[K’
+[2.208s]  1107 |       [01;36m[Kat[m[K(size_type __n) const
+[2.208s]       |       [01;36m[K^~[m[K
+[2.208s] [01m[K/usr/include/c++/9/bits/stl_vector.h:1107:20:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<std_msgs::msg::Int32_<std::allocator<void> > >[m[K’} to ‘[01m[Kstd::vector<std::pair<rclcpp::Time, rclcpp::Time> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’}
+[2.208s]  1107 |       at([01;36m[Ksize_type __n[m[K) const
+[2.208s]       |          [01;36m[K~~~~~~~~~~^~~[m[K
+[2.481s] make[2]: *** [CMakeFiles/ping.dir/build.make:63: CMakeFiles/ping.dir/src/ping.cpp.o] Error 1
+[2.481s] make[2]: *** Waiting for unfinished jobs....
+[3.406s] make[2]: *** [CMakeFiles/ping.dir/build.make:76: CMakeFiles/ping.dir/src/ping_node.cpp.o] Error 1
+[3.407s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/ping.dir/all] Error 2
+[3.407s] make: *** [Makefile:141: all] Error 2
+[3.408s] Invoked command in '/home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking -- -j12 -l12

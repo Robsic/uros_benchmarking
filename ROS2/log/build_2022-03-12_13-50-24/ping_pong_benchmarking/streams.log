@@ -1,0 +1,1096 @@
+[0.226s] Invoking command in '/home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking -- -j12 -l12
+[0.299s] [ 66%] [32mBuilding CXX object CMakeFiles/ping.dir/src/ping.cpp.o[0m
+[0.300s] [ 66%] [32mBuilding CXX object CMakeFiles/ping.dir/src/ping_node.cpp.o[0m
+[1.353s] In file included from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:8[m[K:
+[1.354s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:24:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ is not a member of ‘[01m[Kstd[m[K’
+[1.354s]    24 |         rclcpp::Subscription<std::[01;31m[Kmsg[m[K::Int32>::SharedPtr pong_sub;
+[1.354s]       |                                   [01;31m[K^~~[m[K
+[1.354s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:24:35:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[1.355s] In file included from [01m[K/opt/ros/foxy/include/builtin_interfaces/msg/duration.hpp:7[m[K,
+[1.355s]                  from [01m[K/opt/ros/foxy/include/rclcpp/duration.hpp:20[m[K,
+[1.355s]                  from [01m[K/opt/ros/foxy/include/rclcpp/qos.hpp:20[m[K,
+[1.355s]                  from [01m[K/opt/ros/foxy/include/rclcpp/node_interfaces/node_graph_interface.hpp:31[m[K,
+[1.355s]                  from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:34[m[K,
+[1.355s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[1.355s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[1.355s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[1.355s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[1.356s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[1.356s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[1.356s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:5[m[K:
+[1.356s] [01m[K/opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kbuiltin_interfaces::msg[m[K’
+[1.356s]    26 | namespace [01;36m[Kmsg[m[K
+[1.356s]       |           [01;36m[K^~~[m[K
+[1.356s] In file included from [01m[K/opt/ros/foxy/include/statistics_msgs/msg/detail/metrics_message__struct.hpp:22[m[K,
+[1.356s]                  from [01m[K/opt/ros/foxy/include/statistics_msgs/msg/metrics_message.hpp:7[m[K,
+[1.356s]                  from [01m[K/opt/ros/foxy/include/libstatistics_collector/collector/generate_statistics_message.hpp:21[m[K,
+[1.357s]                  from [01m[K/opt/ros/foxy/include/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23[m[K,
+[1.357s]                  from [01m[K/opt/ros/foxy/include/rclcpp/subscription.hpp:50[m[K,
+[1.357s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:25[m[K,
+[1.357s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[1.357s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[1.357s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[1.357s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[1.358s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:5[m[K:
+[1.358s] [01m[K/opt/ros/foxy/include/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstatistics_msgs::msg[m[K’
+[1.358s]    26 | namespace [01;36m[Kmsg[m[K
+[1.358s]       |           [01;36m[K^~~[m[K
+[1.358s] In file included from [01m[K/opt/ros/foxy/include/rcl_interfaces/msg/list_parameters_result.hpp:7[m[K,
+[1.359s]                  from [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:34[m[K,
+[1.359s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.359s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+[1.359s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.359s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:6[m[K:
+[1.359s] [01m[K/opt/ros/foxy/include/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Krcl_interfaces::msg[m[K’
+[1.359s]    26 | namespace [01;36m[Kmsg[m[K
+[1.359s]       |           [01;36m[K^~~[m[K
+[1.359s] In file included from [01m[K/opt/ros/foxy/include/std_msgs/msg/int32.hpp:7[m[K,
+[1.360s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:3[m[K,
+[1.360s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:8[m[K:
+[1.360s] [01m[K/opt/ros/foxy/include/std_msgs/msg/detail/int32__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg[m[K’
+[1.360s]    26 | namespace [01;36m[Kmsg[m[K
+[1.360s]       |           [01;36m[K^~~[m[K
+[1.360s] In file included from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:8[m[K:
+[1.360s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:24:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ is not a member of ‘[01m[Kstd[m[K’
+[1.361s]    24 |         rclcpp::Subscription<std::[01;31m[Kmsg[m[K::Int32>::SharedPtr pong_sub;
+[1.361s]       |                                   [01;31m[K^~~[m[K
+[1.361s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:24:35:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[1.361s] In file included from [01m[K/opt/ros/foxy/include/builtin_interfaces/msg/duration.hpp:7[m[K,
+[1.361s]                  from [01m[K/opt/ros/foxy/include/rclcpp/duration.hpp:20[m[K,
+[1.361s]                  from [01m[K/opt/ros/foxy/include/rclcpp/qos.hpp:20[m[K,
+[1.361s]                  from [01m[K/opt/ros/foxy/include/rclcpp/node_interfaces/node_graph_interface.hpp:31[m[K,
+[1.362s]                  from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:34[m[K,
+[1.362s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[1.362s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[1.362s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[1.362s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[1.362s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[1.362s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[1.362s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:5[m[K:
+[1.363s] [01m[K/opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kbuiltin_interfaces::msg[m[K’
+[1.363s]    26 | namespace [01;36m[Kmsg[m[K
+[1.363s]       |           [01;36m[K^~~[m[K
+[1.363s] In file included from [01m[K/opt/ros/foxy/include/statistics_msgs/msg/detail/metrics_message__struct.hpp:22[m[K,
+[1.363s]                  from [01m[K/opt/ros/foxy/include/statistics_msgs/msg/metrics_message.hpp:7[m[K,
+[1.363s]                  from [01m[K/opt/ros/foxy/include/libstatistics_collector/collector/generate_statistics_message.hpp:21[m[K,
+[1.363s]                  from [01m[K/opt/ros/foxy/include/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23[m[K,
+[1.363s]                  from [01m[K/opt/ros/foxy/include/rclcpp/subscription.hpp:50[m[K,
+[1.364s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:25[m[K,
+[1.364s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[1.364s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[1.364s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[1.364s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[1.364s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:5[m[K:
+[1.364s] [01m[K/opt/ros/foxy/include/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstatistics_msgs::msg[m[K’
+[1.364s]    26 | namespace [01;36m[Kmsg[m[K
+[1.364s]       |           [01;36m[K^~~[m[K
+[1.365s] In file included from [01m[K/opt/ros/foxy/include/rcl_interfaces/msg/list_parameters_result.hpp:7[m[K,
+[1.365s]                  from [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:34[m[K,
+[1.365s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.365s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+[1.365s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.365s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:6[m[K:
+[1.365s] [01m[K/opt/ros/foxy/include/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Krcl_interfaces::msg[m[K’
+[1.366s]    26 | namespace [01;36m[Kmsg[m[K
+[1.366s]       |           [01;36m[K^~~[m[K
+[1.366s] In file included from [01m[K/opt/ros/foxy/include/std_msgs/msg/int32.hpp:7[m[K,
+[1.366s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:3[m[K,
+[1.366s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:8[m[K:
+[1.366s] [01m[K/opt/ros/foxy/include/std_msgs/msg/detail/int32__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg[m[K’
+[1.367s]    26 | namespace [01;36m[Kmsg[m[K
+[1.367s]       |           [01;36m[K^~~[m[K
+[1.367s] In file included from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:8[m[K:
+[1.367s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:24:45:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.367s]    24 |         rclcpp::Subscription<std::msg::Int32[01;31m[K>[m[K::SharedPtr pong_sub;
+[1.367s]       |                                             [01;31m[K^[m[K
+[1.367s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:24:45:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[1.367s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:24:48:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[1.368s]    24 |         rclcpp::Subscription<std::msg::Int32>::[01;31m[KSharedPtr[m[K pong_sub;
+[1.368s]       |                                                [01;31m[K^~~~~~~~~[m[K
+[1.368s]       |                                                         [32m[K;[m[K
+[1.368s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:24:58:[m[K [01;31m[Kerror: [m[K‘[01m[Kpong_sub[m[K’ does not name a type
+[1.368s]    24 |         rclcpp::Subscription<std::msg::Int32>::SharedPtr [01;31m[Kpong_sub[m[K;
+[1.368s]       |                                                          [01;31m[K^~~~~~~~[m[K
+[1.368s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:25:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ is not a member of ‘[01m[Kstd[m[K’
+[1.368s]    25 |         rclcpp::Publisher<std::[01;31m[Kmsg[m[K::Int32>::SharedPtr ping_pub;
+[1.368s]       |                                [01;31m[K^~~[m[K
+[1.369s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:25:32:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[1.369s] In file included from [01m[K/opt/ros/foxy/include/builtin_interfaces/msg/duration.hpp:7[m[K,
+[1.369s]                  from [01m[K/opt/ros/foxy/include/rclcpp/duration.hpp:20[m[K,
+[1.369s]                  from [01m[K/opt/ros/foxy/include/rclcpp/qos.hpp:20[m[K,
+[1.369s]                  from [01m[K/opt/ros/foxy/include/rclcpp/node_interfaces/node_graph_interface.hpp:31[m[K,
+[1.369s]                  from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:34[m[K,
+[1.369s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[1.369s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[1.370s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[1.370s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[1.370s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[1.370s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[1.370s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:5[m[K:
+[1.370s] [01m[K/opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kbuiltin_interfaces::msg[m[K’
+[1.370s]    26 | namespace [01;36m[Kmsg[m[K
+[1.371s]       |           [01;36m[K^~~[m[K
+[1.371s] In file included from [01m[K/opt/ros/foxy/include/statistics_msgs/msg/detail/metrics_message__struct.hpp:22[m[K,
+[1.371s]                  from [01m[K/opt/ros/foxy/include/statistics_msgs/msg/metrics_message.hpp:7[m[K,
+[1.371s]                  from [01m[K/opt/ros/foxy/include/libstatistics_collector/collector/generate_statistics_message.hpp:21[m[K,
+[1.371s]                  from [01m[K/opt/ros/foxy/include/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23[m[K,
+[1.371s]                  from [01m[K/opt/ros/foxy/include/rclcpp/subscription.hpp:50[m[K,
+[1.371s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:25[m[K,
+[1.371s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[1.372s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[1.372s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[1.372s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[1.372s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:5[m[K:
+[1.372s] [01m[K/opt/ros/foxy/include/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstatistics_msgs::msg[m[K’
+[1.372s]    26 | namespace [01;36m[Kmsg[m[K
+[1.372s]       |           [01;36m[K^~~[m[K
+[1.372s] In file included from [01m[K/opt/ros/foxy/include/rcl_interfaces/msg/list_parameters_result.hpp:7[m[K,
+[1.373s]                  from [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:34[m[K,
+[1.373s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.373s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+[1.373s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.373s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:6[m[K:
+[1.373s] [01m[K/opt/ros/foxy/include/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Krcl_interfaces::msg[m[K’
+[1.373s]    26 | namespace [01;36m[Kmsg[m[K
+[1.373s]       |           [01;36m[K^~~[m[K
+[1.373s] In file included from [01m[K/opt/ros/foxy/include/std_msgs/msg/int32.hpp:7[m[K,
+[1.374s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:3[m[K,
+[1.374s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:8[m[K:
+[1.374s] [01m[K/opt/ros/foxy/include/std_msgs/msg/detail/int32__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg[m[K’
+[1.374s]    26 | namespace [01;36m[Kmsg[m[K
+[1.374s]       |           [01;36m[K^~~[m[K
+[1.374s] In file included from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:8[m[K:
+[1.374s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:25:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ is not a member of ‘[01m[Kstd[m[K’
+[1.375s]    25 |         rclcpp::Publisher<std::[01;31m[Kmsg[m[K::Int32>::SharedPtr ping_pub;
+[1.375s]       |                                [01;31m[K^~~[m[K
+[1.375s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:25:32:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[1.375s] In file included from [01m[K/opt/ros/foxy/include/builtin_interfaces/msg/duration.hpp:7[m[K,
+[1.375s]                  from [01m[K/opt/ros/foxy/include/rclcpp/duration.hpp:20[m[K,
+[1.375s]                  from [01m[K/opt/ros/foxy/include/rclcpp/qos.hpp:20[m[K,
+[1.375s]                  from [01m[K/opt/ros/foxy/include/rclcpp/node_interfaces/node_graph_interface.hpp:31[m[K,
+[1.375s]                  from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:34[m[K,
+[1.376s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[1.376s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[1.376s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[1.376s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[1.376s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[1.376s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[1.376s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:5[m[K:
+[1.377s] [01m[K/opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kbuiltin_interfaces::msg[m[K’
+[1.377s]    26 | namespace [01;36m[Kmsg[m[K
+[1.377s]       |           [01;36m[K^~~[m[K
+[1.377s] In file included from [01m[K/opt/ros/foxy/include/statistics_msgs/msg/detail/metrics_message__struct.hpp:22[m[K,
+[1.377s]                  from [01m[K/opt/ros/foxy/include/statistics_msgs/msg/metrics_message.hpp:7[m[K,
+[1.377s]                  from [01m[K/opt/ros/foxy/include/libstatistics_collector/collector/generate_statistics_message.hpp:21[m[K,
+[1.377s]                  from [01m[K/opt/ros/foxy/include/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23[m[K,
+[1.377s]                  from [01m[K/opt/ros/foxy/include/rclcpp/subscription.hpp:50[m[K,
+[1.378s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:25[m[K,
+[1.378s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[1.378s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[1.378s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[1.378s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[1.378s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:5[m[K:
+[1.378s] [01m[K/opt/ros/foxy/include/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstatistics_msgs::msg[m[K’
+[1.379s]    26 | namespace [01;36m[Kmsg[m[K
+[1.379s]       |           [01;36m[K^~~[m[K
+[1.379s] In file included from [01m[K/opt/ros/foxy/include/rcl_interfaces/msg/list_parameters_result.hpp:7[m[K,
+[1.379s]                  from [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:34[m[K,
+[1.379s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.379s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+[1.379s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.379s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:6[m[K:
+[1.380s] [01m[K/opt/ros/foxy/include/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Krcl_interfaces::msg[m[K’
+[1.380s]    26 | namespace [01;36m[Kmsg[m[K
+[1.380s]       |           [01;36m[K^~~[m[K
+[1.380s] In file included from [01m[K/opt/ros/foxy/include/std_msgs/msg/int32.hpp:7[m[K,
+[1.380s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:3[m[K,
+[1.380s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:8[m[K:
+[1.380s] [01m[K/opt/ros/foxy/include/std_msgs/msg/detail/int32__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg[m[K’
+[1.380s]    26 | namespace [01;36m[Kmsg[m[K
+[1.381s]       |           [01;36m[K^~~[m[K
+[1.381s] In file included from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:8[m[K:
+[1.381s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:25:42:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.381s]    25 |         rclcpp::Publisher<std::msg::Int32[01;31m[K>[m[K::SharedPtr ping_pub;
+[1.381s]       |                                          [01;31m[K^[m[K
+[1.381s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:25:45:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[1.382s]    25 |         rclcpp::Publisher<std::msg::Int32>::[01;31m[KSharedPtr[m[K ping_pub;
+[1.382s]       |                                             [01;31m[K^~~~~~~~~[m[K
+[1.382s]       |                                                      [32m[K;[m[K
+[1.382s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:25:45:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint Ping::SharedPtr[m[K’
+[1.382s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:24:48:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kint Ping::SharedPtr[m[K’
+[1.382s]    24 |         rclcpp::Subscription<std::msg::Int32>::[01;36m[KSharedPtr[m[K pong_sub;
+[1.382s]       |                                                [01;36m[K^~~~~~~~~[m[K
+[1.382s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:25:55:[m[K [01;31m[Kerror: [m[K‘[01m[Kping_pub[m[K’ does not name a type
+[1.383s]    25 |         rclcpp::Publisher<std::msg::Int32>::SharedPtr [01;31m[Kping_pub[m[K;
+[1.383s]       |                                                       [01;31m[K^~~~~~~~[m[K
+[1.383s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:37:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_msg[m[K’ does not name a type; did you mean ‘[01m[Kstd_msgs[m[K’?
+[1.383s]    37 |         void onPongCallback(const [01;31m[Kstd_msg[m[K::msg::Int32::SharedPtr msg);
+[1.383s]       |                                   [01;31m[K^~~~~~~[m[K
+[1.383s]       |                                   [32m[Kstd_msgs[m[K
+[1.383s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:37:47:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+[1.384s]    37 |         void onPongCallback(const std_msgs::msg[01;31m[K::[m[KInt32::SharedPtr msg);
+[1.384s]       |                                               [01;31m[K^~[m[K
+[1.384s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:37:47:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+[1.384s]    37 |         void onPongCallback[34m[K([m[Kconst std_msgs::msg[01;31m[K:[m[K[32m[K:[m[KInt32::SharedPtr msg);
+[1.384s]       |                            [34m[K~[m[K                  [01;31m[K^[m[K[32m[K~[m[K
+[1.385s]       |                                               [32m[K)[m[K
+[1.385s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:37:44:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[1.385s]    37 |         void onPongCallback(const std_msgs::[01;31m[Kmsg[m[K::Int32::SharedPtr msg);
+[1.385s]       |                                            [01;31m[K^~~[m[K
+[1.385s]       |                                               [32m[K;[m[K
+[1.385s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:37:49:[m[K [01;31m[Kerror: [m[K‘[01m[KInt32[m[K’ in namespace ‘[01m[K::[m[K’ does not name a type; did you mean ‘[01m[Kint32_t[m[K’?
+[1.385s]    37 |         void onPongCallback(const std_msgs::msg::[01;31m[KInt32[m[K::SharedPtr msg);
+[1.386s]       |                                                 [01;31m[K^~~~~[m[K
+[1.386s]       |                                                 [32m[Kint32_t[m[K
+[1.386s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[1.386s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:15:50:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""s[m[K’
+[1.386s]    15 |     const std::chrono::seconds experiment_time = [01;31m[K10s[m[K;
+[1.386s]       |                                                  [01;31m[K^~~[m[K
+[1.389s] In file included from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.389s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:24:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ is not a member of ‘[01m[Kstd[m[K’
+[1.389s]    24 |         rclcpp::Subscription<std::[01;31m[Kmsg[m[K::Int32>::SharedPtr pong_sub;
+[1.390s]       |                                   [01;31m[K^~~[m[K
+[1.390s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:24:35:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[1.390s] In file included from [01m[K/opt/ros/foxy/include/builtin_interfaces/msg/duration.hpp:7[m[K,
+[1.390s]                  from [01m[K/opt/ros/foxy/include/rclcpp/duration.hpp:20[m[K,
+[1.390s]                  from [01m[K/opt/ros/foxy/include/rclcpp/qos.hpp:20[m[K,
+[1.391s]                  from [01m[K/opt/ros/foxy/include/rclcpp/node_interfaces/node_graph_interface.hpp:31[m[K,
+[1.391s]                  from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:34[m[K,
+[1.391s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[1.391s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[1.391s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[1.391s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[1.391s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[1.392s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[1.392s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.392s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.392s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.392s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2[m[K,
+[1.392s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.393s] [01m[K/opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kbuiltin_interfaces::msg[m[K’
+[1.393s]    26 | namespace [01;36m[Kmsg[m[K
+[1.393s]       |           [01;36m[K^~~[m[K
+[1.393s] In file included from [01m[K/opt/ros/foxy/include/statistics_msgs/msg/detail/metrics_message__struct.hpp:22[m[K,
+[1.393s]                  from [01m[K/opt/ros/foxy/include/statistics_msgs/msg/metrics_message.hpp:7[m[K,
+[1.394s]                  from [01m[K/opt/ros/foxy/include/libstatistics_collector/collector/generate_statistics_message.hpp:21[m[K,
+[1.394s]                  from [01m[K/opt/ros/foxy/include/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23[m[K,
+[1.394s]                  from [01m[K/opt/ros/foxy/include/rclcpp/subscription.hpp:50[m[K,
+[1.394s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:25[m[K,
+[1.394s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[1.394s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[1.394s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[1.395s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[1.395s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.395s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.395s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.395s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2[m[K,
+[1.395s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.395s] [01m[K/opt/ros/foxy/include/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstatistics_msgs::msg[m[K’
+[1.395s]    26 | namespace [01;36m[Kmsg[m[K
+[1.396s]       |           [01;36m[K^~~[m[K
+[1.396s] In file included from [01m[K/opt/ros/foxy/include/rcl_interfaces/msg/list_parameters_result.hpp:7[m[K,
+[1.396s]                  from [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:34[m[K,
+[1.396s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.396s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+[1.396s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.396s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2[m[K,
+[1.397s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.397s] [01m[K/opt/ros/foxy/include/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Krcl_interfaces::msg[m[K’
+[1.397s]    26 | namespace [01;36m[Kmsg[m[K
+[1.397s]       |           [01;36m[K^~~[m[K
+[1.397s] In file included from [01m[K/opt/ros/foxy/include/std_msgs/msg/int32.hpp:7[m[K,
+[1.397s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:3[m[K,
+[1.397s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.398s] [01m[K/opt/ros/foxy/include/std_msgs/msg/detail/int32__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg[m[K’
+[1.398s]    26 | namespace [01;36m[Kmsg[m[K
+[1.398s]       |           [01;36m[K^~~[m[K
+[1.398s] In file included from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.398s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:24:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ is not a member of ‘[01m[Kstd[m[K’
+[1.398s]    24 |         rclcpp::Subscription<std::[01;31m[Kmsg[m[K::Int32>::SharedPtr pong_sub;
+[1.398s]       |                                   [01;31m[K^~~[m[K
+[1.399s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:24:35:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[1.399s] In file included from [01m[K/opt/ros/foxy/include/builtin_interfaces/msg/duration.hpp:7[m[K,
+[1.399s]                  from [01m[K/opt/ros/foxy/include/rclcpp/duration.hpp:20[m[K,
+[1.399s]                  from [01m[K/opt/ros/foxy/include/rclcpp/qos.hpp:20[m[K,
+[1.399s]                  from [01m[K/opt/ros/foxy/include/rclcpp/node_interfaces/node_graph_interface.hpp:31[m[K,
+[1.399s]                  from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:34[m[K,
+[1.399s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[1.399s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[1.400s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[1.400s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[1.400s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[1.400s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[1.400s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.400s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.400s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.401s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2[m[K,
+[1.401s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.401s] [01m[K/opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kbuiltin_interfaces::msg[m[K’
+[1.401s]    26 | namespace [01;36m[Kmsg[m[K
+[1.401s]       |           [01;36m[K^~~[m[K
+[1.401s] In file included from [01m[K/opt/ros/foxy/include/statistics_msgs/msg/detail/metrics_message__struct.hpp:22[m[K,
+[1.401s]                  from [01m[K/opt/ros/foxy/include/statistics_msgs/msg/metrics_message.hpp:7[m[K,
+[1.402s]                  from [01m[K/opt/ros/foxy/include/libstatistics_collector/collector/generate_statistics_message.hpp:21[m[K,
+[1.402s]                  from [01m[K/opt/ros/foxy/include/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23[m[K,
+[1.402s]                  from [01m[K/opt/ros/foxy/include/rclcpp/subscription.hpp:50[m[K,
+[1.402s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:25[m[K,
+[1.402s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[1.402s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[1.402s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[1.402s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[1.403s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.403s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.403s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.403s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2[m[K,
+[1.403s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.403s] [01m[K/opt/ros/foxy/include/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstatistics_msgs::msg[m[K’
+[1.403s]    26 | namespace [01;36m[Kmsg[m[K
+[1.404s]       |           [01;36m[K^~~[m[K
+[1.404s] In file included from [01m[K/opt/ros/foxy/include/rcl_interfaces/msg/list_parameters_result.hpp:7[m[K,
+[1.404s]                  from [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:34[m[K,
+[1.404s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.404s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+[1.404s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.404s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2[m[K,
+[1.404s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.405s] [01m[K/opt/ros/foxy/include/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Krcl_interfaces::msg[m[K’
+[1.405s]    26 | namespace [01;36m[Kmsg[m[K
+[1.405s]       |           [01;36m[K^~~[m[K
+[1.405s] In file included from [01m[K/opt/ros/foxy/include/std_msgs/msg/int32.hpp:7[m[K,
+[1.405s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:3[m[K,
+[1.405s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.405s] [01m[K/opt/ros/foxy/include/std_msgs/msg/detail/int32__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg[m[K’
+[1.405s]    26 | namespace [01;36m[Kmsg[m[K
+[1.406s]       |           [01;36m[K^~~[m[K
+[1.406s] In file included from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.406s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:24:45:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.406s]    24 |         rclcpp::Subscription<std::msg::Int32[01;31m[K>[m[K::SharedPtr pong_sub;
+[1.406s]       |                                             [01;31m[K^[m[K
+[1.406s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:24:45:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[1.406s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:24:48:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[1.406s]    24 |         rclcpp::Subscription<std::msg::Int32>::[01;31m[KSharedPtr[m[K pong_sub;
+[1.407s]       |                                                [01;31m[K^~~~~~~~~[m[K
+[1.407s]       |                                                         [32m[K;[m[K
+[1.407s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:24:58:[m[K [01;31m[Kerror: [m[K‘[01m[Kpong_sub[m[K’ does not name a type
+[1.407s]    24 |         rclcpp::Subscription<std::msg::Int32>::SharedPtr [01;31m[Kpong_sub[m[K;
+[1.407s]       |                                                          [01;31m[K^~~~~~~~[m[K
+[1.407s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:25:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ is not a member of ‘[01m[Kstd[m[K’
+[1.407s]    25 |         rclcpp::Publisher<std::[01;31m[Kmsg[m[K::Int32>::SharedPtr ping_pub;
+[1.407s]       |                                [01;31m[K^~~[m[K
+[1.408s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:25:32:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[1.408s] In file included from [01m[K/opt/ros/foxy/include/builtin_interfaces/msg/duration.hpp:7[m[K,
+[1.408s]                  from [01m[K/opt/ros/foxy/include/rclcpp/duration.hpp:20[m[K,
+[1.408s]                  from [01m[K/opt/ros/foxy/include/rclcpp/qos.hpp:20[m[K,
+[1.408s]                  from [01m[K/opt/ros/foxy/include/rclcpp/node_interfaces/node_graph_interface.hpp:31[m[K,
+[1.408s]                  from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:34[m[K,
+[1.408s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[1.409s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[1.409s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[1.409s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[1.409s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[1.409s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[1.409s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.409s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.409s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.410s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2[m[K,
+[1.410s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.410s] [01m[K/opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kbuiltin_interfaces::msg[m[K’
+[1.410s]    26 | namespace [01;36m[Kmsg[m[K
+[1.410s]       |           [01;36m[K^~~[m[K
+[1.410s] In file included from [01m[K/opt/ros/foxy/include/statistics_msgs/msg/detail/metrics_message__struct.hpp:22[m[K,
+[1.410s]                  from [01m[K/opt/ros/foxy/include/statistics_msgs/msg/metrics_message.hpp:7[m[K,
+[1.410s]                  from [01m[K/opt/ros/foxy/include/libstatistics_collector/collector/generate_statistics_message.hpp:21[m[K,
+[1.411s]                  from [01m[K/opt/ros/foxy/include/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23[m[K,
+[1.411s]                  from [01m[K/opt/ros/foxy/include/rclcpp/subscription.hpp:50[m[K,
+[1.411s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:25[m[K,
+[1.411s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[1.411s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[1.411s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[1.411s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[1.411s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.412s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.412s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.412s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2[m[K,
+[1.412s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.412s] [01m[K/opt/ros/foxy/include/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstatistics_msgs::msg[m[K’
+[1.412s]    26 | namespace [01;36m[Kmsg[m[K
+[1.412s]       |           [01;36m[K^~~[m[K
+[1.413s] In file included from [01m[K/opt/ros/foxy/include/rcl_interfaces/msg/list_parameters_result.hpp:7[m[K,
+[1.413s]                  from [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:34[m[K,
+[1.413s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.413s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+[1.413s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.413s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2[m[K,
+[1.413s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.413s] [01m[K/opt/ros/foxy/include/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Krcl_interfaces::msg[m[K’
+[1.414s]    26 | namespace [01;36m[Kmsg[m[K
+[1.414s]       |           [01;36m[K^~~[m[K
+[1.414s] In file included from [01m[K/opt/ros/foxy/include/std_msgs/msg/int32.hpp:7[m[K,
+[1.414s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:3[m[K,
+[1.414s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.414s] [01m[K/opt/ros/foxy/include/std_msgs/msg/detail/int32__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg[m[K’
+[1.414s]    26 | namespace [01;36m[Kmsg[m[K
+[1.414s]       |           [01;36m[K^~~[m[K
+[1.415s] In file included from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.415s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:25:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ is not a member of ‘[01m[Kstd[m[K’
+[1.415s]    25 |         rclcpp::Publisher<std::[01;31m[Kmsg[m[K::Int32>::SharedPtr ping_pub;
+[1.415s]       |                                [01;31m[K^~~[m[K
+[1.415s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:25:32:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[1.415s] In file included from [01m[K/opt/ros/foxy/include/builtin_interfaces/msg/duration.hpp:7[m[K,
+[1.415s]                  from [01m[K/opt/ros/foxy/include/rclcpp/duration.hpp:20[m[K,
+[1.415s]                  from [01m[K/opt/ros/foxy/include/rclcpp/qos.hpp:20[m[K,
+[1.432s]                  from [01m[K/opt/ros/foxy/include/rclcpp/node_interfaces/node_graph_interface.hpp:31[m[K,
+[1.432s]                  from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:34[m[K,
+[1.432s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[1.432s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[1.432s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[1.432s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[1.432s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[1.432s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[1.417s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.417s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.417s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.417s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2[m[K,
+[1.417s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.417s] [01m[K/opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kbuiltin_interfaces::msg[m[K’
+[1.417s]    26 | namespace [01;36m[Kmsg[m[K
+[1.417s]       |           [01;36m[K^~~[m[K
+[1.418s] In file included from [01m[K/opt/ros/foxy/include/statistics_msgs/msg/detail/metrics_message__struct.hpp:22[m[K,
+[1.418s]                  from [01m[K/opt/ros/foxy/include/statistics_msgs/msg/metrics_message.hpp:7[m[K,
+[1.418s]                  from [01m[K/opt/ros/foxy/include/libstatistics_collector/collector/generate_statistics_message.hpp:21[m[K,
+[1.418s]                  from [01m[K/opt/ros/foxy/include/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23[m[K,
+[1.418s]                  from [01m[K/opt/ros/foxy/include/rclcpp/subscription.hpp:50[m[K,
+[1.418s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:25[m[K,
+[1.418s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[1.419s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[1.419s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[1.419s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[1.419s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.419s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.419s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.419s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2[m[K,
+[1.419s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.420s] [01m[K/opt/ros/foxy/include/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstatistics_msgs::msg[m[K’
+[1.420s]    26 | namespace [01;36m[Kmsg[m[K
+[1.420s]       |           [01;36m[K^~~[m[K
+[1.420s] In file included from [01m[K/opt/ros/foxy/include/rcl_interfaces/msg/list_parameters_result.hpp:7[m[K,
+[1.420s]                  from [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:34[m[K,
+[1.420s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.420s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+[1.420s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.421s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2[m[K,
+[1.421s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.421s] [01m[K/opt/ros/foxy/include/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Krcl_interfaces::msg[m[K’
+[1.421s]    26 | namespace [01;36m[Kmsg[m[K
+[1.421s]       |           [01;36m[K^~~[m[K
+[1.421s] In file included from [01m[K/opt/ros/foxy/include/std_msgs/msg/int32.hpp:7[m[K,
+[1.421s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:3[m[K,
+[1.421s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.422s] [01m[K/opt/ros/foxy/include/std_msgs/msg/detail/int32__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg[m[K’
+[1.422s]    26 | namespace [01;36m[Kmsg[m[K
+[1.422s]       |           [01;36m[K^~~[m[K
+[1.422s] In file included from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.422s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:25:42:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.422s]    25 |         rclcpp::Publisher<std::msg::Int32[01;31m[K>[m[K::SharedPtr ping_pub;
+[1.422s]       |                                          [01;31m[K^[m[K
+[1.422s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:25:45:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[1.423s]    25 |         rclcpp::Publisher<std::msg::Int32>::[01;31m[KSharedPtr[m[K ping_pub;
+[1.423s]       |                                             [01;31m[K^~~~~~~~~[m[K
+[1.423s]       |                                                      [32m[K;[m[K
+[1.423s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:25:45:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint Ping::SharedPtr[m[K’
+[1.423s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:24:48:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kint Ping::SharedPtr[m[K’
+[1.423s]    24 |         rclcpp::Subscription<std::msg::Int32>::[01;36m[KSharedPtr[m[K pong_sub;
+[1.423s]       |                                                [01;36m[K^~~~~~~~~[m[K
+[1.423s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:25:55:[m[K [01;31m[Kerror: [m[K‘[01m[Kping_pub[m[K’ does not name a type
+[1.424s]    25 |         rclcpp::Publisher<std::msg::Int32>::SharedPtr [01;31m[Kping_pub[m[K;
+[1.424s]       |                                                       [01;31m[K^~~~~~~~[m[K
+[1.424s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:37:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_msg[m[K’ does not name a type; did you mean ‘[01m[Kstd_msgs[m[K’?
+[1.424s]    37 |         void onPongCallback(const [01;31m[Kstd_msg[m[K::msg::Int32::SharedPtr msg);
+[1.424s]       |                                   [01;31m[K^~~~~~~[m[K
+[1.424s]       |                                   [32m[Kstd_msgs[m[K
+[1.424s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:37:47:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+[1.424s]    37 |         void onPongCallback(const std_msgs::msg[01;31m[K::[m[KInt32::SharedPtr msg);
+[1.425s]       |                                               [01;31m[K^~[m[K
+[1.425s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:37:47:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+[1.425s]    37 |         void onPongCallback[34m[K([m[Kconst std_msgs::msg[01;31m[K:[m[K[32m[K:[m[KInt32::SharedPtr msg);
+[1.425s]       |                            [34m[K~[m[K                  [01;31m[K^[m[K[32m[K~[m[K
+[1.425s]       |                                               [32m[K)[m[K
+[1.425s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:37:44:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[1.425s]    37 |         void onPongCallback(const std_msgs::[01;31m[Kmsg[m[K::Int32::SharedPtr msg);
+[1.425s]       |                                            [01;31m[K^~~[m[K
+[1.426s]       |                                               [32m[K;[m[K
+[1.426s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:37:49:[m[K [01;31m[Kerror: [m[K‘[01m[KInt32[m[K’ in namespace ‘[01m[K::[m[K’ does not name a type; did you mean ‘[01m[Kint32_t[m[K’?
+[1.426s]    37 |         void onPongCallback(const std_msgs::msg::[01;31m[KInt32[m[K::SharedPtr msg);
+[1.426s]       |                                                 [01;31m[K^~~~~[m[K
+[1.426s]       |                                                 [32m[Kint32_t[m[K
+[1.430s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:[m[K In constructor ‘[01m[KPing::Ping()[m[K’:
+[1.430s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:20:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpong_sub[m[K’ was not declared in this scope
+[1.430s]    20 |     [01;31m[Kpong_sub[m[K = this->create_subscription<std_msgs::msg::Int32>("/pong", default_qos, std::bind(&Ping::onPongCallback, this, _1));
+[1.430s]       |     [01;31m[K^~~~~~~~[m[K
+[1.430s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:20:57:[m[K [01;31m[Kerror: [m[K‘[01m[KInt32[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’
+[1.430s]    20 |     pong_sub = this->create_subscription<std_msgs::msg::[01;31m[KInt32[m[K>("/pong", default_qos, std::bind(&Ping::onPongCallback, this, _1));
+[1.430s]       |                                                         [01;31m[K^~~~~[m[K
+[1.430s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:20:57:[m[K [01;31m[Kerror: [m[K‘[01m[KInt32[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’
+[1.436s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:20:128:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KPing::create_subscription<<expression error> >(const char [6], rclcpp::QoS&, std::_Bind_helper<false, void (Ping::*)(...), Ping*, const std::_Placeholder<1>&>::type)[m[K’
+[1.436s]    20 |     pong_sub = this->create_subscription<std_msgs::msg::Int32>("/pong", default_qos, std::bind(&Ping::onPongCallback, this, _1)[01;31m[K)[m[K;
+[1.436s]       |                                                                                                                                [01;31m[K^[m[K
+[1.436s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.436s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+[1.436s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.436s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2[m[K,
+[1.436s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.436s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:213:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class CallbackMessageT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<SubscriptionT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+[1.436s]   213 |   [01;36m[Kcreate_subscription[m[K(
+[1.436s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[1.436s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:213:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.436s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:20:128:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.436s]    20 |     pong_sub = this->create_subscription<std_msgs::msg::Int32>("/pong", default_qos, std::bind(&Ping::onPongCallback, this, _1)[01;31m[K)[m[K;
+[1.437s]       |                                                                                                                                [01;31m[K^[m[K
+[1.437s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:21:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kping_pub[m[K’ was not declared in this scope
+[1.438s]    21 |     [01;31m[Kping_pub[m[K = this->create_publisher<std_msgs::msg::Int32>("/ping", default_qos);
+[1.438s]       |     [01;31m[K^~~~~~~~[m[K
+[1.438s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:21:54:[m[K [01;31m[Kerror: [m[K‘[01m[KInt32[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’
+[1.438s]    21 |     ping_pub = this->create_publisher<std_msgs::msg::[01;31m[KInt32[m[K>("/ping", default_qos);
+[1.438s]       |                                                      [01;31m[K^~~~~[m[K
+[1.438s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:21:54:[m[K [01;31m[Kerror: [m[K‘[01m[KInt32[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’
+[1.438s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:21:81:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KPing::create_publisher<<expression error> >(const char [6], rclcpp::QoS&)[m[K’
+[1.438s]    21 |     ping_pub = this->create_publisher<std_msgs::msg::Int32>("/ping", default_qos[01;31m[K)[m[K;
+[1.438s]       |                                                                                 [01;31m[K^[m[K
+[1.438s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.438s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+[1.439s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.439s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2[m[K,
+[1.439s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.439s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:184:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+[1.439s]   184 |   [01;36m[Kcreate_publisher[m[K(
+[1.439s]       |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[1.439s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:184:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.439s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:21:81:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.439s]    21 |     ping_pub = this->create_publisher<std_msgs::msg::Int32>("/ping", default_qos[01;31m[K)[m[K;
+[1.439s]       |                                                                                 [01;31m[K^[m[K
+[1.440s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:[m[K In member function ‘[01m[Kvoid Ping::onTimerPing()[m[K’:
+[1.440s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:34:20:[m[K [01;31m[Kerror: [m[K‘[01m[KInt32[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’
+[1.440s]    34 |     std_msgs::msg::[01;31m[KInt32[m[K msg;
+[1.440s]       |                    [01;31m[K^~~~~[m[K
+[1.440s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:35:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ was not declared in this scope
+[1.440s]    35 |     [01;31m[Kmsg[m[K.data = static_cast<int32_t>(send_recive_data.size());
+[1.440s]       |     [01;31m[K^~~[m[K
+[1.440s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:35:5:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[1.440s] In file included from [01m[K/opt/ros/foxy/include/builtin_interfaces/msg/duration.hpp:7[m[K,
+[1.440s]                  from [01m[K/opt/ros/foxy/include/rclcpp/duration.hpp:20[m[K,
+[1.441s]                  from [01m[K/opt/ros/foxy/include/rclcpp/qos.hpp:20[m[K,
+[1.441s]                  from [01m[K/opt/ros/foxy/include/rclcpp/node_interfaces/node_graph_interface.hpp:31[m[K,
+[1.441s]                  from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:34[m[K,
+[1.441s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[1.441s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[1.441s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[1.441s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[1.441s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[1.441s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[1.441s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.441s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.441s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.441s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2[m[K,
+[1.441s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.441s] [01m[K/opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kbuiltin_interfaces::msg[m[K’
+[1.442s]    26 | namespace [01;36m[Kmsg[m[K
+[1.442s]       |           [01;36m[K^~~[m[K
+[1.442s] In file included from [01m[K/opt/ros/foxy/include/statistics_msgs/msg/detail/metrics_message__struct.hpp:22[m[K,
+[1.442s]                  from [01m[K/opt/ros/foxy/include/statistics_msgs/msg/metrics_message.hpp:7[m[K,
+[1.442s]                  from [01m[K/opt/ros/foxy/include/libstatistics_collector/collector/generate_statistics_message.hpp:21[m[K,
+[1.442s]                  from [01m[K/opt/ros/foxy/include/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23[m[K,
+[1.442s]                  from [01m[K/opt/ros/foxy/include/rclcpp/subscription.hpp:50[m[K,
+[1.442s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:25[m[K,
+[1.442s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[1.442s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[1.442s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[1.442s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[1.443s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.443s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.443s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.443s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2[m[K,
+[1.443s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.443s] [01m[K/opt/ros/foxy/include/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstatistics_msgs::msg[m[K’
+[1.443s]    26 | namespace [01;36m[Kmsg[m[K
+[1.443s]       |           [01;36m[K^~~[m[K
+[1.443s] In file included from [01m[K/opt/ros/foxy/include/rcl_interfaces/msg/list_parameters_result.hpp:7[m[K,
+[1.443s]                  from [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:34[m[K,
+[1.443s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.443s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+[1.443s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.443s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2[m[K,
+[1.443s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.443s] [01m[K/opt/ros/foxy/include/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Krcl_interfaces::msg[m[K’
+[1.444s]    26 | namespace [01;36m[Kmsg[m[K
+[1.444s]       |           [01;36m[K^~~[m[K
+[1.444s] In file included from [01m[K/opt/ros/foxy/include/std_msgs/msg/int32.hpp:7[m[K,
+[1.444s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:3[m[K,
+[1.444s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.444s] [01m[K/opt/ros/foxy/include/std_msgs/msg/detail/int32__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg[m[K’
+[1.444s]    26 | namespace [01;36m[Kmsg[m[K
+[1.444s]       |           [01;36m[K^~~[m[K
+[1.444s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:37:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kmake_pair[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::make_pair[m[K’?
+[1.444s]    37 |     send_recive_data.push_back([01;31m[Kmake_pair[m[K(now(),{0,0}));
+[1.444s]       |                                [01;31m[K^~~~~~~~~[m[K
+[1.444s]       |                                [32m[Kstd::make_pair[m[K
+[1.445s] In file included from [01m[K/usr/include/c++/9/bits/stl_algobase.h:64[m[K,
+[1.445s]                  from [01m[K/usr/include/c++/9/memory:62[m[K,
+[1.445s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.445s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2[m[K,
+[1.445s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.445s] [01m[K/usr/include/c++/9/bits/stl_pair.h:524:5:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::make_pair[m[K’ declared here
+[1.445s]   524 |     [01;36m[Kmake_pair[m[K(_T1&& __x, _T2&& __y)
+[1.445s]       |     [01;36m[K^~~~~~~~~[m[K
+[1.445s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:39:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kping_pub[m[K’ was not declared in this scope
+[1.445s]    39 |     [01;31m[Kping_pub[m[K->publish(msg);
+[1.445s]       |     [01;31m[K^~~~~~~~[m[K
+[1.445s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:[m[K At global scope:
+[1.445s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:43:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_msg[m[K’ does not name a type; did you mean ‘[01m[Kstd_msgs[m[K’?
+[1.445s]    43 | void Ping::onPongCallback(const [01;31m[Kstd_msg[m[K::msg::Int32::SharedPtr msg){
+[1.446s]       |                                 [01;31m[K^~~~~~~[m[K
+[1.446s]       |                                 [32m[Kstd_msgs[m[K
+[1.447s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:43:45:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+[1.447s]    43 | void Ping::onPongCallback(const std_msgs::msg[01;31m[K::[m[KInt32::SharedPtr msg){
+[1.447s]       |                                             [01;31m[K^~[m[K
+[1.447s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:43:45:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+[1.448s]    43 | void Ping::onPongCallback[34m[K([m[Kconst std_msgs::msg[01;31m[K:[m[K[32m[K:[m[KInt32::SharedPtr msg){
+[1.448s]       |                          [34m[K~[m[K                  [01;31m[K^[m[K[32m[K~[m[K
+[1.448s]       |                                             [32m[K)[m[K
+[1.448s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:43:45:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K::[m[K’ token
+[1.448s]    43 | void Ping::onPongCallback(const std_msgs::msg[01;31m[K::[m[KInt32::SharedPtr msg){
+[1.448s]       |                                             [01;31m[K^~[m[K
+[1.448s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:[m[K In member function ‘[01m[Kvoid Ping::parse_data()[m[K’:
+[1.449s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:52:64:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::vector<double, std::allocator<double> >::push_back(rclcpp::Duration)[m[K’
+[1.449s]    52 |             latency.push_back((sample.second-sample.first)*1000[01;31m[K)[m[K;
+[1.449s]       |                                                                [01;31m[K^[m[K
+[1.449s] In file included from [01m[K/usr/include/c++/9/vector:67[m[K,
+[1.449s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:27[m[K,
+[1.449s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.449s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.449s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.449s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2[m[K,
+[1.449s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.450s] [01m[K/usr/include/c++/9/bits/stl_vector.h:1184:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = double; _Alloc = std::allocator<double>; std::vector<_Tp, _Alloc>::value_type = double][m[K’
+[1.450s]  1184 |       [01;36m[Kpush_back[m[K(const value_type& __x)
+[1.450s]       |       [01;36m[K^~~~~~~~~[m[K
+[1.450s] [01m[K/usr/include/c++/9/bits/stl_vector.h:1184:35:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Krclcpp::Duration[m[K’ to ‘[01m[Kconst value_type&[m[K’ {aka ‘[01m[Kconst double&[m[K’}
+[1.450s]  1184 |       push_back([01;36m[Kconst value_type& __x[m[K)
+[1.450s]       |                 [01;36m[K~~~~~~~~~~~~~~~~~~^~~[m[K
+[1.450s] [01m[K/usr/include/c++/9/bits/stl_vector.h:1200:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid std::vector<_Tp, _Alloc>::push_back(std::vector<_Tp, _Alloc>::value_type&&) [with _Tp = double; _Alloc = std::allocator<double>; std::vector<_Tp, _Alloc>::value_type = double][m[K’
+[1.450s]  1200 |       [01;36m[Kpush_back[m[K(value_type&& __x)
+[1.450s]       |       [01;36m[K^~~~~~~~~[m[K
+[1.450s] [01m[K/usr/include/c++/9/bits/stl_vector.h:1200:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Krclcpp::Duration[m[K’ to ‘[01m[Kstd::vector<double, std::allocator<double> >::value_type&&[m[K’ {aka ‘[01m[Kdouble&&[m[K’}
+[1.451s]  1200 |       push_back([01;36m[Kvalue_type&& __x[m[K)
+[1.451s]       |                 [01;36m[K~~~~~~~~~~~~~^~~[m[K
+[1.451s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:[m[K In member function ‘[01m[Kvoid Ping::store_data()[m[K’:
+[1.451s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:76:19:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator<<[m[K’ (operand types are ‘[01m[Kstd::ostream[m[K’ {aka ‘[01m[Kstd::basic_ostream<char>[m[K’} and ‘[01m[Krclcpp::Time[m[K’)
+[1.451s]    76 |         [32m[Kstd::cout[m[K [01;31m[K<<[m[K [34m[Ksample.first[m[K << "\t" << sample.second << "\t" << latency.at(i) << std::endl;
+[1.451s]       |         [32m[K~~~~~~~~~[m[K [01;31m[K^~[m[K [34m[K~~~~~~~~~~~~[m[K
+[1.451s]       |              [32m[K|[m[K              [34m[K|[m[K
+[1.451s]       |              [32m[K|[m[K              [34m[Krclcpp::Time[m[K
+[1.451s]       |              [32m[Kstd::ostream {aka std::basic_ostream<char>}[m[K
+[1.452s] In file included from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[1.452s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:22[m[K,
+[1.452s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.452s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.452s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.452s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2[m[K,
+[1.452s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.452s] [01m[K/usr/include/c++/9/ostream:108:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[1.452s]   108 |       [01;36m[Koperator[m[K<<(__ostream_type& (*__pf)(__ostream_type&))
+[1.452s]       |       [01;36m[K^~~~~~~~[m[K
+[1.453s] [01m[K/usr/include/c++/9/ostream:108:36:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Krclcpp::Time[m[K’ to ‘[01m[Kstd::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&)[m[K’ {aka ‘[01m[Kstd::basic_ostream<char>& (*)(std::basic_ostream<char>&)[m[K’}
+[1.453s]   108 |       operator<<([01;36m[K__ostream_type& (*__pf)(__ostream_type&)[m[K)
+[1.453s]       |                  [01;36m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.453s] [01m[K/usr/include/c++/9/ostream:117:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>][m[K’
+[1.453s]   117 |       [01;36m[Koperator[m[K<<(__ios_type& (*__pf)(__ios_type&))
+[1.453s]       |       [01;36m[K^~~~~~~~[m[K
+[1.453s] [01m[K/usr/include/c++/9/ostream:117:32:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Krclcpp::Time[m[K’ to ‘[01m[Kstd::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&)[m[K’ {aka ‘[01m[Kstd::basic_ios<char>& (*)(std::basic_ios<char>&)[m[K’}
+[1.453s]   117 |       operator<<([01;36m[K__ios_type& (*__pf)(__ios_type&)[m[K)
+[1.453s]       |                  [01;36m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[1.453s] [01m[K/usr/include/c++/9/ostream:127:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[1.454s]   127 |       [01;36m[Koperator[m[K<<(ios_base& (*__pf) (ios_base&))
+[1.454s]       |       [01;36m[K^~~~~~~~[m[K
+[1.454s] [01m[K/usr/include/c++/9/ostream:127:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Krclcpp::Time[m[K’ to ‘[01m[Kstd::ios_base& (*)(std::ios_base&)[m[K’
+[1.454s]   127 |       operator<<([01;36m[Kios_base& (*__pf) (ios_base&)[m[K)
+[1.454s]       |                  [01;36m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~[m[K
+[1.454s] [01m[K/usr/include/c++/9/ostream:326:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[1.454s]   326 |       [01;36m[Koperator[m[K<<(long __n)
+[1.454s]       |       [01;36m[K^~~~~~~~[m[K
+[1.454s] [01m[K/usr/include/c++/9/ostream:326:23:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Krclcpp::Time[m[K’ to ‘[01m[Klong int[m[K’
+[1.455s]   326 |       operator<<([01;36m[Klong __n[m[K)
+[1.455s]       |                  [01;36m[K~~~~~^~~[m[K
+[1.455s] [01m[K/usr/include/c++/9/ostream:170:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[1.455s]   170 |       [01;36m[Koperator[m[K<<(unsigned long __n)
+[1.455s]       |       [01;36m[K^~~~~~~~[m[K
+[1.455s] [01m[K/usr/include/c++/9/ostream:170:32:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Krclcpp::Time[m[K’ to ‘[01m[Klong unsigned int[m[K’
+[1.455s]   170 |       operator<<([01;36m[Kunsigned long __n[m[K)
+[1.455s]       |                  [01;36m[K~~~~~~~~~~~~~~^~~[m[K
+[1.455s] [01m[K/usr/include/c++/9/ostream:174:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[1.455s]   174 |       [01;36m[Koperator[m[K<<(bool __n)
+[1.456s]       |       [01;36m[K^~~~~~~~[m[K
+[1.456s] [01m[K/usr/include/c++/9/ostream:174:23:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Krclcpp::Time[m[K’ to ‘[01m[Kbool[m[K’
+[1.456s]   174 |       operator<<([01;36m[Kbool __n[m[K)
+[1.456s]       |                  [01;36m[K~~~~~^~~[m[K
+[1.456s] In file included from [01m[K/usr/include/c++/9/ostream:702[m[K,
+[1.456s]                  from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[1.456s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:22[m[K,
+[1.456s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.456s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.456s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.457s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2[m[K,
+[1.457s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.457s] [01m[K/usr/include/c++/9/bits/ostream.tcc:91:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>][m[K’
+[1.457s]    91 |     [01;36m[Kbasic_ostream<_CharT, _Traits>[m[K::
+[1.457s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.457s] [01m[K/usr/include/c++/9/bits/ostream.tcc:92:22:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Krclcpp::Time[m[K’ to ‘[01m[Kshort int[m[K’
+[1.457s]    92 |     operator<<([01;36m[Kshort __n[m[K)
+[1.457s]       |                [01;36m[K~~~~~~^~~[m[K
+[1.457s] In file included from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[1.457s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:22[m[K,
+[1.458s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.458s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.458s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.458s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2[m[K,
+[1.458s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.458s] [01m[K/usr/include/c++/9/ostream:181:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[1.458s]   181 |       [01;36m[Koperator[m[K<<(unsigned short __n)
+[1.458s]       |       [01;36m[K^~~~~~~~[m[K
+[1.458s] [01m[K/usr/include/c++/9/ostream:181:33:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Krclcpp::Time[m[K’ to ‘[01m[Kshort unsigned int[m[K’
+[1.458s]   181 |       operator<<([01;36m[Kunsigned short __n[m[K)
+[1.459s]       |                  [01;36m[K~~~~~~~~~~~~~~~^~~[m[K
+[1.459s] In file included from [01m[K/usr/include/c++/9/ostream:702[m[K,
+[1.459s]                  from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[1.459s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:22[m[K,
+[1.459s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.459s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.459s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.459s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2[m[K,
+[1.459s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.459s] [01m[K/usr/include/c++/9/bits/ostream.tcc:105:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>][m[K’
+[1.460s]   105 |     [01;36m[Kbasic_ostream<_CharT, _Traits>[m[K::
+[1.460s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.460s] [01m[K/usr/include/c++/9/bits/ostream.tcc:106:20:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Krclcpp::Time[m[K’ to ‘[01m[Kint[m[K’
+[1.460s]   106 |     operator<<([01;36m[Kint __n[m[K)
+[1.460s]       |                [01;36m[K~~~~^~~[m[K
+[1.460s] In file included from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[1.460s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:22[m[K,
+[1.460s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.460s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.460s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.460s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2[m[K,
+[1.461s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.461s] [01m[K/usr/include/c++/9/ostream:192:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[1.461s]   192 |       [01;36m[Koperator[m[K<<(unsigned int __n)
+[1.461s]       |       [01;36m[K^~~~~~~~[m[K
+[1.461s] [01m[K/usr/include/c++/9/ostream:192:31:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Krclcpp::Time[m[K’ to ‘[01m[Kunsigned int[m[K’
+[1.461s]   192 |       operator<<([01;36m[Kunsigned int __n[m[K)
+[1.461s]       |                  [01;36m[K~~~~~~~~~~~~~^~~[m[K
+[1.461s] [01m[K/usr/include/c++/9/ostream:201:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[1.461s]   201 |       [01;36m[Koperator[m[K<<(long long __n)
+[1.461s]       |       [01;36m[K^~~~~~~~[m[K
+[1.462s] [01m[K/usr/include/c++/9/ostream:201:28:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Krclcpp::Time[m[K’ to ‘[01m[Klong long int[m[K’
+[1.462s]   201 |       operator<<([01;36m[Klong long __n[m[K)
+[1.462s]       |                  [01;36m[K~~~~~~~~~~^~~[m[K
+[1.462s] [01m[K/usr/include/c++/9/ostream:205:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[1.462s]   205 |       [01;36m[Koperator[m[K<<(unsigned long long __n)
+[1.462s]       |       [01;36m[K^~~~~~~~[m[K
+[1.462s] [01m[K/usr/include/c++/9/ostream:205:37:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Krclcpp::Time[m[K’ to ‘[01m[Klong long unsigned int[m[K’
+[1.462s]   205 |       operator<<([01;36m[Kunsigned long long __n[m[K)
+[1.462s]       |                  [01;36m[K~~~~~~~~~~~~~~~~~~~^~~[m[K
+[1.462s] [01m[K/usr/include/c++/9/ostream:220:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[1.463s]   220 |       [01;36m[Koperator[m[K<<(double __f)
+[1.463s]       |       [01;36m[K^~~~~~~~[m[K
+[1.463s] [01m[K/usr/include/c++/9/ostream:220:25:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Krclcpp::Time[m[K’ to ‘[01m[Kdouble[m[K’
+[1.463s]   220 |       operator<<([01;36m[Kdouble __f[m[K)
+[1.463s]       |                  [01;36m[K~~~~~~~^~~[m[K
+[1.463s] [01m[K/usr/include/c++/9/ostream:224:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[1.463s]   224 |       [01;36m[Koperator[m[K<<(float __f)
+[1.463s]       |       [01;36m[K^~~~~~~~[m[K
+[1.463s] [01m[K/usr/include/c++/9/ostream:224:24:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Krclcpp::Time[m[K’ to ‘[01m[Kfloat[m[K’
+[1.463s]   224 |       operator<<([01;36m[Kfloat __f[m[K)
+[1.464s]       |                  [01;36m[K~~~~~~^~~[m[K
+[1.464s] [01m[K/usr/include/c++/9/ostream:232:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[1.464s]   232 |       [01;36m[Koperator[m[K<<(long double __f)
+[1.464s]       |       [01;36m[K^~~~~~~~[m[K
+[1.464s] [01m[K/usr/include/c++/9/ostream:232:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Krclcpp::Time[m[K’ to ‘[01m[Klong double[m[K’
+[1.464s]   232 |       operator<<([01;36m[Klong double __f[m[K)
+[1.464s]       |                  [01;36m[K~~~~~~~~~~~~^~~[m[K
+[1.464s] [01m[K/usr/include/c++/9/ostream:245:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[1.464s]   245 |       [01;36m[Koperator[m[K<<(const void* __p)
+[1.464s]       |       [01;36m[K^~~~~~~~[m[K
+[1.464s] [01m[K/usr/include/c++/9/ostream:245:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Krclcpp::Time[m[K’ to ‘[01m[Kconst void*[m[K’
+[1.465s]   245 |       operator<<([01;36m[Kconst void* __p[m[K)
+[1.465s]       |                  [01;36m[K~~~~~~~~~~~~^~~[m[K
+[1.465s] In file included from [01m[K/usr/include/c++/9/ostream:702[m[K,
+[1.465s]                  from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[1.465s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:22[m[K,
+[1.465s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.465s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.465s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.465s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2[m[K,
+[1.465s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.466s] [01m[K/usr/include/c++/9/bits/ostream.tcc:119:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>][m[K’
+[1.466s]   119 |     [01;36m[Kbasic_ostream<_CharT, _Traits>[m[K::
+[1.466s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.466s] [01m[K/usr/include/c++/9/bits/ostream.tcc:120:34:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Krclcpp::Time[m[K’ to ‘[01m[Kstd::basic_ostream<char>::__streambuf_type*[m[K’ {aka ‘[01m[Kstd::basic_streambuf<char>*[m[K’}
+[1.466s]   120 |     operator<<([01;36m[K__streambuf_type* __sbin[m[K)
+[1.466s]       |                [01;36m[K~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[1.466s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:34[m[K,
+[1.466s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.466s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.467s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.467s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2[m[K,
+[1.467s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.467s] [01m[K/opt/ros/foxy/include/rclcpp/future_return_code.hpp:38:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::ostream& rclcpp::operator<<(std::ostream&, const rclcpp::FutureReturnCode&)[m[K’
+[1.467s]    38 | [01;36m[Koperator[m[K<<(std::ostream & os, const FutureReturnCode & future_return_code);
+[1.467s]       | [01;36m[K^~~~~~~~[m[K
+[1.467s] [01m[K/opt/ros/foxy/include/rclcpp/future_return_code.hpp:38:56:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Krclcpp::Time[m[K’ to ‘[01m[Kconst rclcpp::FutureReturnCode&[m[K’
+[1.467s]    38 | operator<<(std::ostream & os, [01;36m[Kconst FutureReturnCode & future_return_code[m[K);
+[1.467s]       |                               [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[1.468s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/parameter.hpp:26[m[K,
+[1.468s]                  from [01m[K/opt/ros/foxy/include/rclcpp/node_interfaces/node_parameters_interface.hpp:28[m[K,
+[1.468s]                  from [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:51[m[K,
+[1.468s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.468s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+[1.468s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.468s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2[m[K,
+[1.468s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.468s] [01m[K/opt/ros/foxy/include/rclcpp/parameter_value.hpp:53:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::ostream& rclcpp::operator<<(std::ostream&, rclcpp::ParameterType)[m[K’
+[1.468s]    53 | [01;36m[Koperator[m[K<<(std::ostream & os, ParameterType type);
+[1.468s]       | [01;36m[K^~~~~~~~[m[K
+[1.469s] [01m[K/opt/ros/foxy/include/rclcpp/parameter_value.hpp:53:45:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Krclcpp::Time[m[K’ to ‘[01m[Krclcpp::ParameterType[m[K’
+[1.469s]    53 | operator<<(std::ostream & os, [01;36m[KParameterType type[m[K);
+[1.469s]       |                               [01;36m[K~~~~~~~~~~~~~~^~~~[m[K
+[1.469s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/node_interfaces/node_parameters_interface.hpp:28[m[K,
+[1.469s]                  from [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:51[m[K,
+[1.469s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.469s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+[1.469s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.469s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2[m[K,
+[1.469s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.469s] [01m[K/opt/ros/foxy/include/rclcpp/parameter.hpp:226:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::ostream& rclcpp::operator<<(std::ostream&, const rclcpp::Parameter&)[m[K’
+[1.470s]   226 | [01;36m[Koperator[m[K<<(std::ostream & os, const rclcpp::Parameter & pv);
+[1.470s]       | [01;36m[K^~~~~~~~[m[K
+[1.470s] [01m[K/opt/ros/foxy/include/rclcpp/parameter.hpp:226:57:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Krclcpp::Time[m[K’ to ‘[01m[Kconst rclcpp::Parameter&[m[K’
+[1.470s]   226 | operator<<(std::ostream & os, [01;36m[Kconst rclcpp::Parameter & pv[m[K);
+[1.470s]       |                               [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[1.470s] [01m[K/opt/ros/foxy/include/rclcpp/parameter.hpp:230:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::ostream& rclcpp::operator<<(std::ostream&, const std::vector<rclcpp::Parameter>&)[m[K’
+[1.470s]   230 | [01;36m[Koperator[m[K<<(std::ostream & os, const std::vector<Parameter> & parameters);
+[1.470s]       | [01;36m[K^~~~~~~~[m[K
+[1.470s] [01m[K/opt/ros/foxy/include/rclcpp/parameter.hpp:230:62:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Krclcpp::Time[m[K’ to ‘[01m[Kconst std::vector<rclcpp::Parameter>&[m[K’
+[1.471s]   230 | operator<<(std::ostream & os, [01;36m[Kconst std::vector<Parameter> & parameters[m[K);
+[1.471s]       |                               [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[1.471s] In file included from [01m[K/usr/include/c++/9/string:55[m[K,
+[1.471s]                  from [01m[K/usr/include/c++/9/stdexcept:39[m[K,
+[1.471s]                  from [01m[K/usr/include/c++/9/array:39[m[K,
+[1.471s]                  from [01m[K/usr/include/c++/9/tuple:39[m[K,
+[1.471s]                  from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+[1.471s]                  from [01m[K/usr/include/c++/9/memory:80[m[K,
+[1.471s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.471s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2[m[K,
+[1.471s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.472s] [01m[K/usr/include/c++/9/bits/basic_string.h:6419:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)[m[K’
+[1.472s]  6419 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os,
+[1.472s]       |     [01;36m[K^~~~~~~~[m[K
+[1.472s] [01m[K/usr/include/c++/9/bits/basic_string.h:6419:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.472s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:76:29:[m[K [01;36m[Knote: [m[K  ‘[01m[Krclcpp::Time[m[K’ is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Alloc>[m[K’
+[1.472s]    76 |         std::cout << sample.[01;36m[Kfirst[m[K << "\t" << sample.second << "\t" << latency.at(i) << std::endl;
+[1.472s]       |                             [01;36m[K^~~~~[m[K
+[1.472s] In file included from [01m[K/usr/include/c++/9/memory:81[m[K,
+[1.472s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.472s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2[m[K,
+[1.473s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.473s] [01m[K/usr/include/c++/9/bits/shared_ptr.h:66:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Ch, class _Tr, class _Tp, __gnu_cxx::_Lock_policy _Lp> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::__shared_ptr<_Tp, _Lp>&)[m[K’
+[1.473s]    66 |     [01;36m[Koperator[m[K<<(std::basic_ostream<_Ch, _Tr>& __os,
+[1.473s]       |     [01;36m[K^~~~~~~~[m[K
+[1.473s] [01m[K/usr/include/c++/9/bits/shared_ptr.h:66:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.473s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:76:29:[m[K [01;36m[Knote: [m[K  ‘[01m[Krclcpp::Time[m[K’ is not derived from ‘[01m[Kconst std::__shared_ptr<_Tp, _Lp>[m[K’
+[1.473s]    76 |         std::cout << sample.[01;36m[Kfirst[m[K << "\t" << sample.second << "\t" << latency.at(i) << std::endl;
+[1.473s]       |                             [01;36m[K^~~~~[m[K
+[1.473s] In file included from [01m[K/usr/include/c++/9/mutex:42[m[K,
+[1.473s]                  from [01m[K/usr/include/c++/9/future:38[m[K,
+[1.473s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:18[m[K,
+[1.474s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.474s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2[m[K,
+[1.474s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.474s] [01m[K/usr/include/c++/9/system_error:217:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::error_code&)[m[K’
+[1.474s]   217 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)
+[1.474s]       |     [01;36m[K^~~~~~~~[m[K
+[1.474s] [01m[K/usr/include/c++/9/system_error:217:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.474s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:76:29:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Ksample.std::pair<rclcpp::Time, rclcpp::Time>::first[m[K’ (type ‘[01m[Krclcpp::Time[m[K’) to type ‘[01m[Kconst std::error_code&[m[K’
+[1.474s]    76 |         std::cout << [01;36m[Ksample.first[m[K << "\t" << sample.second << "\t" << latency.at(i) << std::endl;
+[1.474s]       |                      [01;36m[K~~~~~~~^~~~~[m[K
+[1.475s] In file included from [01m[K/usr/include/c++/9/future:39[m[K,
+[1.475s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:18[m[K,
+[1.475s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.475s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2[m[K,
+[1.475s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.475s] [01m[K/usr/include/c++/9/thread:322:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::thread::id)[m[K’
+[1.475s]   322 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __out, thread::id __id)
+[1.475s]       |     [01;36m[K^~~~~~~~[m[K
+[1.475s] [01m[K/usr/include/c++/9/thread:322:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.475s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:76:29:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Ksample.std::pair<rclcpp::Time, rclcpp::Time>::first[m[K’ (type ‘[01m[Krclcpp::Time[m[K’) to type ‘[01m[Kstd::thread::id[m[K’
+[1.476s]    76 |         std::cout << [01;36m[Ksample.first[m[K << "\t" << sample.second << "\t" << latency.at(i) << std::endl;
+[1.476s]       |                      [01;36m[K~~~~~~~^~~~~[m[K
+[1.476s] In file included from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[1.476s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:22[m[K,
+[1.476s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.476s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.476s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.476s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2[m[K,
+[1.476s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.476s] [01m[K/usr/include/c++/9/ostream:506:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)[m[K’
+[1.476s]   506 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+[1.477s]       |     [01;36m[K^~~~~~~~[m[K
+[1.477s] [01m[K/usr/include/c++/9/ostream:506:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.477s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:76:29:[m[K [01;36m[Knote: [m[K  deduced conflicting types for parameter ‘[01m[K_CharT[m[K’ (‘[01m[Kchar[m[K’ and ‘[01m[Krclcpp::Time[m[K’)
+[1.477s]    76 |         std::cout << sample.[01;36m[Kfirst[m[K << "\t" << sample.second << "\t" << latency.at(i) << std::endl;
+[1.477s]       |                             [01;36m[K^~~~~[m[K
+[1.477s] In file included from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[1.477s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:22[m[K,
+[1.477s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.478s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.478s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.478s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2[m[K,
+[1.478s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.478s] [01m[K/usr/include/c++/9/ostream:511:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)[m[K’
+[1.478s]   511 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+[1.478s]       |     [01;36m[K^~~~~~~~[m[K
+[1.478s] [01m[K/usr/include/c++/9/ostream:511:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.478s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:76:29:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Ksample.std::pair<rclcpp::Time, rclcpp::Time>::first[m[K’ (type ‘[01m[Krclcpp::Time[m[K’) to type ‘[01m[Kchar[m[K’
+[1.479s]    76 |         std::cout << [01;36m[Ksample.first[m[K << "\t" << sample.second << "\t" << latency.at(i) << std::endl;
+[1.479s]       |                      [01;36m[K~~~~~~~^~~~~[m[K
+[1.479s] In file included from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[1.479s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:22[m[K,
+[1.479s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.479s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.479s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.479s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2[m[K,
+[1.479s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.479s] [01m[K/usr/include/c++/9/ostream:517:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)[m[K’
+[1.480s]   517 |     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, char __c)
+[1.480s]       |     [01;36m[K^~~~~~~~[m[K
+[1.480s] [01m[K/usr/include/c++/9/ostream:517:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.480s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:76:29:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Ksample.std::pair<rclcpp::Time, rclcpp::Time>::first[m[K’ (type ‘[01m[Krclcpp::Time[m[K’) to type ‘[01m[Kchar[m[K’
+[1.480s]    76 |         std::cout << [01;36m[Ksample.first[m[K << "\t" << sample.second << "\t" << latency.at(i) << std::endl;
+[1.480s]       |                      [01;36m[K~~~~~~~^~~~~[m[K
+[1.480s] In file included from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[1.480s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:22[m[K,
+[1.480s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.481s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.481s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.481s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2[m[K,
+[1.481s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.481s] [01m[K/usr/include/c++/9/ostream:523:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)[m[K’
+[1.481s]   523 |     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, signed char __c)
+[1.481s]       |     [01;36m[K^~~~~~~~[m[K
+[1.481s] [01m[K/usr/include/c++/9/ostream:523:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.481s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:76:29:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Ksample.std::pair<rclcpp::Time, rclcpp::Time>::first[m[K’ (type ‘[01m[Krclcpp::Time[m[K’) to type ‘[01m[Ksigned char[m[K’
+[1.481s]    76 |         std::cout << [01;36m[Ksample.first[m[K << "\t" << sample.second << "\t" << latency.at(i) << std::endl;
+[1.482s]       |                      [01;36m[K~~~~~~~^~~~~[m[K
+[1.482s] In file included from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[1.482s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:22[m[K,
+[1.482s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.482s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.482s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.482s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2[m[K,
+[1.482s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.482s] [01m[K/usr/include/c++/9/ostream:528:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)[m[K’
+[1.483s]   528 |     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+[1.483s]       |     [01;36m[K^~~~~~~~[m[K
+[1.483s] [01m[K/usr/include/c++/9/ostream:528:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.483s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:76:29:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Ksample.std::pair<rclcpp::Time, rclcpp::Time>::first[m[K’ (type ‘[01m[Krclcpp::Time[m[K’) to type ‘[01m[Kunsigned char[m[K’
+[1.483s]    76 |         std::cout << [01;36m[Ksample.first[m[K << "\t" << sample.second << "\t" << latency.at(i) << std::endl;
+[1.483s]       |                      [01;36m[K~~~~~~~^~~~~[m[K
+[1.483s] In file included from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[1.483s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:22[m[K,
+[1.483s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.483s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.484s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.484s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2[m[K,
+[1.484s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.484s] [01m[K/usr/include/c++/9/ostream:548:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)[m[K’
+[1.484s]   548 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+[1.484s]       |     [01;36m[K^~~~~~~~[m[K
+[1.484s] [01m[K/usr/include/c++/9/ostream:548:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.485s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:76:29:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst _CharT*[m[K’ and ‘[01m[Krclcpp::Time[m[K’
+[1.485s]    76 |         std::cout << sample.[01;36m[Kfirst[m[K << "\t" << sample.second << "\t" << latency.at(i) << std::endl;
+[1.485s]       |                             [01;36m[K^~~~~[m[K
+[1.485s] In file included from [01m[K/usr/include/c++/9/ostream:702[m[K,
+[1.485s]                  from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[1.485s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:22[m[K,
+[1.485s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.485s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.485s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.486s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2[m[K,
+[1.486s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.486s] [01m[K/usr/include/c++/9/bits/ostream.tcc:321:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)[m[K’
+[1.486s]   321 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+[1.486s]       |     [01;36m[K^~~~~~~~[m[K
+[1.486s] [01m[K/usr/include/c++/9/bits/ostream.tcc:321:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.486s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:76:29:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Ksample.std::pair<rclcpp::Time, rclcpp::Time>::first[m[K’ (type ‘[01m[Krclcpp::Time[m[K’) to type ‘[01m[Kconst char*[m[K’
+[1.486s]    76 |         std::cout << [01;36m[Ksample.first[m[K << "\t" << sample.second << "\t" << latency.at(i) << std::endl;
+[1.486s]       |                      [01;36m[K~~~~~~~^~~~~[m[K
+[1.487s] In file included from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[1.487s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:22[m[K,
+[1.487s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.487s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.487s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.487s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2[m[K,
+[1.487s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.487s] [01m[K/usr/include/c++/9/ostream:565:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)[m[K’
+[1.487s]   565 |     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, const char* __s)
+[1.487s]       |     [01;36m[K^~~~~~~~[m[K
+[1.488s] [01m[K/usr/include/c++/9/ostream:565:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.488s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:76:29:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Ksample.std::pair<rclcpp::Time, rclcpp::Time>::first[m[K’ (type ‘[01m[Krclcpp::Time[m[K’) to type ‘[01m[Kconst char*[m[K’
+[1.488s]    76 |         std::cout << [01;36m[Ksample.first[m[K << "\t" << sample.second << "\t" << latency.at(i) << std::endl;
+[1.488s]       |                      [01;36m[K~~~~~~~^~~~~[m[K
+[1.488s] In file included from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[1.488s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:22[m[K,
+[1.488s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.488s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.488s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.488s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2[m[K,
+[1.489s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.489s] [01m[K/usr/include/c++/9/ostream:578:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)[m[K’
+[1.489s]   578 |     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+[1.489s]       |     [01;36m[K^~~~~~~~[m[K
+[1.489s] [01m[K/usr/include/c++/9/ostream:578:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.489s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:76:29:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Ksample.std::pair<rclcpp::Time, rclcpp::Time>::first[m[K’ (type ‘[01m[Krclcpp::Time[m[K’) to type ‘[01m[Kconst signed char*[m[K’
+[1.489s]    76 |         std::cout << [01;36m[Ksample.first[m[K << "\t" << sample.second << "\t" << latency.at(i) << std::endl;
+[1.489s]       |                      [01;36m[K~~~~~~~^~~~~[m[K
+[1.489s] In file included from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[1.489s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:22[m[K,
+[1.490s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.490s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.490s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.490s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2[m[K,
+[1.490s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.490s] [01m[K/usr/include/c++/9/ostream:583:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)[m[K’
+[1.490s]   583 |     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+[1.490s]       |     [01;36m[K^~~~~~~~[m[K
+[1.490s] [01m[K/usr/include/c++/9/ostream:583:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.491s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:76:29:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Ksample.std::pair<rclcpp::Time, rclcpp::Time>::first[m[K’ (type ‘[01m[Krclcpp::Time[m[K’) to type ‘[01m[Kconst unsigned char*[m[K’
+[1.491s]    76 |         std::cout << [01;36m[Ksample.first[m[K << "\t" << sample.second << "\t" << latency.at(i) << std::endl;
+[1.491s]       |                      [01;36m[K~~~~~~~^~~~~[m[K
+[1.491s] In file included from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[1.491s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:22[m[K,
+[1.491s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.491s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.491s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.491s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/ping_node.hpp:2[m[K,
+[1.491s]                  from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2[m[K:
+[1.492s] [01m[K/usr/include/c++/9/ostream:691:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Ostream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_ostream<_Ostream>, std::__is_insertable<typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type, const _Tp&, void> >::value, typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type>::type std::operator<<(_Ostream&&, const _Tp&)[m[K’
+[1.492s]   691 |     [01;36m[Koperator[m[K<<(_Ostream&& __os, const _Tp& __x)
+[1.492s]       |     [01;36m[K^~~~~~~~[m[K
+[1.492s] [01m[K/usr/include/c++/9/ostream:691:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.492s] /usr/include/c++/9/ostream: In substitution of ‘[01m[Ktemplate<class _Ostream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_ostream<_Ostream>, std::__is_insertable<typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type, const _Tp&, void> >::value, typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type>::type std::operator<<(_Ostream&&, const _Tp&) [with _Ostream = std::basic_ostream<char>&; _Tp = rclcpp::Time][m[K’:
+[1.492s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:76:29:[m[K   required from here
+[1.492s] [01m[K/usr/include/c++/9/ostream:691:5:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, std::basic_ostream<char>&>[m[K’
+[1.874s] make[2]: *** [CMakeFiles/ping.dir/build.make:76: CMakeFiles/ping.dir/src/ping_node.cpp.o] Error 1
+[1.874s] make[2]: *** Waiting for unfinished jobs....
+[1.892s] make[2]: *** [CMakeFiles/ping.dir/build.make:63: CMakeFiles/ping.dir/src/ping.cpp.o] Error 1
+[1.892s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/ping.dir/all] Error 2
+[1.893s] make: *** [Makefile:141: all] Error 2
+[1.896s] Invoked command in '/home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking -- -j12 -l12

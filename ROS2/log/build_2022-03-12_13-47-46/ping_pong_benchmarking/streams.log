@@ -1,0 +1,68 @@
+[0.008s] Invoking command in '/home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking -DCMAKE_INSTALL_PREFIX=/home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking
+[0.474s] -- The C compiler identification is GNU 9.4.0
+[0.572s] -- The CXX compiler identification is GNU 9.4.0
+[0.576s] -- Check for working C compiler: /usr/bin/cc
+[0.896s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.897s] -- Detecting C compiler ABI info
+[1.006s] -- Detecting C compiler ABI info - done
+[1.021s] -- Detecting C compile features
+[1.021s] -- Detecting C compile features - done
+[1.023s] -- Check for working CXX compiler: /usr/bin/c++
+[1.456s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.457s] -- Detecting CXX compiler ABI info
+[1.615s] -- Detecting CXX compiler ABI info - done
+[1.625s] -- Detecting CXX compile features
+[1.626s] -- Detecting CXX compile features - done
+[1.627s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.647s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.647s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.818s] -- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+[1.856s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.862s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.932s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.959s] -- Found FastRTPS: /opt/ros/foxy/include  
+[2.029s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.078s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[2.079s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.080s] -- Looking for pthread.h
+[2.267s] -- Looking for pthread.h - found
+[2.267s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.509s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[2.509s] -- Looking for pthread_create in pthreads
+[2.859s] -- Looking for pthread_create in pthreads - not found
+[2.859s] -- Looking for pthread_create in pthread
+[3.756s] -- Looking for pthread_create in pthread - found
+[3.757s] -- Found Threads: TRUE  
+[3.897s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[3.958s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.959s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.959s] -- Configured cppcheck include dirs: /home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include
+[3.959s] -- Configured cppcheck exclude dirs and/or files: 
+[3.959s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[3.959s] -- Configured cpplint exclude dirs and/or files: 
+[3.960s] -- Added test 'lint_cmake' to check CMake code style
+[3.961s] -- Added test 'uncrustify' to check C / C++ code style
+[3.961s] -- Configured uncrustify additional arguments: 
+[3.961s] -- Added test 'xmllint' to check XML markup files
+[3.963s] -- Configuring done
+[3.970s] -- Generating done
+[3.971s] -- Build files have been written to: /home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking
+[3.979s] Invoked command in '/home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking -DCMAKE_INSTALL_PREFIX=/home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking
+[3.980s] Invoking command in '/home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking -- -j12 -l12
+[4.012s] [35m[1mScanning dependencies of target ping[0m
+[4.042s] [ 33%] [32mBuilding CXX object CMakeFiles/ping.dir/src/ping.cpp.o[0m
+[4.042s] [ 66%] [32mBuilding CXX object CMakeFiles/ping.dir/src/ping_node.cpp.o[0m
+[4.326s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:8:10:[m[K [01;31m[Kfatal error: [m[Kping_pong_benchmarking/ping_node.hpp: No such file or directory
+[4.326s]     8 | #include [01;31m[K"ping_pong_benchmarking/ping_node.hpp"[m[K
+[4.326s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.326s] compilation terminated.
+[4.326s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Kping_pong_benchmarking/ping_node.hpp: No such file or directory
+[4.326s]     2 | #include [01;31m[K"ping_pong_benchmarking/ping_node.hpp"[m[K
+[4.326s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.326s] compilation terminated.
+[4.307s] make[2]: *** [CMakeFiles/ping.dir/build.make:76: CMakeFiles/ping.dir/src/ping_node.cpp.o] Error 1
+[4.308s] make[2]: *** Waiting for unfinished jobs....
+[4.308s] make[2]: *** [CMakeFiles/ping.dir/build.make:63: CMakeFiles/ping.dir/src/ping.cpp.o] Error 1
+[4.308s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/ping.dir/all] Error 2
+[4.309s] make: *** [Makefile:141: all] Error 2
+[4.312s] Invoked command in '/home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking -- -j12 -l12

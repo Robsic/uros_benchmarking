@@ -1,0 +1,28 @@
+[0.200s] Invoking command in '/home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking -- -j12 -l12
+[0.238s] [35m[1mScanning dependencies of target ping[0m
+[0.435s] [ 33%] [32mBuilding CXX object CMakeFiles/ping.dir/src/ping.cpp.o[0m
+[1.838s] [ 66%] [32m[1mLinking CXX executable ping[0m
+[2.087s] [100%] Built target ping
+[2.217s] Invoked command in '/home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking -- -j12 -l12
+[2.250s] Invoking command in '/home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking
+[2.258s] -- Install configuration: ""
+[2.259s] -- Installing: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/lib/ping_pong_benchmarking/ping
+[2.260s] -- Set runtime path of "/home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/lib/ping_pong_benchmarking/ping" to ""
+[2.261s] -- Installing: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/include
+[2.261s] -- Installing: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/include/ping_node.hpp
+[2.261s] -- Installing: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ament_index/resource_index/package_run_dependencies/ping_pong_benchmarking
+[2.261s] -- Installing: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ament_index/resource_index/parent_prefix_path/ping_pong_benchmarking
+[2.261s] -- Installing: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/environment/ament_prefix_path.sh
+[2.262s] -- Installing: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/environment/ament_prefix_path.dsv
+[2.262s] -- Installing: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/environment/path.sh
+[2.262s] -- Installing: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/environment/path.dsv
+[2.262s] -- Installing: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/local_setup.bash
+[2.262s] -- Installing: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/local_setup.sh
+[2.263s] -- Installing: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/local_setup.zsh
+[2.263s] -- Installing: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/local_setup.dsv
+[2.263s] -- Installing: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/package.dsv
+[2.263s] -- Installing: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ament_index/resource_index/packages/ping_pong_benchmarking
+[2.263s] -- Installing: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/cmake/ping_pong_benchmarkingConfig.cmake
+[2.263s] -- Installing: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/cmake/ping_pong_benchmarkingConfig-version.cmake
+[2.263s] -- Installing: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/package.xml
+[2.265s] Invoked command in '/home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking

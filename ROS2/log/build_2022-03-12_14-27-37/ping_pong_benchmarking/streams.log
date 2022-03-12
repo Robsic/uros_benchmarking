@@ -1,0 +1,28 @@
+[0.435s] Invoking command in '/home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking -- -j12 -l12
+[1.056s] [35m[1mScanning dependencies of target ping[0m
+[1.175s] [ 33%] [32mBuilding CXX object CMakeFiles/ping.dir/src/ping.cpp.o[0m
+[2.825s] [ 66%] [32m[1mLinking CXX executable ping[0m
+[3.052s] [100%] Built target ping
+[3.222s] Invoked command in '/home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking -- -j12 -l12
+[3.273s] Invoking command in '/home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking
+[3.286s] -- Install configuration: ""
+[3.286s] -- Installing: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/lib/ping_pong_benchmarking/ping
+[3.289s] -- Set runtime path of "/home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/lib/ping_pong_benchmarking/ping" to ""
+[3.289s] -- Up-to-date: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/include
+[3.290s] -- Up-to-date: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/include/ping_node.hpp
+[3.290s] -- Up-to-date: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ament_index/resource_index/package_run_dependencies/ping_pong_benchmarking
+[3.290s] -- Up-to-date: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ament_index/resource_index/parent_prefix_path/ping_pong_benchmarking
+[3.290s] -- Up-to-date: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/environment/ament_prefix_path.sh
+[3.290s] -- Up-to-date: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/environment/ament_prefix_path.dsv
+[3.290s] -- Up-to-date: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/environment/path.sh
+[3.290s] -- Up-to-date: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/environment/path.dsv
+[3.291s] -- Up-to-date: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/local_setup.bash
+[3.291s] -- Up-to-date: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/local_setup.sh
+[3.291s] -- Up-to-date: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/local_setup.zsh
+[3.291s] -- Up-to-date: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/local_setup.dsv
+[3.291s] -- Installing: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/package.dsv
+[3.291s] -- Up-to-date: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ament_index/resource_index/packages/ping_pong_benchmarking
+[3.291s] -- Up-to-date: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/cmake/ping_pong_benchmarkingConfig.cmake
+[3.291s] -- Up-to-date: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/cmake/ping_pong_benchmarkingConfig-version.cmake
+[3.291s] -- Up-to-date: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/package.xml
+[3.293s] Invoked command in '/home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking

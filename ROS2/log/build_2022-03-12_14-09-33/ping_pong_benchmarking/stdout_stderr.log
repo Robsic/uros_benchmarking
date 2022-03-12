@@ -1,0 +1,21 @@
+[35m[1mScanning dependencies of target ping[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/ping.dir/src/ping.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/ping.dir/src/ping_node.cpp.o[0m
+[01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping.cpp:15:50:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""s[m[K’
+   15 |     const std::chrono::seconds experiment_time = [01;31m[K10s[m[K;
+      |                                                  [01;31m[K^~~[m[K
+[01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:[m[K In member function ‘[01m[Kvoid Ping::onTimerPing()[m[K’:
+[01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:38:60:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+   38 |     send_recive_data.push_back[34m[K([m[Kstd::make_pair(now(), now())[01;31m[K;[m[K
+      |                               [34m[K~[m[K                            [01;31m[K^[m[K
+      |                                                            [32m[K)[m[K
+[01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:[m[K In member function ‘[01m[Kvoid Ping::onPongCallback(std_msgs::msg::Int32_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:45:32:[m[K [01;31m[Kerror: [m[Kinvalid cast from type ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<std_msgs::msg::Int32_<std::allocator<void> > >[m[K’} to type ‘[01m[Kint[m[K’
+   45 |     send_recive_data.at(int(msg[01;31m[K)[m[K).second = now();
+      |                                [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/ping.dir/build.make:63: CMakeFiles/ping.dir/src/ping.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/ping.dir/build.make:76: CMakeFiles/ping.dir/src/ping_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/ping.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
