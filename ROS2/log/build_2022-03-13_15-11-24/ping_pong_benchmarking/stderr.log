@@ -1,0 +1,13 @@
+[01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/multi_3_topic/ping_node.cpp:[m[K In constructor ‘[01m[KPing::Ping()[m[K’:
+[01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/multi_3_topic/ping_node.cpp:25:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcallback_group_pong_1[m[K’ was not declared in this scope
+   25 |     [01;31m[Kcallback_group_pong_1[m[K = this->create_callback_group(rclcpp::CallbackGroupType::MutuallyExclusive);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/multi_3_topic/ping_node.cpp:26:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcallback_group_pong_2[m[K’ was not declared in this scope
+   26 |     [01;31m[Kcallback_group_pong_2[m[K = this->create_callback_group(rclcpp::CallbackGroupType::MutuallyExclusive);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/multi_3_topic/ping_node.cpp:27:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcallback_group_pong_3[m[K’ was not declared in this scope
+   27 |     [01;31m[Kcallback_group_pong_3[m[K = this->create_callback_group(rclcpp::CallbackGroupType::MutuallyExclusive);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/ping_3_multi.dir/build.make:76: CMakeFiles/ping_3_multi.dir/src/multi_3_topic/ping_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:169: CMakeFiles/ping_3_multi.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

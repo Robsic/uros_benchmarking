@@ -1,0 +1,21 @@
+[0.027s] Invoking command in '/home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking -- -j12 -l12
+[0.066s] [35m[1mScanning dependencies of target pong_test_3_multi[0m
+[0.067s] [35m[1mScanning dependencies of target ping_3_multi[0m
+[0.083s] [ 26%] Built target pong_test_3_single
+[0.083s] [ 26%] Built target pong_test_1_single
+[0.084s] [ 46%] Built target ping_3_single
+[0.089s] [ 66%] Built target ping_1_single
+[0.187s] [ 73%] [32mBuilding CXX object CMakeFiles/pong_test_3_multi.dir/src/multi_3_topic/pong_test_node.cpp.o[0m
+[0.187s] [ 80%] [32mBuilding CXX object CMakeFiles/ping_3_multi.dir/src/multi_3_topic/ping_node.cpp.o[0m
+[1.299s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/multi_3_topic/pong_test_node.cpp:[m[K In constructor ‘[01m[KPongTest::PongTest()[m[K’:
+[1.300s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/multi_3_topic/pong_test_node.cpp:24:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kping_3_sub_opt[m[K’ was not declared in this scope; did you mean ‘[01m[Kpong_3_sub_opt[m[K’?
+[1.300s]    24 |             [01;31m[Kping_3_sub_opt[m[K.callback_group = callback_group_ping_3;
+[1.300s]       |             [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.300s]       |             [32m[Kpong_3_sub_opt[m[K
+[2.583s] make[2]: *** [CMakeFiles/pong_test_3_multi.dir/build.make:63: CMakeFiles/pong_test_3_multi.dir/src/multi_3_topic/pong_test_node.cpp.o] Error 1
+[2.583s] make[1]: *** [CMakeFiles/Makefile2:250: CMakeFiles/pong_test_3_multi.dir/all] Error 2
+[2.583s] make[1]: *** Waiting for unfinished jobs....
+[4.485s] [ 86%] [32m[1mLinking CXX executable ping_3_multi[0m
+[4.723s] [ 93%] Built target ping_3_multi
+[4.724s] make: *** [Makefile:141: all] Error 2
+[4.726s] Invoked command in '/home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking -- -j12 -l12

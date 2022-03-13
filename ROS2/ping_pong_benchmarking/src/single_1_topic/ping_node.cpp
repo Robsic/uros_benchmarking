@@ -1,5 +1,5 @@
 
-#include "ping_node.hpp"
+#include "single_1_topic/ping_node.hpp"
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/u_int32.hpp"
 
@@ -30,8 +30,6 @@ Ping::Ping() : rclcpp::Node("ping"){
     pong_recived = 0;
     latency_average = 0;
     std_deviation = 0;
-
-
 }
 
 Ping::~Ping(){
@@ -77,7 +75,7 @@ void Ping::parse_data(){
 void Ping::store_data(){
 
     std::ofstream data_file;
-    data_file.open("./ping_pong_benchmarking/data/pingpong_data.txt");
+    data_file.open("./ping_pong_benchmarking/data/single_1_topic/pingpong_data.txt");
 
     for(auto &sample : send_recive_data){
         data_file << sample.first.nanoseconds() << "\t" << sample.second.nanoseconds() << std::endl;
@@ -93,7 +91,7 @@ void Ping::store_data(){
     
     data_file.close();
 
-    data_file.open("./ping_pong_benchmarking/data/pingpong_results.txt");
+    data_file.open("./ping_pong_benchmarking/data/single_1_topic/pingpong_results.txt");
 
     data_file << "Latency Average: " << latency_average << std::endl << std::endl 
               << "Latency Standard Deviation: " << std_deviation << std::endl << std::endl 

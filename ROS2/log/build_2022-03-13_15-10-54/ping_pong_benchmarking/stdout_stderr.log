@@ -1,0 +1,59 @@
+-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include;/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/single_1_topic;/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/single_3_topic;/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/multi_3_topic
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking
+[35m[1mScanning dependencies of target pong_test_3_multi[0m
+[35m[1mScanning dependencies of target ping_3_multi[0m
+[ 33%] Built target pong_test_3_single
+[ 33%] Built target ping_1_single
+[ 53%] Built target ping_3_single
+[ 66%] Built target pong_test_1_single
+[ 73%] [32mBuilding CXX object CMakeFiles/pong_test_3_multi.dir/src/multi_3_topic/pong_test_node.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/ping_3_multi.dir/src/multi_3_topic/ping_node.cpp.o[0m
+[ 86%] [32mBuilding CXX object CMakeFiles/ping_3_multi.dir/src/multi_3_topic/ping.cpp.o[0m
+[01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/multi_3_topic/ping_node.cpp:[m[K In constructor ‘[01m[KPing::Ping()[m[K’:
+[01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/multi_3_topic/ping_node.cpp:25:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcallback_group_pong_1[m[K’ was not declared in this scope
+   25 |     [01;31m[Kcallback_group_pong_1[m[K = this->create_callbeck_group(rclcpp::CallbackGroupType::MutuallyExclusive);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/multi_3_topic/ping_node.cpp:25:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass Ping[m[K’ has no member named ‘[01m[Kcreate_callbeck_group[m[K’; did you mean ‘[01m[Kcreate_callback_group[m[K’?
+   25 |     callback_group_pong_1 = this->[01;31m[Kcreate_callbeck_group[m[K(rclcpp::CallbackGroupType::MutuallyExclusive);
+      |                                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                   [32m[Kcreate_callback_group[m[K
+[01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/multi_3_topic/ping_node.cpp:26:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcallback_group_pong_2[m[K’ was not declared in this scope
+   26 |     [01;31m[Kcallback_group_pong_2[m[K = this->create_callbeck_group(rclcpp::CallbackGroupType::MutuallyExclusive);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/multi_3_topic/ping_node.cpp:26:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass Ping[m[K’ has no member named ‘[01m[Kcreate_callbeck_group[m[K’; did you mean ‘[01m[Kcreate_callback_group[m[K’?
+   26 |     callback_group_pong_2 = this->[01;31m[Kcreate_callbeck_group[m[K(rclcpp::CallbackGroupType::MutuallyExclusive);
+      |                                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                   [32m[Kcreate_callback_group[m[K
+[01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/multi_3_topic/ping_node.cpp:27:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcallback_group_pong_3[m[K’ was not declared in this scope
+   27 |     [01;31m[Kcallback_group_pong_3[m[K = this->create_callbeck_group(rclcpp::CallbackGroupType::MutuallyExclusive);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/multi_3_topic/ping_node.cpp:27:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass Ping[m[K’ has no member named ‘[01m[Kcreate_callbeck_group[m[K’; did you mean ‘[01m[Kcreate_callback_group[m[K’?
+   27 |     callback_group_pong_3 = this->[01;31m[Kcreate_callbeck_group[m[K(rclcpp::CallbackGroupType::MutuallyExclusive);
+      |                                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                   [32m[Kcreate_callback_group[m[K
+make[2]: *** [CMakeFiles/ping_3_multi.dir/build.make:76: CMakeFiles/ping_3_multi.dir/src/multi_3_topic/ping_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:169: CMakeFiles/ping_3_multi.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[ 93%] [32m[1mLinking CXX executable pong_test_3_multi[0m
+[ 93%] Built target pong_test_3_multi
+make: *** [Makefile:141: all] Error 2

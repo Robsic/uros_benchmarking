@@ -1,0 +1,22 @@
+[0.173s] Invoking command in '/home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking -- -j12 -l12
+[0.263s] [35m[1mScanning dependencies of target ping_3_multi[0m
+[0.277s] [ 66%] Built target pong_test_3_single
+[0.277s] [ 66%] Built target pong_test_1_single
+[0.278s] [ 66%] Built target ping_1_single
+[0.278s] [ 66%] Built target ping_3_single
+[0.281s] [ 80%] Built target pong_test_3_multi
+[0.415s] [ 86%] [32mBuilding CXX object CMakeFiles/ping_3_multi.dir/src/multi_3_topic/ping_node.cpp.o[0m
+[1.502s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/multi_3_topic/ping_node.cpp:[m[K In constructor ‘[01m[KPing::Ping()[m[K’:
+[1.502s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/multi_3_topic/ping_node.cpp:25:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcallback_group_pong_1[m[K’ was not declared in this scope
+[1.502s]    25 |     [01;31m[Kcallback_group_pong_1[m[K = this->create_callback_group(rclcpp::CallbackGroupType::MutuallyExclusive);
+[1.502s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[1.506s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/multi_3_topic/ping_node.cpp:26:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcallback_group_pong_2[m[K’ was not declared in this scope
+[1.506s]    26 |     [01;31m[Kcallback_group_pong_2[m[K = this->create_callback_group(rclcpp::CallbackGroupType::MutuallyExclusive);
+[1.506s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[1.510s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/multi_3_topic/ping_node.cpp:27:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcallback_group_pong_3[m[K’ was not declared in this scope
+[1.510s]    27 |     [01;31m[Kcallback_group_pong_3[m[K = this->create_callback_group(rclcpp::CallbackGroupType::MutuallyExclusive);
+[1.510s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[2.764s] make[2]: *** [CMakeFiles/ping_3_multi.dir/build.make:76: CMakeFiles/ping_3_multi.dir/src/multi_3_topic/ping_node.cpp.o] Error 1
+[2.765s] make[1]: *** [CMakeFiles/Makefile2:169: CMakeFiles/ping_3_multi.dir/all] Error 2
+[2.765s] make: *** [Makefile:141: all] Error 2
+[2.767s] Invoked command in '/home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking -- -j12 -l12

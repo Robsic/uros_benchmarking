@@ -1,0 +1,21 @@
+[ 70%] Built target pong_test_1_single
+[ 70%] Built target ping_1_single
+[ 60%] Built target pong_test_3_single
+[35m[1mScanning dependencies of target ping_3_single[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/ping_3_single.dir/src/single_3_topic/ping_node.cpp.o[0m
+[01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:[m[K In constructor ‘[01m[KPing::Ping()[m[K’:
+[01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:26:108:[m[K [01;31m[Kerror: [m[K‘[01m[KonPongCallback1[m[K’ is not a member of ‘[01m[KPing[m[K’
+   26 | subscription<std_msgs::msg::UInt32>("/pong_1", default_qos, std::bind(&Ping::[01;31m[KonPongCallback1[m[K, this, _1));
+      |                                                                              [01;31m[K^~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:28:108:[m[K [01;31m[Kerror: [m[K‘[01m[KonPongCallback2[m[K’ is not a member of ‘[01m[KPing[m[K’
+   28 | subscription<std_msgs::msg::UInt32>("/pong2_", default_qos, std::bind(&Ping::[01;31m[KonPongCallback2[m[K, this, _1));
+      |                                                                              [01;31m[K^~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:30:108:[m[K [01;31m[Kerror: [m[K‘[01m[KonPongCallback3[m[K’ is not a member of ‘[01m[KPing[m[K’
+   30 | subscription<std_msgs::msg::UInt32>("/pong_3", default_qos, std::bind(&Ping::[01;31m[KonPongCallback3[m[K, this, _1));
+      |                                                                              [01;31m[K^~~~~~~~~~~~~~~[m[K
+
+make[2]: *** [CMakeFiles/ping_3_single.dir/build.make:76: CMakeFiles/ping_3_single.dir/src/single_3_topic/ping_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:111: CMakeFiles/ping_3_single.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

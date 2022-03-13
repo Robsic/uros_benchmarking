@@ -1,0 +1,23 @@
+[0.222s] Invoking command in '/home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking -- -j12 -l12
+[0.283s] [ 70%] Built target pong_test_1_single
+[0.283s] [ 70%] Built target ping_1_single
+[0.284s] [ 60%] Built target pong_test_3_single
+[0.404s] [35m[1mScanning dependencies of target ping_3_single[0m
+[0.524s] [ 80%] [32mBuilding CXX object CMakeFiles/ping_3_single.dir/src/single_3_topic/ping_node.cpp.o[0m
+[1.611s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:[m[K In constructor ‘[01m[KPing::Ping()[m[K’:
+[1.611s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:26:108:[m[K [01;31m[Kerror: [m[K‘[01m[KonPongCallback1[m[K’ is not a member of ‘[01m[KPing[m[K’
+[1.611s]    26 | subscription<std_msgs::msg::UInt32>("/pong_1", default_qos, std::bind(&Ping::[01;31m[KonPongCallback1[m[K, this, _1));
+[1.611s]       |                                                                              [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.611s] 
+[1.612s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:28:108:[m[K [01;31m[Kerror: [m[K‘[01m[KonPongCallback2[m[K’ is not a member of ‘[01m[KPing[m[K’
+[1.612s]    28 | subscription<std_msgs::msg::UInt32>("/pong2_", default_qos, std::bind(&Ping::[01;31m[KonPongCallback2[m[K, this, _1));
+[1.612s]       |                                                                              [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.612s] 
+[1.612s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:30:108:[m[K [01;31m[Kerror: [m[K‘[01m[KonPongCallback3[m[K’ is not a member of ‘[01m[KPing[m[K’
+[1.612s]    30 | subscription<std_msgs::msg::UInt32>("/pong_3", default_qos, std::bind(&Ping::[01;31m[KonPongCallback3[m[K, this, _1));
+[1.612s]       |                                                                              [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.612s] 
+[2.332s] make[2]: *** [CMakeFiles/ping_3_single.dir/build.make:76: CMakeFiles/ping_3_single.dir/src/single_3_topic/ping_node.cpp.o] Error 1
+[2.332s] make[1]: *** [CMakeFiles/Makefile2:111: CMakeFiles/ping_3_single.dir/all] Error 2
+[2.332s] make: *** [Makefile:141: all] Error 2
+[2.334s] Invoked command in '/home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking -- -j12 -l12

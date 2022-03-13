@@ -1,0 +1,10 @@
+[35m[1mScanning dependencies of target pong_test_3_multi[0m
+[35m[1mScanning dependencies of target ping_3_multi[0m
+[ 26%] Built target pong_test_3_single
+[ 26%] Built target pong_test_1_single
+[ 46%] Built target ping_3_single
+[ 66%] Built target ping_1_single
+[ 73%] [32mBuilding CXX object CMakeFiles/pong_test_3_multi.dir/src/multi_3_topic/pong_test_node.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/ping_3_multi.dir/src/multi_3_topic/ping_node.cpp.o[0m
+[ 86%] [32m[1mLinking CXX executable ping_3_multi[0m
+[ 93%] Built target ping_3_multi

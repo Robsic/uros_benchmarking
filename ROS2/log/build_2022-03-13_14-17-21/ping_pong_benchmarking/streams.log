@@ -1,0 +1,375 @@
+[0.213s] Invoking command in '/home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking -- -j12 -l12
+[0.305s] [35m[1mScanning dependencies of target ping_3_single[0m
+[0.325s] [ 40%] Built target pong_test_3_single
+[0.325s] [ 40%] Built target pong_test_1_single
+[0.326s] [ 70%] Built target ping_1_single
+[0.371s] [ 80%] [32mBuilding CXX object CMakeFiles/ping_3_single.dir/src/single_3_topic/ping_node.cpp.o[0m
+[1.462s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:[m[K In constructor ‘[01m[KPing::Ping()[m[K’:
+[1.462s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:26:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpong_1_sub[m[K’ was not declared in this scope; did you mean ‘[01m[Kpong_sub[m[K’?
+[1.462s]    26 |     [01;31m[Kpong_1_sub[m[K = this->create_subscription<std_msgs::msg::UInt32>("/pong_1", default_qos, std::bind(&Ping::onPongCallback1, this, _1));
+[1.462s]       |     [01;31m[K^~~~~~~~~~[m[K
+[1.462s]       |     [32m[Kpong_sub[m[K
+[1.462s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:26:108:[m[K [01;31m[Kerror: [m[K‘[01m[KonPongCallback1[m[K’ is not a member of ‘[01m[KPing[m[K’
+[1.462s]    26 | subscription<std_msgs::msg::UInt32>("/pong_1", default_qos, std::bind(&Ping::[01;31m[KonPongCallback1[m[K, this, _1));
+[1.462s]       |                                                                              [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.462s] 
+[1.463s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:27:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kping_1_pub[m[K’ was not declared in this scope; did you mean ‘[01m[Kping_pub[m[K’?
+[1.463s]    27 |     [01;31m[Kping_1_pub[m[K = this->create_publisher<std_msgs::msg::UInt32>("/ping_1", default_qos);
+[1.463s]       |     [01;31m[K^~~~~~~~~~[m[K
+[1.463s]       |     [32m[Kping_pub[m[K
+[1.464s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:28:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpong_2_sub[m[K’ was not declared in this scope; did you mean ‘[01m[Kpong_sub[m[K’?
+[1.464s]    28 |     [01;31m[Kpong_2_sub[m[K = this->create_subscription<std_msgs::msg::UInt32>("/pong2_", default_qos, std::bind(&Ping::onPongCallback2, this, _1));
+[1.464s]       |     [01;31m[K^~~~~~~~~~[m[K
+[1.465s]       |     [32m[Kpong_sub[m[K
+[1.465s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:28:108:[m[K [01;31m[Kerror: [m[K‘[01m[KonPongCallback2[m[K’ is not a member of ‘[01m[KPing[m[K’
+[1.465s]    28 | subscription<std_msgs::msg::UInt32>("/pong2_", default_qos, std::bind(&Ping::[01;31m[KonPongCallback2[m[K, this, _1));
+[1.465s]       |                                                                              [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.465s] 
+[1.465s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:29:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kping_2_pub[m[K’ was not declared in this scope; did you mean ‘[01m[Kping_pub[m[K’?
+[1.465s]    29 |     [01;31m[Kping_2_pub[m[K = this->create_publisher<std_msgs::msg::UInt32>("/ping_2", default_qos);
+[1.466s]       |     [01;31m[K^~~~~~~~~~[m[K
+[1.466s]       |     [32m[Kping_pub[m[K
+[1.466s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:30:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpong_3_sub[m[K’ was not declared in this scope; did you mean ‘[01m[Kpong_sub[m[K’?
+[1.467s]    30 |     [01;31m[Kpong_3_sub[m[K = this->create_subscription<std_msgs::msg::UInt32>("/pong_3", default_qos, std::bind(&Ping::onPongCallback3, this, _1));
+[1.467s]       |     [01;31m[K^~~~~~~~~~[m[K
+[1.467s]       |     [32m[Kpong_sub[m[K
+[1.467s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:30:108:[m[K [01;31m[Kerror: [m[K‘[01m[KonPongCallback3[m[K’ is not a member of ‘[01m[KPing[m[K’
+[1.467s]    30 | subscription<std_msgs::msg::UInt32>("/pong_3", default_qos, std::bind(&Ping::[01;31m[KonPongCallback3[m[K, this, _1));
+[1.467s]       |                                                                              [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.467s] 
+[1.468s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:31:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kping_3_pub[m[K’ was not declared in this scope; did you mean ‘[01m[Kping_pub[m[K’?
+[1.468s]    31 |     [01;31m[Kping_3_pub[m[K = this->create_publisher<std_msgs::msg::UInt32>("/ping_3", default_qos);
+[1.468s]       |     [01;31m[K^~~~~~~~~~[m[K
+[1.468s]       |     [32m[Kping_pub[m[K
+[1.469s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:33:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kping_1_send[m[K’ was not declared in this scope; did you mean ‘[01m[Kping_send[m[K’?
+[1.469s]    33 |     [01;31m[Kping_1_send[m[K = 0;
+[1.469s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[1.469s]       |     [32m[Kping_send[m[K
+[1.470s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:34:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpong_1_recived[m[K’ was not declared in this scope; did you mean ‘[01m[Kpong_recived[m[K’?
+[1.470s]    34 |     [01;31m[Kpong_1_recived[m[K = 0;
+[1.470s]       |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.470s]       |     [32m[Kpong_recived[m[K
+[1.470s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:35:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klatency_1_average[m[K’ was not declared in this scope; did you mean ‘[01m[Klatency_average[m[K’?
+[1.471s]    35 |     [01;31m[Klatency_1_average[m[K = 0;
+[1.471s]       |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[1.471s]       |     [32m[Klatency_average[m[K
+[1.472s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:36:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_1_deviation[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd_deviation[m[K’?
+[1.472s]    36 |     [01;31m[Kstd_1_deviation[m[K = 0;
+[1.472s]       |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.472s]       |     [32m[Kstd_deviation[m[K
+[1.473s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:37:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kping_2_send[m[K’ was not declared in this scope; did you mean ‘[01m[Kping_send[m[K’?
+[1.473s]    37 |     [01;31m[Kping_2_send[m[K = 0;
+[1.473s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[1.473s]       |     [32m[Kping_send[m[K
+[1.474s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:38:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpong_2_recived[m[K’ was not declared in this scope; did you mean ‘[01m[Kpong_recived[m[K’?
+[1.474s]    38 |     [01;31m[Kpong_2_recived[m[K = 0;
+[1.474s]       |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.474s]       |     [32m[Kpong_recived[m[K
+[1.474s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:39:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klatency_2_average[m[K’ was not declared in this scope; did you mean ‘[01m[Klatency_average[m[K’?
+[1.475s]    39 |     [01;31m[Klatency_2_average[m[K = 0;
+[1.475s]       |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[1.475s]       |     [32m[Klatency_average[m[K
+[1.475s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:40:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_2_deviation[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd_deviation[m[K’?
+[1.475s]    40 |     [01;31m[Kstd_2_deviation[m[K = 0;
+[1.476s]       |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.476s]       |     [32m[Kstd_deviation[m[K
+[1.476s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:41:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kping_3_send[m[K’ was not declared in this scope; did you mean ‘[01m[Kping_send[m[K’?
+[1.476s]    41 |     [01;31m[Kping_3_send[m[K = 0;
+[1.476s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[1.477s]       |     [32m[Kping_send[m[K
+[1.477s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:42:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpong_3_recived[m[K’ was not declared in this scope; did you mean ‘[01m[Kpong_recived[m[K’?
+[1.477s]    42 |     [01;31m[Kpong_3_recived[m[K = 0;
+[1.477s]       |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.477s]       |     [32m[Kpong_recived[m[K
+[1.478s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:43:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klatency_3_average[m[K’ was not declared in this scope; did you mean ‘[01m[Klatency_average[m[K’?
+[1.478s]    43 |     [01;31m[Klatency_3_average[m[K = 0;
+[1.478s]       |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[1.478s]       |     [32m[Klatency_average[m[K
+[1.479s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:44:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_3_deviation[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd_deviation[m[K’?
+[1.479s]    44 |     [01;31m[Kstd_3_deviation[m[K = 0;
+[1.479s]       |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.479s]       |     [32m[Kstd_deviation[m[K
+[1.481s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:[m[K In member function ‘[01m[Kvoid Ping::onTimerPing()[m[K’:
+[1.481s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:55:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksend_recive_data_1[m[K’ was not declared in this scope; did you mean ‘[01m[Ksend_recive_data[m[K’?
+[1.481s]    55 |     [01;31m[Ksend_recive_data_1[m[K.push_back(std::make_pair(now(), now()));
+[1.481s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[1.481s]       |     [32m[Ksend_recive_data[m[K
+[1.484s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:56:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksend_recive_data_2[m[K’ was not declared in this scope; did you mean ‘[01m[Ksend_recive_data[m[K’?
+[1.484s]    56 |     [01;31m[Ksend_recive_data_2[m[K.push_back(std::make_pair(now(), now()));
+[1.484s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[1.484s]       |     [32m[Ksend_recive_data[m[K
+[1.485s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:57:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksend_recive_data_3[m[K’ was not declared in this scope; did you mean ‘[01m[Ksend_recive_data[m[K’?
+[1.485s]    57 |     [01;31m[Ksend_recive_data_3[m[K.push_back(std::make_pair(now(), now()));
+[1.485s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[1.485s]       |     [32m[Ksend_recive_data[m[K
+[1.486s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:59:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kping_1_pub[m[K’ was not declared in this scope; did you mean ‘[01m[Kping_pub[m[K’?
+[1.486s]    59 |     [01;31m[Kping_1_pub[m[K->publish(msg);
+[1.486s]       |     [01;31m[K^~~~~~~~~~[m[K
+[1.486s]       |     [32m[Kping_pub[m[K
+[1.487s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:60:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kping_2_pub[m[K’ was not declared in this scope; did you mean ‘[01m[Kping_pub[m[K’?
+[1.487s]    60 |     [01;31m[Kping_2_pub[m[K->publish(msg);
+[1.487s]       |     [01;31m[K^~~~~~~~~~[m[K
+[1.487s]       |     [32m[Kping_pub[m[K
+[1.488s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:61:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kping_3_pub[m[K’ was not declared in this scope; did you mean ‘[01m[Kping_pub[m[K’?
+[1.488s]    61 |     [01;31m[Kping_3_pub[m[K->publish(msg);
+[1.488s]       |     [01;31m[K^~~~~~~~~~[m[K
+[1.488s]       |     [32m[Kping_pub[m[K
+[1.489s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:62:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kping_1_send[m[K’ was not declared in this scope; did you mean ‘[01m[Kping_send[m[K’?
+[1.489s]    62 |     [01;31m[Kping_1_send[m[K++;
+[1.489s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[1.489s]       |     [32m[Kping_send[m[K
+[1.490s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:63:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kping_2_send[m[K’ was not declared in this scope; did you mean ‘[01m[Kping_send[m[K’?
+[1.490s]    63 |     [01;31m[Kping_2_send[m[K++;
+[1.490s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[1.490s]       |     [32m[Kping_send[m[K
+[1.491s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:64:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kping_3_send[m[K’ was not declared in this scope; did you mean ‘[01m[Kping_send[m[K’?
+[1.491s]    64 |     [01;31m[Kping_3_send[m[K++;
+[1.491s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[1.491s]       |     [32m[Kping_send[m[K
+[1.491s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:[m[K At global scope:
+[1.491s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:67:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid Ping::onPong1Callback(std_msgs::msg::UInt32_<std::allocator<void> >::SharedPtr)[m[K’
+[1.491s]    67 | void [01;31m[KPing[m[K::onPong1Callback(const std_msgs::msg::UInt32::SharedPtr msg){
+[1.492s]       |      [01;31m[K^~~~[m[K
+[1.492s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:67:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid Ping::onPong1Callback(std_msgs::msg::UInt32_<std::allocator<void> >::SharedPtr)[m[K’
+[1.492s] In file included from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:2[m[K:
+[1.492s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/single_1_topic/ping_node.hpp:13:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass Ping[m[K’ defined here
+[1.492s]    13 | class [01;36m[KPing[m[K : public rclcpp::Node{
+[1.492s]       |       [01;36m[K^~~~[m[K
+[1.492s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:72:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid Ping::onPong2Callback(std_msgs::msg::UInt32_<std::allocator<void> >::SharedPtr)[m[K’
+[1.492s]    72 | void [01;31m[KPing[m[K::onPong2Callback(const std_msgs::msg::UInt32::SharedPtr msg){
+[1.492s]       |      [01;31m[K^~~~[m[K
+[1.492s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:72:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid Ping::onPong2Callback(std_msgs::msg::UInt32_<std::allocator<void> >::SharedPtr)[m[K’
+[1.492s] In file included from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:2[m[K:
+[1.492s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/single_1_topic/ping_node.hpp:13:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass Ping[m[K’ defined here
+[1.493s]    13 | class [01;36m[KPing[m[K : public rclcpp::Node{
+[1.493s]       |       [01;36m[K^~~~[m[K
+[1.493s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:77:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid Ping::onPong3Callback(std_msgs::msg::UInt32_<std::allocator<void> >::SharedPtr)[m[K’
+[1.493s]    77 | void [01;31m[KPing[m[K::onPong3Callback(const std_msgs::msg::UInt32::SharedPtr msg){
+[1.493s]       |      [01;31m[K^~~~[m[K
+[1.493s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:77:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid Ping::onPong3Callback(std_msgs::msg::UInt32_<std::allocator<void> >::SharedPtr)[m[K’
+[1.493s] In file included from [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:2[m[K:
+[1.493s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/include/single_1_topic/ping_node.hpp:13:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass Ping[m[K’ defined here
+[1.493s]    13 | class [01;36m[KPing[m[K : public rclcpp::Node{
+[1.493s]       |       [01;36m[K^~~~[m[K
+[1.493s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:[m[K In member function ‘[01m[Kvoid Ping::parse_data()[m[K’:
+[1.493s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:85:24:[m[K [01;31m[Kerror: [m[K‘[01m[Ksend_recive_data_1[m[K’ was not declared in this scope; did you mean ‘[01m[Ksend_recive_data[m[K’?
+[1.494s]    85 |     for(auto &sample : [01;31m[Ksend_recive_data_1[m[K){
+[1.494s]       |                        [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[1.494s]       |                        [32m[Ksend_recive_data[m[K
+[1.494s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:87:13:[m[K [01;31m[Kerror: [m[K‘[01m[Klatency_1[m[K’ was not declared in this scope; did you mean ‘[01m[Klatency[m[K’?
+[1.494s]    87 |             [01;31m[Klatency_1[m[K.push_back((sample.second.nanoseconds()-sample.first.nanoseconds()));
+[1.494s]       |             [01;31m[K^~~~~~~~~[m[K
+[1.494s]       |             [32m[Klatency[m[K
+[1.494s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:88:13:[m[K [01;31m[Kerror: [m[K‘[01m[Klatency_average_1[m[K’ was not declared in this scope; did you mean ‘[01m[Klatency_average[m[K’?
+[1.494s]    88 |             [01;31m[Klatency_average_1[m[K += latency_1.at(latency_1.size()-1);
+[1.494s]       |             [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[1.494s]       |             [32m[Klatency_average[m[K
+[1.495s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:92:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klatency_average_1[m[K’ was not declared in this scope; did you mean ‘[01m[Klatency_average[m[K’?
+[1.495s]    92 |     [01;31m[Klatency_average_1[m[K/=latency_1.size();
+[1.495s]       |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[1.495s]       |     [32m[Klatency_average[m[K
+[1.496s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:92:24:[m[K [01;31m[Kerror: [m[K‘[01m[Klatency_1[m[K’ was not declared in this scope; did you mean ‘[01m[Klatency[m[K’?
+[1.496s]    92 |     latency_average_1/=[01;31m[Klatency_1[m[K.size();
+[1.496s]       |                        [01;31m[K^~~~~~~~~[m[K
+[1.496s]       |                        [32m[Klatency[m[K
+[1.497s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:95:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_deviation_1[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd_deviation[m[K’?
+[1.497s]    95 |         [01;31m[Kstd_deviation_1[m[K += lat-latency_average_1;
+[1.497s]       |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.497s]       |         [32m[Kstd_deviation[m[K
+[1.498s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:98:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_deviation_1[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd_deviation[m[K’?
+[1.498s]    98 |     [01;31m[Kstd_deviation_1[m[K = sqrt(std_deviation_1/latency_1.size());
+[1.498s]       |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.498s]       |     [32m[Kstd_deviation[m[K
+[1.499s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:100:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktopic_loss_1[m[K’ was not declared in this scope; did you mean ‘[01m[Ktopic_loss[m[K’?
+[1.499s]   100 |     [01;31m[Ktopic_loss_1[m[K = abs(pong_recived_1-ping_send_1);
+[1.499s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[1.499s]       |     [32m[Ktopic_loss[m[K
+[1.500s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:100:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kpong_recived_1[m[K’ was not declared in this scope; did you mean ‘[01m[Kpong_recived[m[K’?
+[1.500s]   100 |     topic_loss_1 = abs([01;31m[Kpong_recived_1[m[K-ping_send_1);
+[1.500s]       |                        [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.500s]       |                        [32m[Kpong_recived[m[K
+[1.501s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:100:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kping_send_1[m[K’ was not declared in this scope; did you mean ‘[01m[Kping_send[m[K’?
+[1.501s]   100 |     topic_loss_1 = abs(pong_recived_1-[01;31m[Kping_send_1[m[K);
+[1.501s]       |                                       [01;31m[K^~~~~~~~~~~[m[K
+[1.501s]       |                                       [32m[Kping_send[m[K
+[1.502s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:102:24:[m[K [01;31m[Kerror: [m[K‘[01m[Ksend_recive_data_2[m[K’ was not declared in this scope; did you mean ‘[01m[Ksend_recive_data[m[K’?
+[1.502s]   102 |     for(auto &sample : [01;31m[Ksend_recive_data_2[m[K){
+[1.502s]       |                        [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[1.502s]       |                        [32m[Ksend_recive_data[m[K
+[1.503s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:104:13:[m[K [01;31m[Kerror: [m[K‘[01m[Klatency_2[m[K’ was not declared in this scope; did you mean ‘[01m[Klatency[m[K’?
+[1.503s]   104 |             [01;31m[Klatency_2[m[K.push_back((sample.second.nanoseconds()-sample.first.nanoseconds()));
+[1.503s]       |             [01;31m[K^~~~~~~~~[m[K
+[1.503s]       |             [32m[Klatency[m[K
+[1.504s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:105:13:[m[K [01;31m[Kerror: [m[K‘[01m[Klatency_average_2[m[K’ was not declared in this scope; did you mean ‘[01m[Klatency_average[m[K’?
+[1.504s]   105 |             [01;31m[Klatency_average_2[m[K += latency_2.at(latency_2.size()-1);
+[1.504s]       |             [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[1.504s]       |             [32m[Klatency_average[m[K
+[1.505s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:109:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klatency_average_2[m[K’ was not declared in this scope; did you mean ‘[01m[Klatency_average[m[K’?
+[1.505s]   109 |     [01;31m[Klatency_average_2[m[K/=latency_2.size();
+[1.505s]       |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[1.505s]       |     [32m[Klatency_average[m[K
+[1.506s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:109:24:[m[K [01;31m[Kerror: [m[K‘[01m[Klatency_2[m[K’ was not declared in this scope; did you mean ‘[01m[Klatency[m[K’?
+[1.506s]   109 |     latency_average_2/=[01;31m[Klatency_2[m[K.size();
+[1.506s]       |                        [01;31m[K^~~~~~~~~[m[K
+[1.506s]       |                        [32m[Klatency[m[K
+[1.507s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:113:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_deviation_2[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd_deviation[m[K’?
+[1.507s]   113 |         [01;31m[Kstd_deviation_2[m[K+= lat-latency_average_2;
+[1.507s]       |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.507s]       |         [32m[Kstd_deviation[m[K
+[1.507s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:116:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_deviation_2[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd_deviation[m[K’?
+[1.508s]   116 |     [01;31m[Kstd_deviation_2[m[K = sqrt(std_deviation_2/latency_2.size());
+[1.508s]       |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.508s]       |     [32m[Kstd_deviation[m[K
+[1.508s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:118:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktopic_loss_2[m[K’ was not declared in this scope; did you mean ‘[01m[Ktopic_loss[m[K’?
+[1.508s]   118 |     [01;31m[Ktopic_loss_2[m[K = abs(pong_recived_2-ping_send_2);
+[1.509s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[1.509s]       |     [32m[Ktopic_loss[m[K
+[1.509s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:118:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kpong_recived_2[m[K’ was not declared in this scope; did you mean ‘[01m[Kpong_recived[m[K’?
+[1.509s]   118 |     topic_loss_2 = abs([01;31m[Kpong_recived_2[m[K-ping_send_2);
+[1.509s]       |                        [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.510s]       |                        [32m[Kpong_recived[m[K
+[1.510s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:118:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kping_send_2[m[K’ was not declared in this scope; did you mean ‘[01m[Kping_send[m[K’?
+[1.510s]   118 |     topic_loss_2 = abs(pong_recived_2-[01;31m[Kping_send_2[m[K);
+[1.510s]       |                                       [01;31m[K^~~~~~~~~~~[m[K
+[1.510s]       |                                       [32m[Kping_send[m[K
+[1.511s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:121:24:[m[K [01;31m[Kerror: [m[K‘[01m[Ksend_recive_data_3[m[K’ was not declared in this scope; did you mean ‘[01m[Ksend_recive_data[m[K’?
+[1.511s]   121 |     for(auto &sample : [01;31m[Ksend_recive_data_3[m[K){
+[1.511s]       |                        [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[1.511s]       |                        [32m[Ksend_recive_data[m[K
+[1.512s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:123:13:[m[K [01;31m[Kerror: [m[K‘[01m[Klatency_3[m[K’ was not declared in this scope; did you mean ‘[01m[Klatency[m[K’?
+[1.512s]   123 |             [01;31m[Klatency_3[m[K.push_back((sample.second.nanoseconds()-sample.first.nanoseconds()));
+[1.512s]       |             [01;31m[K^~~~~~~~~[m[K
+[1.513s]       |             [32m[Klatency[m[K
+[1.513s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:124:13:[m[K [01;31m[Kerror: [m[K‘[01m[Klatency_average_3[m[K’ was not declared in this scope; did you mean ‘[01m[Klatency_average[m[K’?
+[1.513s]   124 |             [01;31m[Klatency_average_3[m[K += latency_3.at(latency_3.size()-1);
+[1.513s]       |             [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[1.513s]       |             [32m[Klatency_average[m[K
+[1.514s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:128:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klatency_average_3[m[K’ was not declared in this scope; did you mean ‘[01m[Klatency_average[m[K’?
+[1.514s]   128 |     [01;31m[Klatency_average_3[m[K/=latency_3.size();
+[1.514s]       |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[1.514s]       |     [32m[Klatency_average[m[K
+[1.515s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:128:24:[m[K [01;31m[Kerror: [m[K‘[01m[Klatency_3[m[K’ was not declared in this scope; did you mean ‘[01m[Klatency[m[K’?
+[1.515s]   128 |     latency_average_3/=[01;31m[Klatency_3[m[K.size();
+[1.515s]       |                        [01;31m[K^~~~~~~~~[m[K
+[1.515s]       |                        [32m[Klatency[m[K
+[1.516s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:131:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_deviation_3[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd_deviation[m[K’?
+[1.516s]   131 |         [01;31m[Kstd_deviation_3[m[K+= lat-latency_average_3;
+[1.516s]       |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.516s]       |         [32m[Kstd_deviation[m[K
+[1.517s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:134:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_deviation_3[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd_deviation[m[K’?
+[1.517s]   134 |     [01;31m[Kstd_deviation_3[m[K = sqrt(std_deviation_3/latency_3.size());
+[1.517s]       |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.517s]       |     [32m[Kstd_deviation[m[K
+[1.518s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:136:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktopic_loss_3[m[K’ was not declared in this scope; did you mean ‘[01m[Ktopic_loss[m[K’?
+[1.518s]   136 |     [01;31m[Ktopic_loss_3[m[K = abs(pong_recived_3-ping_send_3);
+[1.518s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[1.518s]       |     [32m[Ktopic_loss[m[K
+[1.519s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:136:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kpong_recived_3[m[K’ was not declared in this scope; did you mean ‘[01m[Kpong_recived[m[K’?
+[1.519s]   136 |     topic_loss_3 = abs([01;31m[Kpong_recived_3[m[K-ping_send_3);
+[1.519s]       |                        [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.519s]       |                        [32m[Kpong_recived[m[K
+[1.520s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:136:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kping_send_3[m[K’ was not declared in this scope; did you mean ‘[01m[Kping_send[m[K’?
+[1.520s]   136 |     topic_loss_3 = abs(pong_recived_3-[01;31m[Kping_send_3[m[K);
+[1.520s]       |                                       [01;31m[K^~~~~~~~~~~[m[K
+[1.520s]       |                                       [32m[Kping_send[m[K
+[1.521s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:[m[K In member function ‘[01m[Kvoid Ping::store_data()[m[K’:
+[1.521s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:146:24:[m[K [01;31m[Kerror: [m[K‘[01m[Ksend_recive_data_1[m[K’ was not declared in this scope; did you mean ‘[01m[Ksend_recive_data[m[K’?
+[1.521s]   146 |     for(auto &sample : [01;31m[Ksend_recive_data_1[m[K){
+[1.521s]       |                        [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[1.521s]       |                        [32m[Ksend_recive_data[m[K
+[1.522s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:154:24:[m[K [01;31m[Kerror: [m[K‘[01m[Klatency_1[m[K’ was not declared in this scope; did you mean ‘[01m[Klatency[m[K’?
+[1.522s]   154 |     for(auto &sample : [01;31m[Klatency_1[m[K){
+[1.522s]       |                        [01;31m[K^~~~~~~~~[m[K
+[1.522s]       |                        [32m[Klatency[m[K
+[1.523s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:162:41:[m[K [01;31m[Kerror: [m[K‘[01m[Klatency_average_1[m[K’ was not declared in this scope; did you mean ‘[01m[Klatency_average[m[K’?
+[1.523s]   162 |     data_file << "Latency Average: " << [01;31m[Klatency_average_1[m[K << std::endl << std::endl
+[1.524s]       |                                         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[1.524s]       |                                         [32m[Klatency_average[m[K
+[1.524s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:163:52:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_deviation_1[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd_deviation[m[K’?
+[1.524s]   163 |               << "Latency Standard Deviation: " << [01;31m[Kstd_deviation_1[m[K << std::endl << std::endl
+[1.524s]       |                                                    [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.524s]       |                                                    [32m[Kstd_deviation[m[K
+[1.525s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:164:36:[m[K [01;31m[Kerror: [m[K‘[01m[Ktopic_1_loss[m[K’ was not declared in this scope; did you mean ‘[01m[Ktopic_loss[m[K’?
+[1.525s]   164 |               << "Topic loss: " << [01;31m[Ktopic_1_loss[m[K << std::endl << std::endl
+[1.525s]       |                                    [01;31m[K^~~~~~~~~~~~[m[K
+[1.525s]       |                                    [32m[Ktopic_loss[m[K
+[1.526s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:165:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kping_1_send[m[K’ was not declared in this scope; did you mean ‘[01m[Kping_send[m[K’?
+[1.526s]   165 |               << "Ping send: " << [01;31m[Kping_1_send[m[K << std::endl << std::endl
+[1.526s]       |                                   [01;31m[K^~~~~~~~~~~[m[K
+[1.526s]       |                                   [32m[Kping_send[m[K
+[1.527s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:166:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kpong_1_recived[m[K’ was not declared in this scope; did you mean ‘[01m[Kpong_recived[m[K’?
+[1.527s]   166 |               << "Pong recived: " << [01;31m[Kpong_1_recived[m[K << std::endl << std::endl;
+[1.527s]       |                                      [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.527s]       |                                      [32m[Kpong_recived[m[K
+[1.527s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:171:19:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kstd::ofstream data_file[m[K’
+[1.527s]   171 |     std::ofstream [01;31m[Kdata_file[m[K;
+[1.527s]       |                   [01;31m[K^~~~~~~~~[m[K
+[1.528s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:143:19:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::ofstream data_file[m[K’ previously declared here
+[1.528s]   143 |     std::ofstream [01;36m[Kdata_file[m[K;
+[1.528s]       |                   [01;36m[K^~~~~~~~~[m[K
+[1.528s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:174:24:[m[K [01;31m[Kerror: [m[K‘[01m[Ksend_recive_data_2[m[K’ was not declared in this scope; did you mean ‘[01m[Ksend_recive_data[m[K’?
+[1.528s]   174 |     for(auto &sample : [01;31m[Ksend_recive_data_2[m[K){
+[1.528s]       |                        [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[1.528s]       |                        [32m[Ksend_recive_data[m[K
+[1.529s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:182:24:[m[K [01;31m[Kerror: [m[K‘[01m[Klatency_2[m[K’ was not declared in this scope; did you mean ‘[01m[Klatency[m[K’?
+[1.530s]   182 |     for(auto &sample : [01;31m[Klatency_2[m[K){
+[1.530s]       |                        [01;31m[K^~~~~~~~~[m[K
+[1.530s]       |                        [32m[Klatency[m[K
+[1.531s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:189:41:[m[K [01;31m[Kerror: [m[K‘[01m[Klatency_average_2[m[K’ was not declared in this scope; did you mean ‘[01m[Klatency_average[m[K’?
+[1.531s]   189 |     data_file << "Latency Average: " << [01;31m[Klatency_average_2[m[K << std::endl << std::endl
+[1.531s]       |                                         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[1.531s]       |                                         [32m[Klatency_average[m[K
+[1.532s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:190:52:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_deviation_2[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd_deviation[m[K’?
+[1.532s]   190 |               << "Latency Standard Deviation: " << [01;31m[Kstd_deviation_2[m[K << std::endl << std::endl
+[1.532s]       |                                                    [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.532s]       |                                                    [32m[Kstd_deviation[m[K
+[1.532s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:191:36:[m[K [01;31m[Kerror: [m[K‘[01m[Ktopic_2_loss[m[K’ was not declared in this scope; did you mean ‘[01m[Ktopic_loss[m[K’?
+[1.533s]   191 |               << "Topic loss: " << [01;31m[Ktopic_2_loss[m[K << std::endl << std::endl
+[1.533s]       |                                    [01;31m[K^~~~~~~~~~~~[m[K
+[1.533s]       |                                    [32m[Ktopic_loss[m[K
+[1.533s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:192:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kping_2_send[m[K’ was not declared in this scope; did you mean ‘[01m[Kping_send[m[K’?
+[1.534s]   192 |               << "Ping send: " << [01;31m[Kping_2_send[m[K << std::endl << std::endl
+[1.534s]       |                                   [01;31m[K^~~~~~~~~~~[m[K
+[1.534s]       |                                   [32m[Kping_send[m[K
+[1.534s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:193:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kpong_2_recived[m[K’ was not declared in this scope; did you mean ‘[01m[Kpong_recived[m[K’?
+[1.534s]   193 |               << "Pong recived: " << [01;31m[Kpong_2_recived[m[K << std::endl << std::endl;
+[1.535s]       |                                      [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.535s]       |                                      [32m[Kpong_recived[m[K
+[1.535s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:198:19:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kstd::ofstream data_file[m[K’
+[1.535s]   198 |     std::ofstream [01;31m[Kdata_file[m[K;
+[1.535s]       |                   [01;31m[K^~~~~~~~~[m[K
+[1.535s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:143:19:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::ofstream data_file[m[K’ previously declared here
+[1.535s]   143 |     std::ofstream [01;36m[Kdata_file[m[K;
+[1.535s]       |                   [01;36m[K^~~~~~~~~[m[K
+[1.535s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:201:24:[m[K [01;31m[Kerror: [m[K‘[01m[Ksend_recive_data_3[m[K’ was not declared in this scope; did you mean ‘[01m[Ksend_recive_data[m[K’?
+[1.535s]   201 |     for(auto &sample : [01;31m[Ksend_recive_data_3[m[K){
+[1.536s]       |                        [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[1.536s]       |                        [32m[Ksend_recive_data[m[K
+[1.537s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:209:24:[m[K [01;31m[Kerror: [m[K‘[01m[Klatency_3[m[K’ was not declared in this scope; did you mean ‘[01m[Klatency[m[K’?
+[1.537s]   209 |     for(auto &sample : [01;31m[Klatency_3[m[K){
+[1.537s]       |                        [01;31m[K^~~~~~~~~[m[K
+[1.537s]       |                        [32m[Klatency[m[K
+[1.539s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:216:41:[m[K [01;31m[Kerror: [m[K‘[01m[Klatency_average_3[m[K’ was not declared in this scope; did you mean ‘[01m[Klatency_average[m[K’?
+[1.539s]   216 |     data_file << "Latency Average: " << [01;31m[Klatency_average_3[m[K << std::endl << std::endl
+[1.539s]       |                                         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[1.539s]       |                                         [32m[Klatency_average[m[K
+[1.541s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:217:52:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_deviation_3[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd_deviation[m[K’?
+[1.541s]   217 |               << "Latency Standard Deviation: " << [01;31m[Kstd_deviation_3[m[K << std::endl << std::endl
+[1.541s]       |                                                    [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.541s]       |                                                    [32m[Kstd_deviation[m[K
+[1.543s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:218:36:[m[K [01;31m[Kerror: [m[K‘[01m[Ktopic_3_loss[m[K’ was not declared in this scope; did you mean ‘[01m[Ktopic_loss[m[K’?
+[1.543s]   218 |               << "Topic loss: " << [01;31m[Ktopic_3_loss[m[K << std::endl << std::endl
+[1.543s]       |                                    [01;31m[K^~~~~~~~~~~~[m[K
+[1.543s]       |                                    [32m[Ktopic_loss[m[K
+[1.544s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:219:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kping_3_send[m[K’ was not declared in this scope; did you mean ‘[01m[Kping_send[m[K’?
+[1.545s]   219 |               << "Ping send: " << [01;31m[Kping_3_send[m[K << std::endl << std::endl
+[1.545s]       |                                   [01;31m[K^~~~~~~~~~~[m[K
+[1.545s]       |                                   [32m[Kping_send[m[K
+[1.546s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping_node.cpp:220:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kpong_3_recived[m[K’ was not declared in this scope; did you mean ‘[01m[Kpong_recived[m[K’?
+[1.546s]   220 |               << "Pong recived: " << [01;31m[Kpong_3_recived[m[K << std::endl << std::endl;
+[1.546s]       |                                      [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.546s]       |                                      [32m[Kpong_recived[m[K
+[2.213s] make[2]: *** [CMakeFiles/ping_3_single.dir/build.make:76: CMakeFiles/ping_3_single.dir/src/single_3_topic/ping_node.cpp.o] Error 1
+[2.213s] make[1]: *** [CMakeFiles/Makefile2:111: CMakeFiles/ping_3_single.dir/all] Error 2
+[2.213s] make: *** [Makefile:141: all] Error 2
+[2.216s] Invoked command in '/home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking -- -j12 -l12

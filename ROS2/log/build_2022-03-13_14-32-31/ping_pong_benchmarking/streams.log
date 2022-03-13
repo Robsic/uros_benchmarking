@@ -1,0 +1,14 @@
+[0.092s] Invoking command in '/home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking -- -j12 -l12
+[0.183s] [35m[1mScanning dependencies of target ping_3_single[0m
+[0.186s] [ 50%] Built target pong_test_3_single
+[0.186s] [ 50%] Built target ping_1_single
+[0.188s] [ 70%] Built target pong_test_1_single
+[0.210s] [ 80%] [32mBuilding CXX object CMakeFiles/ping_3_single.dir/src/single_3_topic/ping.cpp.o[0m
+[1.220s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[1.221s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_3_topic/ping.cpp:17:51:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[Kint[m[K’ to non-scalar type ‘[01m[Kconst seconds[m[K’ {aka ‘[01m[Kconst std::chrono::duration<long int>[m[K’} requested
+[1.221s]    17 |     const std::chrono::seconds experiment_time = [01;31m[K(argc)[m[Ks;
+[1.221s]       |                                                  [01;31m[K~^~~~~[m[K
+[1.566s] make[2]: *** [CMakeFiles/ping_3_single.dir/build.make:63: CMakeFiles/ping_3_single.dir/src/single_3_topic/ping.cpp.o] Error 1
+[1.566s] make[1]: *** [CMakeFiles/Makefile2:111: CMakeFiles/ping_3_single.dir/all] Error 2
+[1.567s] make: *** [Makefile:141: all] Error 2
+[1.572s] Invoked command in '/home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking -- -j12 -l12
