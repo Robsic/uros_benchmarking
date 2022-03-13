@@ -1,0 +1,14 @@
+[01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/pong_test_node.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Kstd_msgs/msg/uint32.hpp: No such file or directory
+    3 | #include [01;31m[K"std_msgs/msg/uint32.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+[01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:4:10:[m[K [01;31m[Kfatal error: [m[Kstd_msgs/msg/uint32.hpp: No such file or directory
+    4 | #include [01;31m[K"std_msgs/msg/uint32.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/pong_test.dir/build.make:63: CMakeFiles/pong_test.dir/src/pong_test_node.cpp.o] Error 1
+make[2]: *** [CMakeFiles/ping.dir/build.make:76: CMakeFiles/ping.dir/src/ping_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/ping.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/pong_test.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

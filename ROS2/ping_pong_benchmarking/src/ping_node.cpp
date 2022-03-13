@@ -1,7 +1,7 @@
 
 #include "ping_node.hpp"
 #include "rclcpp/rclcpp.hpp"
-#include "std_msgs/msg/int32.hpp"
+#include "std_msgs/msg/u_int32.hpp"
 
 #include <algorithm>
 #include <functional>
@@ -23,13 +23,15 @@ Ping::Ping() : rclcpp::Node("ping"){
     ping_period = 10000000ns;
 
     timer_ = this->create_wall_timer(ping_period, std::bind(&Ping::onTimerPing, this));
-    pong_sub = this->create_subscription<std_msgs::msg::Int32>("/pong", default_qos, std::bind(&Ping::onPongCallback, this, _1));
-    ping_pub = this->create_publisher<std_msgs::msg::Int32>("/ping", default_qos);
+    pong_sub = this->create_subscription<std_msgs::msg::UInt32>("/pong", default_qos, std::bind(&Ping::onPongCallback, this, _1));
+    ping_pub = this->create_publisher<std_msgs::msg::UInt32>("/ping", default_qos);
 
     ping_send = 0;
     pong_recived = 0;
     latency_average = 0;
     std_deviation = 0;
+
+
 }
 
 Ping::~Ping(){
@@ -37,8 +39,8 @@ Ping::~Ping(){
     }
 
 void Ping::onTimerPing(){
-    std_msgs::msg::Int32 msg;
-    msg.data = static_cast<int32_t>(send_recive_data.size());
+    std_msgs::msg::UInt32 msg;
+    msg.data = static_cast<uint32_t>(send_recive_data.size());
 
     send_recive_data.push_back(std::make_pair(now(), now()));
 
@@ -46,7 +48,7 @@ void Ping::onTimerPing(){
     ping_send++;
 }
 
-void Ping::onPongCallback(const std_msgs::msg::Int32::SharedPtr msg){
+void Ping::onPongCallback(const std_msgs::msg::UInt32::SharedPtr msg){
     send_recive_data.at(msg->data).second = now();
     pong_recived++;
 }
@@ -55,7 +57,7 @@ void Ping::parse_data(){
 
     for(auto &sample : send_recive_data){
         if(sample.second.nanoseconds() > sample.first.nanoseconds()){
-            latency.push_back((sample.second.nanoseconds()-sample.first.nanoseconds())*1000);
+            latency.push_back((sample.second.nanoseconds()-sample.first.nanoseconds()));
             latency_average += latency.at(latency.size()-1);
         }
     }
@@ -75,19 +77,25 @@ void Ping::parse_data(){
 void Ping::store_data(){
 
     std::ofstream data_file;
-    data_file.open("pingpong_data.txt");
+    data_file.open("./ping_pong_benchmarking/data/pingpong_data.txt");
 
-    int i = 0;
     for(auto &sample : send_recive_data){
-        std::cout << sample.first.nanoseconds()*1000 << "\t" << sample.second.nanoseconds()*1000 << "\t" << latency.at(i) << std::endl;
-        i++;
+        data_file << sample.first.nanoseconds() << "\t" << sample.second.nanoseconds() << std::endl;
     }
     
     data_file.close();
 
-    data_file.open("pingpong_results.txt");
+    data_file.open("./ping_pong_benchmarking/data/pingpong_latency.txt");
 
-    std::cout << "Latency Average: " << latency_average << std::endl << std::endl 
+    for(auto &sample : latency){
+        data_file << sample << std::endl;
+    }
+    
+    data_file.close();
+
+    data_file.open("./ping_pong_benchmarking/data/pingpong_results.txt");
+
+    data_file << "Latency Average: " << latency_average << std::endl << std::endl 
               << "Latency Standard Deviation: " << std_deviation << std::endl << std::endl 
               << "Topic loss: " << topic_loss << std::endl << std::endl 
               << "Ping send: " << ping_send << std::endl << std::endl 

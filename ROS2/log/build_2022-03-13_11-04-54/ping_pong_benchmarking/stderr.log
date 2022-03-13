@@ -1,0 +1,56 @@
+[01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/pong_test_node.cpp:28:42:[m[K [01;31m[Kerror: [m[K‘[01m[KInt32[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’; did you mean ‘[01m[KUInt32[m[K’?
+   28 |         rclcpp::Publisher<std_msgs::msg::[01;31m[KInt32[m[K>::SharedPtr pong_pub;
+      |                                          [01;31m[K^~~~~[m[K
+      |                                          [32m[KUInt32[m[K
+[01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/pong_test_node.cpp:28:42:[m[K [01;31m[Kerror: [m[K‘[01m[KInt32[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’; did you mean ‘[01m[KUInt32[m[K’?
+   28 |         rclcpp::Publisher<std_msgs::msg::[01;31m[KInt32[m[K>::SharedPtr pong_pub;
+      |                                          [01;31m[K^~~~~[m[K
+      |                                          [32m[KUInt32[m[K
+[01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/pong_test_node.cpp:28:47:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   28 |         rclcpp::Publisher<std_msgs::msg::Int32[01;31m[K>[m[K::SharedPtr pong_pub;
+      |                                               [01;31m[K^[m[K
+[01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/pong_test_node.cpp:28:50:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   28 |         rclcpp::Publisher<std_msgs::msg::Int32>::[01;31m[KSharedPtr[m[K pong_pub;
+      |                                                  [01;31m[K^~~~~~~~~[m[K
+      |                                                           [32m[K;[m[K
+[01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/pong_test_node.cpp:28:60:[m[K [01;31m[Kerror: [m[K‘[01m[Kpong_pub[m[K’ does not name a type
+   28 |         rclcpp::Publisher<std_msgs::msg::Int32>::SharedPtr [01;31m[Kpong_pub[m[K;
+      |                                                            [01;31m[K^~~~~~~~[m[K
+[01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/pong_test_node.cpp:29:45:[m[K [01;31m[Kerror: [m[K‘[01m[KInt32[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’; did you mean ‘[01m[KUInt32[m[K’?
+   29 |         rclcpp::Subscription<std_msgs::msg::[01;31m[KInt32[m[K>::SharedPtr ping_sub;
+      |                                             [01;31m[K^~~~~[m[K
+      |                                             [32m[KUInt32[m[K
+[01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/pong_test_node.cpp:29:45:[m[K [01;31m[Kerror: [m[K‘[01m[KInt32[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’; did you mean ‘[01m[KUInt32[m[K’?
+   29 |         rclcpp::Subscription<std_msgs::msg::[01;31m[KInt32[m[K>::SharedPtr ping_sub;
+      |                                             [01;31m[K^~~~~[m[K
+      |                                             [32m[KUInt32[m[K
+[01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/pong_test_node.cpp:29:50:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   29 |         rclcpp::Subscription<std_msgs::msg::Int32[01;31m[K>[m[K::SharedPtr ping_sub;
+      |                                                  [01;31m[K^[m[K
+[01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/pong_test_node.cpp:29:50:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/pong_test_node.cpp:29:53:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   29 |         rclcpp::Subscription<std_msgs::msg::Int32>::[01;31m[KSharedPtr[m[K ping_sub;
+      |                                                     [01;31m[K^~~~~~~~~[m[K
+      |                                                              [32m[K;[m[K
+[01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/pong_test_node.cpp:29:53:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint PongTest::SharedPtr[m[K’
+[01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/pong_test_node.cpp:28:50:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kint PongTest::SharedPtr[m[K’
+   28 |         rclcpp::Publisher<std_msgs::msg::Int32>::[01;36m[KSharedPtr[m[K pong_pub;
+      |                                                  [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/pong_test_node.cpp:29:63:[m[K [01;31m[Kerror: [m[K‘[01m[Kping_sub[m[K’ does not name a type
+   29 |         rclcpp::Subscription<std_msgs::msg::Int32>::SharedPtr [01;31m[Kping_sub[m[K;
+      |                                                               [01;31m[K^~~~~~~~[m[K
+[01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/pong_test_node.cpp:[m[K In constructor ‘[01m[KPongTest::PongTest()[m[K’:
+[01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/pong_test_node.cpp:13:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kpong_pub[m[K’ was not declared in this scope
+   13 |             [01;31m[Kpong_pub[m[K = this->create_publisher<std_msgs::msg::UInt32>("/pong", default_qos);
+      |             [01;31m[K^~~~~~~~[m[K
+[01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/pong_test_node.cpp:14:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kping_sub[m[K’ was not declared in this scope
+   14 |             [01;31m[Kping_sub[m[K = this->create_subscription<std_msgs::msg::UInt32>("/ping", default_qos, std::bind(&PongTest::onPingCallback, this, _1));
+      |             [01;31m[K^~~~~~~~[m[K
+[01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/pong_test_node.cpp:[m[K In member function ‘[01m[Kvoid PongTest::onPingCallback(std_msgs::msg::UInt32_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/pong_test_node.cpp:25:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kpong_pub[m[K’ was not declared in this scope
+   25 |             [01;31m[Kpong_pub[m[K->publish(*msg);
+      |             [01;31m[K^~~~~~~~[m[K
+make[2]: *** [CMakeFiles/pong_test.dir/build.make:63: CMakeFiles/pong_test.dir/src/pong_test_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/pong_test.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,13 @@
+[01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:[m[K In member function ‘[01m[Kvoid Ping::store_data()[m[K’:
+[01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:85:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kdata_file[m[K’ is not a member of ‘[01m[Kstd[m[K’
+   85 |         std::[01;31m[Kdata_file[m[K << sample.first.nanoseconds()*1000 << "\t" << sample.second.nanoseconds()*1000 << std::endl;
+      |              [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:93:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kdata_file[m[K’ is not a member of ‘[01m[Kstd[m[K’
+   93 |         std::[01;31m[Kdata_file[m[K << sample << std::endl;
+      |              [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:102:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kdata_file[m[K’ is not a member of ‘[01m[Kstd[m[K’
+  102 |     std::[01;31m[Kdata_file[m[K << "Latency Average: " << latency_average << std::endl << std::endl
+      |          [01;31m[K^~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/ping.dir/build.make:76: CMakeFiles/ping.dir/src/ping_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/ping.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

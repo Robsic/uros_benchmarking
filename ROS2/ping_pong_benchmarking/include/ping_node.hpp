@@ -1,6 +1,6 @@
 
 #include "rclcpp/rclcpp.hpp"
-#include "std_msgs/msg/int32.hpp"
+#include "std_msgs/msg/u_int32.hpp"
 
 #include <chrono>
 #include <memory>
@@ -21,8 +21,8 @@ class Ping : public rclcpp::Node{
 
     private:
         rclcpp::TimerBase::SharedPtr timer_;
-        rclcpp::Subscription<std_msgs::msg::Int32>::SharedPtr pong_sub;
-        rclcpp::Publisher<std_msgs::msg::Int32>::SharedPtr ping_pub;
+        rclcpp::Subscription<std_msgs::msg::UInt32>::SharedPtr pong_sub;
+        rclcpp::Publisher<std_msgs::msg::UInt32>::SharedPtr ping_pub;
 
         std::chrono::nanoseconds ping_period;
         int ping_send;
@@ -34,6 +34,6 @@ class Ping : public rclcpp::Node{
         double latency_average;
         double std_deviation;
 
-        void onPongCallback(const std_msgs::msg::Int32::SharedPtr msg);
+        void onPongCallback(const std_msgs::msg::UInt32::SharedPtr msg);
         void onTimerPing();
 };

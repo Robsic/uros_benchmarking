@@ -29,7 +29,15 @@ add_executable(
 target_include_directories(ping PUBLIC include)
 ament_target_dependencies(ping rclcpp std_msgs)
 
-install(TARGETS ping
+add_executable(
+  pong_test
+  src/pong_test_node.cpp
+)
+
+target_include_directories(pong_test PUBLIC include)
+ament_target_dependencies(pong_test rclcpp std_msgs)
+
+install(TARGETS ping pong_test
   DESTINATION lib/${PROJECT_NAME}
 )
 install(

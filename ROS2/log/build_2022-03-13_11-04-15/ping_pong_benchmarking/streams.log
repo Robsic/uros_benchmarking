@@ -1,0 +1,20 @@
+[0.114s] Invoking command in '/home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking -- -j12 -l12
+[0.215s] [35m[1mScanning dependencies of target pong_test[0m
+[0.215s] [35m[1mScanning dependencies of target ping[0m
+[0.274s] [ 20%] [32mBuilding CXX object CMakeFiles/pong_test.dir/src/pong_test_node.cpp.o[0m
+[0.276s] [ 40%] [32mBuilding CXX object CMakeFiles/ping.dir/src/ping_node.cpp.o[0m
+[0.361s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/pong_test_node.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Kstd_msgs/msg/uint32.hpp: No such file or directory
+[0.362s]     3 | #include [01;31m[K"std_msgs/msg/uint32.hpp"[m[K
+[0.362s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.362s] compilation terminated.
+[0.363s] [01m[K/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking/src/ping_node.cpp:4:10:[m[K [01;31m[Kfatal error: [m[Kstd_msgs/msg/uint32.hpp: No such file or directory
+[0.363s]     4 | #include [01;31m[K"std_msgs/msg/uint32.hpp"[m[K
+[0.363s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.364s] compilation terminated.
+[1.018s] make[2]: *** [CMakeFiles/pong_test.dir/build.make:63: CMakeFiles/pong_test.dir/src/pong_test_node.cpp.o] Error 1
+[1.018s] make[2]: *** [CMakeFiles/ping.dir/build.make:76: CMakeFiles/ping.dir/src/ping_node.cpp.o] Error 1
+[1.019s] make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/ping.dir/all] Error 2
+[1.019s] make[1]: *** Waiting for unfinished jobs....
+[1.020s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/pong_test.dir/all] Error 2
+[1.020s] make: *** [Makefile:141: all] Error 2
+[1.026s] Invoked command in '/home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking -- -j12 -l12

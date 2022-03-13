@@ -1,0 +1,234 @@
+[0.000000] (-) TimerEvent: {}
+[0.000789] (ping_pong_benchmarking) JobQueued: {'identifier': 'ping_pong_benchmarking', 'dependencies': OrderedDict()}
+[0.001003] (ping_pong_benchmarking) JobStarted: {'identifier': 'ping_pong_benchmarking'}
+[0.099652] (-) TimerEvent: {}
+[0.200125] (-) TimerEvent: {}
+[0.300645] (-) TimerEvent: {}
+[0.401293] (-) TimerEvent: {}
+[0.501679] (-) TimerEvent: {}
+[0.601959] (-) TimerEvent: {}
+[0.702391] (-) TimerEvent: {}
+[0.803162] (-) TimerEvent: {}
+[0.903875] (-) TimerEvent: {}
+[1.004323] (-) TimerEvent: {}
+[1.084085] (ping_pong_benchmarking) JobProgress: {'identifier': 'ping_pong_benchmarking', 'progress': 'cmake'}
+[1.104543] (-) TimerEvent: {}
+[1.205048] (-) TimerEvent: {}
+[1.305764] (-) TimerEvent: {}
+[1.406490] (-) TimerEvent: {}
+[1.485453] (ping_pong_benchmarking) JobProgress: {'identifier': 'ping_pong_benchmarking', 'progress': 'build'}
+[1.488851] (ping_pong_benchmarking) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking', '--', '-j12', '-l12'], 'cwd': '/home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking', 'env': OrderedDict([('KDE_FULL_SESSION', 'true'), ('PROFILEHOME', ''), ('LANGUAGE', ''), ('LC_TIME', 'pt_BR.UTF-8'), ('PAM_KWALLET5_LOGIN', '/run/user/1000/kwallet5.socket'), ('USER', 'toffanetto'), ('QT_SCREEN_SCALE_FACTORS', 'eDP-1=1;DP-1=1;HDMI-1=1;HDMI-1-2=1;'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1284'), ('XDG_SESSION_TYPE', 'x11'), ('KONSOLE_VERSION', '191203'), ('SHLVL', '1'), ('XCURSOR_SIZE', '24'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/toffanetto'), ('OLDPWD', '/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking'), ('LESS', '-R'), ('DESKTOP_SESSION', 'plasma'), ('ZSH', '/home/toffanetto/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('KDE_SESSION_VERSION', '5'), ('SHELL_SESSION_ID', '7222c15e9d0e45c99c67008219146582'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('KONSOLE_DBUS_SESSION', '/Sessions/1'), ('LC_MONETARY', 'pt_BR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('P9K_TTY', 'old'), ('COLORTERM', 'truecolor'), ('KONSOLE_DBUS_WINDOW', '/Windows/1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'toffanetto'), ('QT_AUTO_SCREEN_SCALE_FACTOR', '0'), ('WINDOWID', '88080391'), ('_', '/usr/bin/colcon'), ('COLORFGBG', '0;15'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/toffanetto-G3:@/tmp/.ICE-unix/1358,unix/toffanetto-G3:/tmp/.ICE-unix/1358'), ('LC_ADDRESS', 'pt_BR.UTF-8'), ('XCURSOR_THEME', 'breeze_cursors'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session1'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'pt_BR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'KDE'), ('XAUTHORITY', '/home/toffanetto/.Xauthority'), ('XDG_SESSION_DESKTOP', 'KDE'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/tmp/ssh-C0oR2tsoq1XF/agent.1238'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('LC_NAME', 'pt_BR.UTF-8'), ('SHELL', '/usr/bin/zsh'), ('QT_ACCESSIBILITY', '1'), ('KONSOLE_DBUS_SERVICE', ':1.86'), ('LC_MEASUREMENT', 'pt_BR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'pt_BR.UTF-8'), ('P9K_SSH', '0'), ('XDG_VTNR', '1'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-plasma:/etc/xdg:/usr/share/kubuntu-default-settings/kf5-settings'), ('XDG_DATA_DIRS', '/usr/share/plasma:/usr/local/share/:/usr/share/'), ('_P9K_TTY', '/dev/pts/1'), ('LC_NUMERIC', 'pt_BR.UTF-8'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('KDE_SESSION_UID', '1000'), ('LC_PAPER', 'pt_BR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[1.506730] (-) TimerEvent: {}
+[1.607451] (-) TimerEvent: {}
+[1.708270] (-) TimerEvent: {}
+[1.809057] (-) TimerEvent: {}
+[1.909540] (-) TimerEvent: {}
+[2.010404] (-) TimerEvent: {}
+[2.111328] (-) TimerEvent: {}
+[2.211938] (-) TimerEvent: {}
+[2.312509] (-) TimerEvent: {}
+[2.412956] (-) TimerEvent: {}
+[2.513300] (-) TimerEvent: {}
+[2.614410] (-) TimerEvent: {}
+[2.714768] (-) TimerEvent: {}
+[2.815403] (-) TimerEvent: {}
+[2.916059] (-) TimerEvent: {}
+[3.016755] (-) TimerEvent: {}
+[3.117137] (-) TimerEvent: {}
+[3.217648] (-) TimerEvent: {}
+[3.318345] (-) TimerEvent: {}
+[3.419054] (-) TimerEvent: {}
+[3.519810] (-) TimerEvent: {}
+[3.620530] (-) TimerEvent: {}
+[3.721062] (-) TimerEvent: {}
+[3.821797] (-) TimerEvent: {}
+[3.922472] (-) TimerEvent: {}
+[4.023259] (-) TimerEvent: {}
+[4.123881] (-) TimerEvent: {}
+[4.224278] (-) TimerEvent: {}
+[4.324982] (-) TimerEvent: {}
+[4.425703] (-) TimerEvent: {}
+[4.526409] (-) TimerEvent: {}
+[4.626984] (-) TimerEvent: {}
+[4.727336] (-) TimerEvent: {}
+[4.828019] (-) TimerEvent: {}
+[4.928695] (-) TimerEvent: {}
+[5.029372] (-) TimerEvent: {}
+[5.129820] (-) TimerEvent: {}
+[5.230223] (-) TimerEvent: {}
+[5.330641] (-) TimerEvent: {}
+[5.431307] (-) TimerEvent: {}
+[5.463196] (ping_pong_benchmarking) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ping\x1b[0m\n'}
+[5.531466] (-) TimerEvent: {}
+[5.632155] (-) TimerEvent: {}
+[5.732793] (-) TimerEvent: {}
+[5.833303] (-) TimerEvent: {}
+[5.933688] (-) TimerEvent: {}
+[6.034276] (-) TimerEvent: {}
+[6.134788] (-) TimerEvent: {}
+[6.235388] (-) TimerEvent: {}
+[6.335846] (-) TimerEvent: {}
+[6.436550] (-) TimerEvent: {}
+[6.537217] (-) TimerEvent: {}
+[6.637891] (-) TimerEvent: {}
+[6.738570] (-) TimerEvent: {}
+[6.790834] (ping_pong_benchmarking) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/ping.dir/src/ping.cpp.o\x1b[0m\n'}
+[6.791690] (ping_pong_benchmarking) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/ping.dir/src/ping_node.cpp.o\x1b[0m\n'}
+[6.838774] (-) TimerEvent: {}
+[6.939445] (-) TimerEvent: {}
+[7.040054] (-) TimerEvent: {}
+[7.140765] (-) TimerEvent: {}
+[7.241469] (-) TimerEvent: {}
+[7.342162] (-) TimerEvent: {}
+[7.442820] (-) TimerEvent: {}
+[7.543468] (-) TimerEvent: {}
+[7.644167] (-) TimerEvent: {}
+[7.744868] (-) TimerEvent: {}
+[7.845535] (-) TimerEvent: {}
+[7.946225] (-) TimerEvent: {}
+[8.046954] (-) TimerEvent: {}
+[8.147352] (-) TimerEvent: {}
+[8.247951] (-) TimerEvent: {}
+[8.348630] (-) TimerEvent: {}
+[8.449411] (-) TimerEvent: {}
+[8.550117] (-) TimerEvent: {}
+[8.650816] (-) TimerEvent: {}
+[8.751515] (-) TimerEvent: {}
+[8.852186] (-) TimerEvent: {}
+[8.952890] (-) TimerEvent: {}
+[9.053627] (-) TimerEvent: {}
+[9.154331] (-) TimerEvent: {}
+[9.255037] (-) TimerEvent: {}
+[9.355686] (-) TimerEvent: {}
+[9.456264] (-) TimerEvent: {}
+[9.557001] (-) TimerEvent: {}
+[9.657719] (-) TimerEvent: {}
+[9.758427] (-) TimerEvent: {}
+[9.859133] (-) TimerEvent: {}
+[9.959679] (-) TimerEvent: {}
+[10.060146] (-) TimerEvent: {}
+[10.160815] (-) TimerEvent: {}
+[10.261450] (-) TimerEvent: {}
+[10.361736] (-) TimerEvent: {}
+[10.462054] (-) TimerEvent: {}
+[10.562434] (-) TimerEvent: {}
+[10.662841] (-) TimerEvent: {}
+[10.763560] (-) TimerEvent: {}
+[10.864271] (-) TimerEvent: {}
+[10.965002] (-) TimerEvent: {}
+[11.065694] (-) TimerEvent: {}
+[11.166393] (-) TimerEvent: {}
+[11.266818] (-) TimerEvent: {}
+[11.367539] (-) TimerEvent: {}
+[11.468261] (-) TimerEvent: {}
+[11.568549] (-) TimerEvent: {}
+[11.668934] (-) TimerEvent: {}
+[11.769295] (-) TimerEvent: {}
+[11.869630] (-) TimerEvent: {}
+[11.969960] (-) TimerEvent: {}
+[12.070321] (-) TimerEvent: {}
+[12.170680] (-) TimerEvent: {}
+[12.270996] (-) TimerEvent: {}
+[12.371316] (-) TimerEvent: {}
+[12.471634] (-) TimerEvent: {}
+[12.571950] (-) TimerEvent: {}
+[12.672263] (-) TimerEvent: {}
+[12.772570] (-) TimerEvent: {}
+[12.872882] (-) TimerEvent: {}
+[12.973152] (-) TimerEvent: {}
+[13.073411] (-) TimerEvent: {}
+[13.173764] (-) TimerEvent: {}
+[13.274035] (-) TimerEvent: {}
+[13.374309] (-) TimerEvent: {}
+[13.474577] (-) TimerEvent: {}
+[13.574847] (-) TimerEvent: {}
+[13.675230] (-) TimerEvent: {}
+[13.775498] (-) TimerEvent: {}
+[13.875772] (-) TimerEvent: {}
+[13.976047] (-) TimerEvent: {}
+[14.076355] (-) TimerEvent: {}
+[14.176582] (-) TimerEvent: {}
+[14.276844] (-) TimerEvent: {}
+[14.377181] (-) TimerEvent: {}
+[14.477445] (-) TimerEvent: {}
+[14.577707] (-) TimerEvent: {}
+[14.677985] (-) TimerEvent: {}
+[14.778235] (-) TimerEvent: {}
+[14.878499] (-) TimerEvent: {}
+[14.978883] (-) TimerEvent: {}
+[15.079289] (-) TimerEvent: {}
+[15.179870] (-) TimerEvent: {}
+[15.293976] (-) TimerEvent: {}
+[15.394240] (-) TimerEvent: {}
+[15.494501] (-) TimerEvent: {}
+[15.594729] (-) TimerEvent: {}
+[15.695006] (-) TimerEvent: {}
+[15.795279] (-) TimerEvent: {}
+[15.895550] (-) TimerEvent: {}
+[15.906654] (ping_pong_benchmarking) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable ping\x1b[0m\n'}
+[15.995820] (-) TimerEvent: {}
+[16.096221] (-) TimerEvent: {}
+[16.196889] (-) TimerEvent: {}
+[16.297576] (-) TimerEvent: {}
+[16.398239] (-) TimerEvent: {}
+[16.498946] (-) TimerEvent: {}
+[16.599608] (-) TimerEvent: {}
+[16.700329] (-) TimerEvent: {}
+[16.800734] (-) TimerEvent: {}
+[16.901417] (-) TimerEvent: {}
+[17.002143] (-) TimerEvent: {}
+[17.102851] (-) TimerEvent: {}
+[17.203557] (-) TimerEvent: {}
+[17.304260] (-) TimerEvent: {}
+[17.404985] (-) TimerEvent: {}
+[17.505710] (-) TimerEvent: {}
+[17.606340] (-) TimerEvent: {}
+[17.707074] (-) TimerEvent: {}
+[17.807766] (-) TimerEvent: {}
+[17.908410] (-) TimerEvent: {}
+[18.009094] (-) TimerEvent: {}
+[18.109808] (-) TimerEvent: {}
+[18.210212] (-) TimerEvent: {}
+[18.310906] (-) TimerEvent: {}
+[18.411591] (-) TimerEvent: {}
+[18.512251] (-) TimerEvent: {}
+[18.612966] (-) TimerEvent: {}
+[18.713611] (-) TimerEvent: {}
+[18.814041] (-) TimerEvent: {}
+[18.914341] (-) TimerEvent: {}
+[18.935272] (ping_pong_benchmarking) StdoutLine: {'line': b'[100%] Built target ping\n'}
+[18.948486] (ping_pong_benchmarking) CommandEnded: {'returncode': 0}
+[18.968777] (ping_pong_benchmarking) JobProgress: {'identifier': 'ping_pong_benchmarking', 'progress': 'install'}
+[18.978303] (ping_pong_benchmarking) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking'], 'cwd': '/home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking', 'env': OrderedDict([('KDE_FULL_SESSION', 'true'), ('PROFILEHOME', ''), ('LANGUAGE', ''), ('LC_TIME', 'pt_BR.UTF-8'), ('PAM_KWALLET5_LOGIN', '/run/user/1000/kwallet5.socket'), ('USER', 'toffanetto'), ('QT_SCREEN_SCALE_FACTORS', 'eDP-1=1;DP-1=1;HDMI-1=1;HDMI-1-2=1;'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1284'), ('XDG_SESSION_TYPE', 'x11'), ('KONSOLE_VERSION', '191203'), ('SHLVL', '1'), ('XCURSOR_SIZE', '24'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/toffanetto'), ('OLDPWD', '/home/toffanetto/uros_benchmarking/ROS2/ping_pong_benchmarking'), ('LESS', '-R'), ('DESKTOP_SESSION', 'plasma'), ('ZSH', '/home/toffanetto/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('KDE_SESSION_VERSION', '5'), ('SHELL_SESSION_ID', '7222c15e9d0e45c99c67008219146582'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('KONSOLE_DBUS_SESSION', '/Sessions/1'), ('LC_MONETARY', 'pt_BR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('P9K_TTY', 'old'), ('COLORTERM', 'truecolor'), ('KONSOLE_DBUS_WINDOW', '/Windows/1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'toffanetto'), ('QT_AUTO_SCREEN_SCALE_FACTOR', '0'), ('WINDOWID', '88080391'), ('_', '/usr/bin/colcon'), ('COLORFGBG', '0;15'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/toffanetto-G3:@/tmp/.ICE-unix/1358,unix/toffanetto-G3:/tmp/.ICE-unix/1358'), ('LC_ADDRESS', 'pt_BR.UTF-8'), ('XCURSOR_THEME', 'breeze_cursors'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session1'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'pt_BR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'KDE'), ('XAUTHORITY', '/home/toffanetto/.Xauthority'), ('XDG_SESSION_DESKTOP', 'KDE'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/tmp/ssh-C0oR2tsoq1XF/agent.1238'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('LC_NAME', 'pt_BR.UTF-8'), ('SHELL', '/usr/bin/zsh'), ('QT_ACCESSIBILITY', '1'), ('KONSOLE_DBUS_SERVICE', ':1.86'), ('LC_MEASUREMENT', 'pt_BR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'pt_BR.UTF-8'), ('P9K_SSH', '0'), ('XDG_VTNR', '1'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/toffanetto/uros_benchmarking/ROS2/build/ping_pong_benchmarking'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-plasma:/etc/xdg:/usr/share/kubuntu-default-settings/kf5-settings'), ('XDG_DATA_DIRS', '/usr/share/plasma:/usr/local/share/:/usr/share/'), ('_P9K_TTY', '/dev/pts/1'), ('LC_NUMERIC', 'pt_BR.UTF-8'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('KDE_SESSION_UID', '1000'), ('LC_PAPER', 'pt_BR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[19.014470] (-) TimerEvent: {}
+[19.023443] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[19.114663] (-) TimerEvent: {}
+[19.215327] (-) TimerEvent: {}
+[19.237316] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Installing: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/lib/ping_pong_benchmarking/ping\n'}
+[19.248145] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Set runtime path of "/home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/lib/ping_pong_benchmarking/ping" to ""\n'}
+[19.249378] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Up-to-date: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/include\n'}
+[19.250287] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Up-to-date: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/include/ping_node.hpp\n'}
+[19.251092] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Up-to-date: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ament_index/resource_index/package_run_dependencies/ping_pong_benchmarking\n'}
+[19.253126] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Up-to-date: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ament_index/resource_index/parent_prefix_path/ping_pong_benchmarking\n'}
+[19.253559] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Up-to-date: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/environment/ament_prefix_path.sh\n'}
+[19.253912] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Up-to-date: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/environment/ament_prefix_path.dsv\n'}
+[19.254126] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Up-to-date: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/environment/path.sh\n'}
+[19.254191] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Up-to-date: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/environment/path.dsv\n'}
+[19.254252] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Up-to-date: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/local_setup.bash\n'}
+[19.254313] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Up-to-date: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/local_setup.sh\n'}
+[19.254375] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Up-to-date: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/local_setup.zsh\n'}
+[19.254436] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Up-to-date: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/local_setup.dsv\n'}
+[19.254496] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Installing: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/package.dsv\n'}
+[19.304117] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Up-to-date: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ament_index/resource_index/packages/ping_pong_benchmarking\n'}
+[19.305127] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Up-to-date: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/cmake/ping_pong_benchmarkingConfig.cmake\n'}
+[19.305737] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Up-to-date: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/cmake/ping_pong_benchmarkingConfig-version.cmake\n'}
+[19.306699] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Up-to-date: /home/toffanetto/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/package.xml\n'}
+[19.315585] (-) TimerEvent: {}
+[19.319201] (ping_pong_benchmarking) CommandEnded: {'returncode': 0}
+[19.415709] (-) TimerEvent: {}
+[19.515981] (-) TimerEvent: {}
+[19.616320] (-) TimerEvent: {}
+[19.716707] (-) TimerEvent: {}
+[19.818375] (-) TimerEvent: {}
+[19.901224] (ping_pong_benchmarking) JobEnded: {'identifier': 'ping_pong_benchmarking', 'rc': 0}
+[19.902347] (-) EventReactorShutdown: {}
