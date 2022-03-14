@@ -1,3 +1,4 @@
+
 /* USER CODE BEGIN Header */
 /**
   ******************************************************************************
@@ -133,7 +134,7 @@ void * microros_zero_allocate(size_t number_of_elements, size_t size_of_element,
 
 /* USER CODE END FunctionPrototypes */
 
-
+void task_ros2_function(void *argument);
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
 /**
@@ -144,17 +145,10 @@ void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 void MX_FREERTOS_Init(void) {
   /* USER CODE BEGIN Init */
 
-	  txHeader.DLC = 4;
-	  txHeader.IDE = CAN_ID_STD; //CAN_ID_EXT
-	  txHeader.RTR = CAN_RTR_DATA;
-	  txHeader.StdId = 0x2BC;
-
   /* USER CODE END Init */
   /* Create the mutex(es) */
   /* creation of analog_mutex */
-  analog_mutexHandle = osMutexNew(&analog_mutex_attributes);
-  HAL_DAC_Start(&hdac, DAC_CHANNEL_1);
-  HAL_DAC_Start(&hdac, DAC_CHANNEL_2);
+
   /* USER CODE BEGIN RTOS_MUTEX */
   /* add mutexes, ... */
   /* USER CODE END RTOS_MUTEX */
@@ -242,7 +236,7 @@ void task_ros2_function(void *argument)
 			  &node,
 			  ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, UInt32),
 			  "/ping");
-              
+
       rclc_publisher_init_default(
               &pong_pub,
               &node,
@@ -250,19 +244,14 @@ void task_ros2_function(void *argument)
               "/pong");
 
 	  // Create executor
-	  rclc_executor_init(&executor, &support.context, 5, &allocator);
+	  rclc_executor_init(&executor, &support.context, 1, &allocator);
 
-	  rclc_executor_add_subscription(&executor, &ping_sub, &receive,
+	  rclc_executor_add_subscription(&executor, &ping_sub, &pong,
 	 	  			  &onPingCallback, ON_NEW_DATA); // ON_NEW_DATA does not work properly
 
       // Run executor
 	  rclc_executor_spin(&executor);
 
-	  /* Infinite loop */
-	  for(;;)
-	  {
-	    osDelay(10);
-	  }
   /* USER CODE END task_ros2_function */
 }
 
@@ -280,6 +269,8 @@ void onPingCallback(const void * msg){
 	if (msg != NULL){
 		ping_data = (const std_msgs__msg__UInt32 *)msg;
 
+		osDelay(RCL_NS_TO_MS(3000000));
+
         pong = *ping_data;
 
 		rcl_ret_t ret = rcl_publish(&pong_pub,&pong, NULL);
@@ -287,3 +278,4 @@ void onPingCallback(const void * msg){
 	}
 }
 /* USER CODE END Application */
+
