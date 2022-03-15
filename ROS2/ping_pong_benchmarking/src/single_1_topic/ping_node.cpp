@@ -83,7 +83,7 @@ void Ping::store_data(){
     
     data_file.close();
 
-    data_file.open("./ping_pong_benchmarking/data/pingpong_latency.txt");
+    data_file.open("./ping_pong_benchmarking/data/single_1_topic/pingpong_latency.txt");
 
     for(auto &sample : latency){
         data_file << sample << std::endl;
