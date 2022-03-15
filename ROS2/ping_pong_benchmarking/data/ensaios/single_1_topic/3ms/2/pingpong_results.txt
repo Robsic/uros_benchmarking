@@ -1,0 +1,10 @@
+Latency Average: 5.9221e+07
+
+Latency Standard Deviation: 0.00015392
+
+Topic loss: 327
+
+Ping send: 1000
+
+Pong recived: 673
+
