@@ -18,7 +18,7 @@ Ping::Ping() : rclcpp::Node("ping"){
 
     using namespace std::chrono_literals;
 
-    auto default_qos = rclcpp::QoS(rclcpp::SystemDefaultsQoS());
+    auto default_qos = rclcpp::QoS(rclcpp::ParametersQoS());
 
     ping_period = 10000000ns;
 
@@ -41,9 +41,11 @@ void Ping::onTimerPing(){
     msg.data = static_cast<uint32_t>(send_recive_data.size());
 
     send_recive_data.push_back(std::make_pair(now(), now()));
+    
 
-    ping_pub->publish(msg);
-    ping_send++;
+        ping_pub->publish(msg);
+        ping_send++;
+    
 }
 
 void Ping::onPongCallback(const std_msgs::msg::UInt32::SharedPtr msg){

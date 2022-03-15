@@ -9,7 +9,11 @@ class PongTest : public rclcpp::Node{
         PongTest() : Node("pong_test"){
 
             using std::placeholders::_1;  
-            auto default_qos = rclcpp::QoS(rclcpp::SystemDefaultsQoS());
+
+            auto default_qos = rclcpp::QoS(rclcpp::ParametersQoS());
+
+            default_qos.reliable();
+            
             pong_pub = this->create_publisher<std_msgs::msg::UInt32>("/pong", default_qos);
             ping_sub = this->create_subscription<std_msgs::msg::UInt32>("/ping", default_qos, std::bind(&PongTest::onPingCallback, this, _1));
 
