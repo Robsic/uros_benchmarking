@@ -1,0 +1,8 @@
+[01m[K/home/robotica8/uros_benchmarking/ROS2/ping_pong_benchmarking/src/multi_3_topic/ping_node.cpp:[m[K In destructor ‘[01m[Kvirtual Ping::~Ping()[m[K’:
+[01m[K/home/robotica8/uros_benchmarking/ROS2/ping_pong_benchmarking/src/multi_3_topic/ping_node.cpp:61:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kping[m[K’ was not declared in this scope; did you mean ‘[01m[KPing[m[K’?
+   61 |     [01;31m[Kping[m[K->parse_data();
+      |     [01;31m[K^~~~[m[K
+      |     [32m[KPing[m[K
+make[2]: *** [CMakeFiles/ping_3_multi.dir/build.make:76: CMakeFiles/ping_3_multi.dir/src/multi_3_topic/ping_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:169: CMakeFiles/ping_3_multi.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,16 @@
+[0.011s] Invoking command in '/home/robotica8/uros_benchmarking/ROS2/build/ping_pong_benchmarking': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/robotica8/uros_benchmarking/ROS2/build/ping_pong_benchmarking -- -j8 -l8
+[0.051s] [35m[1mScanning dependencies of target ping_1_single[0m
+[0.073s] [ 13%] Built target pong_test_1_single
+[0.078s] [ 33%] Built target ping_3_single
+[0.078s] [ 46%] Built target pong_test_3_multi
+[0.078s] [ 66%] Built target ping_3_multi
+[0.080s] [ 73%] [32mBuilding CXX object CMakeFiles/ping_1_single.dir/src/single_1_topic/ping_node.cpp.o[0m
+[0.083s] [ 86%] Built target pong_test_3_single
+[1.282s] [01m[K/home/robotica8/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_1_topic/ping_node.cpp:[m[K In constructor ‘[01m[KPing::Ping()[m[K’:
+[1.282s] [01m[K/home/robotica8/uros_benchmarking/ROS2/ping_pong_benchmarking/src/single_1_topic/ping_node.cpp:21:44:[m[K [01;31m[Kerror: [m[K‘[01m[KDefaultSystemQoS[m[K’ is not a member of ‘[01m[Krclcpp[m[K’
+[1.282s]    21 |     auto default_qos = rclcpp::QoS(rclcpp::[01;31m[KDefaultSystemQoS[m[K());
+[1.282s]       |                                            [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[1.794s] make[2]: *** [CMakeFiles/ping_1_single.dir/build.make:76: CMakeFiles/ping_1_single.dir/src/single_1_topic/ping_node.cpp.o] Error 1
+[1.794s] make[1]: *** [CMakeFiles/Makefile2:115: CMakeFiles/ping_1_single.dir/all] Error 2
+[1.794s] make: *** [Makefile:141: all] Error 2
+[1.796s] Invoked command in '/home/robotica8/uros_benchmarking/ROS2/build/ping_pong_benchmarking' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/robotica8/uros_benchmarking/ROS2/build/ping_pong_benchmarking -- -j8 -l8

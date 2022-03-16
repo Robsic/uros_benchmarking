@@ -1,0 +1,18 @@
+[0.012s] Invoking command in '/home/robotica8/uros_benchmarking/ROS2/build/ping_pong_benchmarking': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/robotica8/uros_benchmarking/ROS2/build/ping_pong_benchmarking -- -j8 -l8
+[0.064s] [35m[1mScanning dependencies of target ping_3_multi[0m
+[0.081s] [ 20%] Built target ping_1_single
+[0.086s] [ 33%] Built target pong_test_3_single
+[0.086s] [ 60%] Built target pong_test_1_single
+[0.087s] [ 60%] Built target pong_test_3_multi
+[0.087s] [ 80%] Built target ping_3_single
+[0.098s] [ 86%] [32mBuilding CXX object CMakeFiles/ping_3_multi.dir/src/multi_3_topic/ping.cpp.o[0m
+[0.100s] [ 93%] [32mBuilding CXX object CMakeFiles/ping_3_multi.dir/src/multi_3_topic/ping_node.cpp.o[0m
+[1.256s] [01m[K/home/robotica8/uros_benchmarking/ROS2/ping_pong_benchmarking/src/multi_3_topic/ping_node.cpp:[m[K In destructor ‘[01m[Kvirtual Ping::~Ping()[m[K’:
+[1.256s] [01m[K/home/robotica8/uros_benchmarking/ROS2/ping_pong_benchmarking/src/multi_3_topic/ping_node.cpp:61:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kping[m[K’ was not declared in this scope; did you mean ‘[01m[KPing[m[K’?
+[1.256s]    61 |     [01;31m[Kping[m[K->parse_data();
+[1.256s]       |     [01;31m[K^~~~[m[K
+[1.256s]       |     [32m[KPing[m[K
+[2.630s] make[2]: *** [CMakeFiles/ping_3_multi.dir/build.make:76: CMakeFiles/ping_3_multi.dir/src/multi_3_topic/ping_node.cpp.o] Error 1
+[2.630s] make[1]: *** [CMakeFiles/Makefile2:169: CMakeFiles/ping_3_multi.dir/all] Error 2
+[2.631s] make: *** [Makefile:141: all] Error 2
+[2.633s] Invoked command in '/home/robotica8/uros_benchmarking/ROS2/build/ping_pong_benchmarking' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/robotica8/uros_benchmarking/ROS2/build/ping_pong_benchmarking -- -j8 -l8

@@ -12,7 +12,7 @@
 
 
 
-Ping::Ping() : rclcpp::Node("ping"){
+Ping::Ping() : rclcpp::Node("ping","ros2"){
 
     using std::placeholders::_1;   
 

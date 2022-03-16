@@ -19,8 +19,6 @@ int main(int argc, char * argv[]){
     
     mt_executor.spin();
 
-    rclcpp::shutdown();
-
     ping->parse_data();
     ping->store_data();
 

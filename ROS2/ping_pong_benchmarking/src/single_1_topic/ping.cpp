@@ -14,7 +14,7 @@ int main(int argc, char * argv[]){
 
     rclcpp::executors::SingleThreadedExecutor st_executor;
 
-    const std::chrono::seconds experiment_time = 4s;
+    const std::chrono::seconds experiment_time = 10s;
 
     auto ping = std::make_shared<Ping>();
     st_executor.add_node(ping);

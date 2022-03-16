@@ -1,0 +1,43 @@
+[0.012s] Invoking command in '/home/robotica8/uros_benchmarking/ROS2/build/ping_pong_benchmarking': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/robotica8/uros_benchmarking/ROS2/build/ping_pong_benchmarking -- -j8 -l8
+[0.053s] [35m[1mScanning dependencies of target ping_3_multi[0m
+[0.072s] [ 13%] Built target pong_test_1_single
+[0.076s] [ 26%] Built target pong_test_3_multi
+[0.077s] [ 46%] Built target ping_3_single
+[0.078s] [ 60%] Built target pong_test_3_single
+[0.083s] [ 80%] Built target ping_1_single
+[0.088s] [ 86%] [32mBuilding CXX object CMakeFiles/ping_3_multi.dir/src/multi_3_topic/ping.cpp.o[0m
+[1.517s] [ 93%] [32m[1mLinking CXX executable ping_3_multi[0m
+[1.747s] [100%] Built target ping_3_multi
+[1.758s] Invoked command in '/home/robotica8/uros_benchmarking/ROS2/build/ping_pong_benchmarking' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/robotica8/uros_benchmarking/ROS2/build/ping_pong_benchmarking -- -j8 -l8
+[1.822s] Invoking command in '/home/robotica8/uros_benchmarking/ROS2/build/ping_pong_benchmarking': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/robotica8/uros_benchmarking/ROS2/build/ping_pong_benchmarking
+[1.829s] -- Install configuration: ""
+[1.829s] -- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/lib/ping_pong_benchmarking/ping_1_single
+[1.830s] -- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/lib/ping_pong_benchmarking/pong_test_1_single
+[1.830s] -- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/lib/ping_pong_benchmarking/ping_3_single
+[1.830s] -- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/lib/ping_pong_benchmarking/pong_test_3_single
+[1.831s] -- Installing: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/lib/ping_pong_benchmarking/ping_3_multi
+[1.833s] -- Set runtime path of "/home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/lib/ping_pong_benchmarking/ping_3_multi" to ""
+[1.834s] -- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/lib/ping_pong_benchmarking/pong_test_3_multi
+[1.834s] -- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/include
+[1.834s] -- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/include/multi_3_topic
+[1.834s] -- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/include/multi_3_topic/ping_node.hpp
+[1.834s] -- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/include/single_3_topic
+[1.834s] -- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/include/single_3_topic/ping_node.hpp
+[1.834s] -- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/include/single_1_topic
+[1.835s] -- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/include/single_1_topic/ping_node.hpp
+[1.835s] -- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ament_index/resource_index/package_run_dependencies/ping_pong_benchmarking
+[1.835s] -- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ament_index/resource_index/parent_prefix_path/ping_pong_benchmarking
+[1.835s] -- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/environment/ament_prefix_path.sh
+[1.835s] -- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/environment/ament_prefix_path.dsv
+[1.835s] -- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/environment/path.sh
+[1.835s] -- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/environment/path.dsv
+[1.835s] -- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/local_setup.bash
+[1.835s] -- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/local_setup.sh
+[1.835s] -- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/local_setup.zsh
+[1.835s] -- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/local_setup.dsv
+[1.836s] -- Installing: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/package.dsv
+[1.836s] -- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ament_index/resource_index/packages/ping_pong_benchmarking
+[1.836s] -- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/cmake/ping_pong_benchmarkingConfig.cmake
+[1.836s] -- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/cmake/ping_pong_benchmarkingConfig-version.cmake
+[1.836s] -- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/package.xml
+[1.837s] Invoked command in '/home/robotica8/uros_benchmarking/ROS2/build/ping_pong_benchmarking' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/robotica8/uros_benchmarking/ROS2/build/ping_pong_benchmarking

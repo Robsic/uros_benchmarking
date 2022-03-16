@@ -12,7 +12,7 @@
 
 
 
-Ping::Ping() : rclcpp::Node("ping"){
+Ping::Ping() : rclcpp::Node("ping","ros2"){
 
     using std::placeholders::_1;   
 
@@ -57,7 +57,7 @@ Ping::Ping() : rclcpp::Node("ping"){
 }
 
 Ping::~Ping(){
-        RCLCPP_INFO(this->get_logger(), "Shutting down Node");
+    RCLCPP_INFO(this->get_logger(), "Shutting down Node");
     }
 
 void Ping::onTimerPing(){
@@ -68,12 +68,16 @@ void Ping::onTimerPing(){
     send_recive_data_2.push_back(std::make_pair(now(), now()));
     send_recive_data_3.push_back(std::make_pair(now(), now()));
 
-    ping_1_pub->publish(msg);
-    ping_2_pub->publish(msg);
-    ping_3_pub->publish(msg);
-    ping_1_send++;
-    ping_2_send++;
-    ping_3_send++;
+    if(ping_1_send<1000){
+        ping_1_pub->publish(msg);
+        ping_2_pub->publish(msg);
+        ping_3_pub->publish(msg);
+        ping_1_send++;
+        ping_2_send++;
+        ping_3_send++;
+    }
+    else
+        rclcpp::shutdown();
 }
 
 void Ping::onPong1Callback(const std_msgs::msg::UInt32::SharedPtr msg){
