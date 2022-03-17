@@ -4,6 +4,7 @@ echo "sh:> Iniciando ensaio de teste"
 ros2 run ping_pong_benchmarking $1
 echo "sh:> Ensaio de teste finalizado"
 
+sleep 3
 
 mkdir ping_pong_benchmarking/data/ensaios/$2
 mkdir ping_pong_benchmarking/data/ensaios/$2/$3

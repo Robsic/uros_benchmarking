@@ -76,8 +76,11 @@ void Ping::onTimerPing(){
         ping_2_send++;
         ping_3_send++;
     }
-    else
+    else{
+        parse_data();
+        store_data();
         rclcpp::shutdown();
+    }
 }
 
 void Ping::onPong1Callback(const std_msgs::msg::UInt32::SharedPtr msg){

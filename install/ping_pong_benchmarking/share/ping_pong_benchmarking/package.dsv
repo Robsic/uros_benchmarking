@@ -1,8 +1,0 @@
-source;share/ping_pong_benchmarking/hook/cmake_prefix_path.ps1
-source;share/ping_pong_benchmarking/hook/cmake_prefix_path.dsv
-source;share/ping_pong_benchmarking/hook/cmake_prefix_path.sh
-source;share/ping_pong_benchmarking/local_setup.bash
-source;share/ping_pong_benchmarking/local_setup.dsv
-source;share/ping_pong_benchmarking/local_setup.ps1
-source;share/ping_pong_benchmarking/local_setup.sh
-source;share/ping_pong_benchmarking/local_setup.zsh

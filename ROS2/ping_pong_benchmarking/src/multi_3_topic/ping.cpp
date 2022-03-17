@@ -19,7 +19,4 @@ int main(int argc, char * argv[]){
     
     mt_executor.spin();
 
-    ping->parse_data();
-    ping->store_data();
-
 }
