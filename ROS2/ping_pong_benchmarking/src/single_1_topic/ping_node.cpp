@@ -18,9 +18,9 @@ Ping::Ping() : rclcpp::Node("ping","ros2"){
 
     using namespace std::chrono_literals;
 
-    auto default_qos = rclcpp::QoS(rclcpp::ParametersQoS());
+    auto default_qos = rclcpp::QoS(rclcpp::SystemDefaultsQoS());
 
-    ping_period = 10000000ns;
+    ping_period = 50000000ns;
 
     timer_ = this->create_wall_timer(ping_period, std::bind(&Ping::onTimerPing, this));
     pong_sub = this->create_subscription<std_msgs::msg::UInt32>("/pong", default_qos, std::bind(&Ping::onPongCallback, this, _1));
@@ -39,12 +39,12 @@ Ping::~Ping(){
 void Ping::onTimerPing(){
     std_msgs::msg::UInt32 msg;
     msg.data = static_cast<uint32_t>(send_recive_data.size());
-
-    send_recive_data.push_back(std::make_pair(now(), now()));
     
-
-        ping_pub->publish(msg);
-        ping_send++;
+        if(ping_send<200){
+            send_recive_data.push_back(std::make_pair(now(), now()));
+            ping_pub->publish(msg);
+            ping_send++;
+        }
     
 }
 
