@@ -1,0 +1,140 @@
+[0.000000] (-) TimerEvent: {}
+[0.000622] (ping_pong_benchmarking) JobQueued: {'identifier': 'ping_pong_benchmarking', 'dependencies': OrderedDict()}
+[0.000685] (ping_pong_benchmarking) JobStarted: {'identifier': 'ping_pong_benchmarking'}
+[0.008660] (ping_pong_benchmarking) JobProgress: {'identifier': 'ping_pong_benchmarking', 'progress': 'cmake'}
+[0.029339] (ping_pong_benchmarking) JobProgress: {'identifier': 'ping_pong_benchmarking', 'progress': 'build'}
+[0.030798] (ping_pong_benchmarking) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/robotica8/uros_benchmarking/ROS2/build/ping_pong_benchmarking', '--', '-j8', '-l8'], 'cwd': '/home/robotica8/uros_benchmarking/ROS2/build/ping_pong_benchmarking', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robotica8'), ('LC_TIME', 'pt_BR.UTF-8'), ('SSH_AGENT_PID', '1994'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/robotica8'), ('OLDPWD', '/home/robotica8/uros_benchmarking'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'pt_BR.UTF-8'), ('MANAGERPID', '1775'), ('LC_CTYPE', 'pt_BR.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=07816291094daea254f26810623b0c23'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('QT_QPA_PLATFORMTHEME', 'appmenu-qt5'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'robotica8'), ('JOURNAL_STREAM', '9:37861'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'robotica8'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('GTK2_MODULES', 'overlay-scrollbar'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/robotica8/bin:/home/robotica8/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/labrobot8:@/tmp/.ICE-unix/2054,unix/labrobot8:/tmp/.ICE-unix/2054'), ('INVOCATION_ID', '9aa8e3d5f0fb4ef48caa463bbe4ea2d3'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'pt_BR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('ZEITGEIST_DATA_PATH', '/home/robotica8/.local/share/zeitgeist'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'pt_BR.UTF-8'), ('TILIX_ID', '034d14d6-042d-47ba-a72d-b33467125647'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'pt_BR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'pt_BR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'pt_BR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/robotica8/uros_benchmarking/ROS2/build/ping_pong_benchmarking'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=07816291094daea254f26810623b0c23'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'pt_BR.UTF-8'), ('LC_PAPER', 'pt_BR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.099863] (-) TimerEvent: {}
+[0.200317] (-) TimerEvent: {}
+[0.300691] (-) TimerEvent: {}
+[0.349234] (ping_pong_benchmarking) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ping_1_single\x1b[0m\n'}
+[0.367358] (ping_pong_benchmarking) StdoutLine: {'line': b'[ 13%] Built target pong_test_3_single\n'}
+[0.370824] (ping_pong_benchmarking) StdoutLine: {'line': b'[ 66%] Built target pong_test_3_multi\n'}
+[0.371075] (ping_pong_benchmarking) StdoutLine: {'line': b'[ 66%] Built target ping_3_multi\n'}
+[0.371401] (ping_pong_benchmarking) StdoutLine: {'line': b'[ 66%] Built target ping_3_single\n'}
+[0.375309] (ping_pong_benchmarking) StdoutLine: {'line': b'[ 80%] Built target pong_test_1_single\n'}
+[0.400798] (-) TimerEvent: {}
+[0.441802] (ping_pong_benchmarking) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding CXX object CMakeFiles/ping_1_single.dir/src/single_1_topic/ping_node.cpp.o\x1b[0m\n'}
+[0.500888] (-) TimerEvent: {}
+[0.601231] (-) TimerEvent: {}
+[0.701636] (-) TimerEvent: {}
+[0.802100] (-) TimerEvent: {}
+[0.902493] (-) TimerEvent: {}
+[1.003030] (-) TimerEvent: {}
+[1.103552] (-) TimerEvent: {}
+[1.203892] (-) TimerEvent: {}
+[1.304183] (-) TimerEvent: {}
+[1.404522] (-) TimerEvent: {}
+[1.504868] (-) TimerEvent: {}
+[1.605202] (-) TimerEvent: {}
+[1.705530] (-) TimerEvent: {}
+[1.805908] (-) TimerEvent: {}
+[1.906337] (-) TimerEvent: {}
+[2.006704] (-) TimerEvent: {}
+[2.106999] (-) TimerEvent: {}
+[2.207327] (-) TimerEvent: {}
+[2.307701] (-) TimerEvent: {}
+[2.408051] (-) TimerEvent: {}
+[2.508649] (-) TimerEvent: {}
+[2.608995] (-) TimerEvent: {}
+[2.709308] (-) TimerEvent: {}
+[2.809627] (-) TimerEvent: {}
+[2.909944] (-) TimerEvent: {}
+[3.010270] (-) TimerEvent: {}
+[3.110642] (-) TimerEvent: {}
+[3.210978] (-) TimerEvent: {}
+[3.311298] (-) TimerEvent: {}
+[3.411600] (-) TimerEvent: {}
+[3.511912] (-) TimerEvent: {}
+[3.612233] (-) TimerEvent: {}
+[3.712545] (-) TimerEvent: {}
+[3.812876] (-) TimerEvent: {}
+[3.913185] (-) TimerEvent: {}
+[4.013526] (-) TimerEvent: {}
+[4.113854] (-) TimerEvent: {}
+[4.214170] (-) TimerEvent: {}
+[4.314485] (-) TimerEvent: {}
+[4.414799] (-) TimerEvent: {}
+[4.515120] (-) TimerEvent: {}
+[4.615412] (-) TimerEvent: {}
+[4.715728] (-) TimerEvent: {}
+[4.816072] (-) TimerEvent: {}
+[4.916407] (-) TimerEvent: {}
+[5.016765] (-) TimerEvent: {}
+[5.117092] (-) TimerEvent: {}
+[5.217484] (-) TimerEvent: {}
+[5.317888] (-) TimerEvent: {}
+[5.418182] (-) TimerEvent: {}
+[5.518508] (-) TimerEvent: {}
+[5.618852] (-) TimerEvent: {}
+[5.719322] (-) TimerEvent: {}
+[5.819627] (-) TimerEvent: {}
+[5.919991] (-) TimerEvent: {}
+[6.020326] (-) TimerEvent: {}
+[6.120652] (-) TimerEvent: {}
+[6.220972] (-) TimerEvent: {}
+[6.321260] (-) TimerEvent: {}
+[6.421587] (-) TimerEvent: {}
+[6.521906] (-) TimerEvent: {}
+[6.622224] (-) TimerEvent: {}
+[6.722537] (-) TimerEvent: {}
+[6.822857] (-) TimerEvent: {}
+[6.923197] (-) TimerEvent: {}
+[7.023503] (-) TimerEvent: {}
+[7.123829] (-) TimerEvent: {}
+[7.224197] (-) TimerEvent: {}
+[7.324631] (-) TimerEvent: {}
+[7.425122] (-) TimerEvent: {}
+[7.525549] (-) TimerEvent: {}
+[7.626042] (-) TimerEvent: {}
+[7.726324] (-) TimerEvent: {}
+[7.826636] (-) TimerEvent: {}
+[7.842513] (ping_pong_benchmarking) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking CXX executable ping_1_single\x1b[0m\n'}
+[7.926824] (-) TimerEvent: {}
+[8.027367] (-) TimerEvent: {}
+[8.127896] (-) TimerEvent: {}
+[8.228234] (-) TimerEvent: {}
+[8.328667] (-) TimerEvent: {}
+[8.429204] (-) TimerEvent: {}
+[8.529659] (-) TimerEvent: {}
+[8.629932] (-) TimerEvent: {}
+[8.730224] (-) TimerEvent: {}
+[8.747728] (ping_pong_benchmarking) StdoutLine: {'line': b'[100%] Built target ping_1_single\n'}
+[8.759466] (ping_pong_benchmarking) CommandEnded: {'returncode': 0}
+[8.797470] (ping_pong_benchmarking) JobProgress: {'identifier': 'ping_pong_benchmarking', 'progress': 'install'}
+[8.813527] (ping_pong_benchmarking) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/robotica8/uros_benchmarking/ROS2/build/ping_pong_benchmarking'], 'cwd': '/home/robotica8/uros_benchmarking/ROS2/build/ping_pong_benchmarking', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robotica8'), ('LC_TIME', 'pt_BR.UTF-8'), ('SSH_AGENT_PID', '1994'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/robotica8'), ('OLDPWD', '/home/robotica8/uros_benchmarking'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'pt_BR.UTF-8'), ('MANAGERPID', '1775'), ('LC_CTYPE', 'pt_BR.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=07816291094daea254f26810623b0c23'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('QT_QPA_PLATFORMTHEME', 'appmenu-qt5'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'robotica8'), ('JOURNAL_STREAM', '9:37861'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'robotica8'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('GTK2_MODULES', 'overlay-scrollbar'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/robotica8/bin:/home/robotica8/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/labrobot8:@/tmp/.ICE-unix/2054,unix/labrobot8:/tmp/.ICE-unix/2054'), ('INVOCATION_ID', '9aa8e3d5f0fb4ef48caa463bbe4ea2d3'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'pt_BR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('ZEITGEIST_DATA_PATH', '/home/robotica8/.local/share/zeitgeist'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'pt_BR.UTF-8'), ('TILIX_ID', '034d14d6-042d-47ba-a72d-b33467125647'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'pt_BR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'pt_BR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'pt_BR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/robotica8/uros_benchmarking/ROS2/build/ping_pong_benchmarking'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=07816291094daea254f26810623b0c23'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'pt_BR.UTF-8'), ('LC_PAPER', 'pt_BR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[8.830334] (-) TimerEvent: {}
+[8.834959] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.851898] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Installing: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/lib/ping_pong_benchmarking/ping_1_single\n'}
+[8.863570] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Set runtime path of "/home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/lib/ping_pong_benchmarking/ping_1_single" to ""\n'}
+[8.878332] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/lib/ping_pong_benchmarking/pong_test_1_single\n'}
+[8.893740] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/lib/ping_pong_benchmarking/ping_3_single\n'}
+[8.910574] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/lib/ping_pong_benchmarking/pong_test_3_single\n'}
+[8.924304] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/lib/ping_pong_benchmarking/ping_3_multi\n'}
+[8.930487] (-) TimerEvent: {}
+[8.938949] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/lib/ping_pong_benchmarking/pong_test_3_multi\n'}
+[8.939720] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/include\n'}
+[8.940338] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/include/multi_3_topic\n'}
+[8.940697] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/include/multi_3_topic/ping_node.hpp\n'}
+[8.940995] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/include/single_3_topic\n'}
+[8.941278] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/include/single_3_topic/ping_node.hpp\n'}
+[8.941557] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/include/single_1_topic\n'}
+[8.941803] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/include/single_1_topic/ping_node.hpp\n'}
+[8.942050] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ament_index/resource_index/package_run_dependencies/ping_pong_benchmarking\n'}
+[8.942284] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ament_index/resource_index/parent_prefix_path/ping_pong_benchmarking\n'}
+[8.942553] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/environment/ament_prefix_path.sh\n'}
+[8.942770] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/environment/ament_prefix_path.dsv\n'}
+[8.942947] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/environment/path.sh\n'}
+[8.943121] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/environment/path.dsv\n'}
+[8.943294] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/local_setup.bash\n'}
+[8.943483] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/local_setup.sh\n'}
+[8.943675] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/local_setup.zsh\n'}
+[8.943850] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/local_setup.dsv\n'}
+[8.944023] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Installing: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/package.dsv\n'}
+[8.953953] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ament_index/resource_index/packages/ping_pong_benchmarking\n'}
+[8.954425] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/cmake/ping_pong_benchmarkingConfig.cmake\n'}
+[8.954652] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/cmake/ping_pong_benchmarkingConfig-version.cmake\n'}
+[8.954877] (ping_pong_benchmarking) StdoutLine: {'line': b'-- Up-to-date: /home/robotica8/uros_benchmarking/ROS2/install/ping_pong_benchmarking/share/ping_pong_benchmarking/package.xml\n'}
+[8.957875] (ping_pong_benchmarking) CommandEnded: {'returncode': 0}
+[9.022177] (ping_pong_benchmarking) JobEnded: {'identifier': 'ping_pong_benchmarking', 'rc': 0}
+[9.023251] (-) EventReactorShutdown: {}

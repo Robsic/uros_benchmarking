@@ -18,7 +18,7 @@ Ping::Ping() : rclcpp::Node("ping","ros2"){
 
     using namespace std::chrono_literals;
 
-    auto default_qos = rclcpp::QoS(rclcpp::SystemDefaultsQoS());
+    auto default_qos = rclcpp::QoS(rclcpp::ParametersQoS());
 
     ping_period = 50000000ns;
 
