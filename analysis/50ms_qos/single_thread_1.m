@@ -272,6 +272,16 @@ latency_3_std = std([mean(p1_3_1) mean(p1_3_2) mean(p1_3_3) mean(p1_3_4) mean(p1
 tl_3_avg = mean([200-size(p1_3_1,1) 200-size(p1_3_2,1) 200-size(p1_3_3,1) 200-size(p1_3_4,1) 200-size(p1_3_5,1) 200-size(p1_3_6,1) 200-size(p1_3_7,1) 200-size(p1_3_8,1) 200-size(p1_3_9,1) 200-size(p1_3_10,1) 200-size(p1_3_11,1) 200-size(p1_3_12,1) 200-size(p1_3_13,1) 200-size(p1_3_14,1) 200-size(p1_3_15,1) 200-size(p1_3_16,1) 200-size(p1_3_17,1) 200-size(p1_3_18,1) 200-size(p1_3_19,1) 200-size(p1_3_20,1)]) 
 stem([mean(p1_3_1) mean(p1_3_2) mean(p1_3_3) mean(p1_3_4) mean(p1_3_5) mean(p1_3_6) mean(p1_3_7) mean(p1_3_8) mean(p1_3_9) mean(p1_3_10) mean(p1_3_11) mean(p1_3_12) mean(p1_3_13) mean(p1_3_14) mean(p1_3_15) mean(p1_3_16) mean(p1_3_17) mean(p1_3_18) mean(p1_3_19) mean(p1_3_20)])
 
+lat_single_1_rl = [latency_0_3_avg latency_0_6_avg latency_0_9_avg latency_1_2_avg latency_1_5_avg latency_1_8_avg latency_2_1_avg latency_2_4_avg latency_2_7_avg latency_3_avg].*1e3;
+jit_single_1_rl = [latency_0_3_std latency_0_6_std latency_0_9_std latency_1_2_std latency_1_5_std latency_1_8_std latency_2_1_std latency_2_4_std latency_2_7_std latency_3_std].*1e3;
+tl_single_1_rl = [tl_0_3_avg tl_0_6_avg tl_0_9_avg tl_1_2_avg tl_1_5_avg tl_1_8_avg tl_2_1_avg tl_2_4_avg tl_2_7_avg tl_3_avg];
+t_single_1_rl =[0.3e-3 0.6e-3 0.9e-3 1.2e-3 1.5e-3 1.8e-3 2.1e-3 2.4e-3 2.7e-3 3e-3]*1e3;
+
+save('lat_single_1_rl.mat','lat_single_1_rl');
+save('jit_single_1_rl.mat','jit_single_1_rl');
+save('tl_single_1_rl.mat','tl_single_1_rl');
+save('t_single_1_rl.mat','t_single_1_rl');
+
 figure
 plot([0.3e-3 0.6e-3 0.9e-3 1.2e-3 1.5e-3 1.8e-3 2.1e-3 2.4e-3 2.7e-3 3e-3],[latency_0_3_avg latency_0_6_avg latency_0_9_avg latency_1_2_avg latency_1_5_avg latency_1_8_avg latency_2_1_avg latency_2_4_avg latency_2_7_avg latency_3_avg],'-*', 'Linewidth', 2)
 hold on

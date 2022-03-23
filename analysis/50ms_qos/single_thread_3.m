@@ -723,61 +723,25 @@ latency_3_avg_3 = mean([mean(p1_3_3_3) mean(p1_3_2_3) mean(p1_3_3_3) mean(p1_3_4
 latency_3_std_3 = std([mean(p1_3_3_3) mean(p1_3_2_3) mean(p1_3_3_3) mean(p1_3_4_3) mean(p1_3_5_3) mean(p1_3_6_3) mean(p1_3_7_3) mean(p1_3_8_3) mean(p1_3_9_3) mean(p1_3_10_3) mean(p1_3_11_3) mean(p1_3_12_3) mean(p1_3_13_3) mean(p1_3_14_3) mean(p1_3_15_3) mean(p1_3_16_3) mean(p1_3_17_3) mean(p1_3_18_3) mean(p1_3_19_3) mean(p1_3_20_3)])
 tl_3_avg_3 = mean([200-size(p1_3_1_3,1) 200-size(p1_3_2_3,1) 200-size(p1_3_3_3,1) 200-size(p1_3_4_3,1) 200-size(p1_3_5_3,1) 200-size(p1_3_6_3,1) 200-size(p1_3_7_3,1) 200-size(p1_3_8_3,1) 200-size(p1_3_9_3,1) 200-size(p1_3_10_3,1) 200-size(p1_3_11_3,1) 200-size(p1_3_12_3,1) 200-size(p1_3_13_3,1) 200-size(p1_3_14_3,1) 200-size(p1_3_15_3,1) 200-size(p1_3_16_3,1) 200-size(p1_3_17_3,1) 200-size(p1_3_18_3,1) 200-size(p1_3_19_3,1) 200-size(p1_3_20_3,1)]) 
 
-figure
-plot([0.3e-3 0.6e-3 0.9e-3 1.2e-3 1.5e-3 1.8e-3 2.1e-3 2.4e-3 2.7e-3 3e-3],[latency_0_3_avg_1 latency_0_6_avg_1 latency_0_9_avg_1 latency_1_2_avg_1 latency_1_5_avg_1 latency_1_8_avg_1 latency_2_1_avg_1 latency_2_4_avg_1 latency_2_7_avg_1 latency_3_avg_1],[0.3e-3 0.6e-3 0.9e-3 1.2e-3 1.5e-3 1.8e-3 2.1e-3 2.4e-3 2.7e-3 3e-3],[latency_0_3_avg_2 latency_0_6_avg_2 latency_0_9_avg_2 latency_1_2_avg_2 latency_1_5_avg_2 latency_1_8_avg_2 latency_2_1_avg_2 latency_2_4_avg_2 latency_2_7_avg_2 latency_3_avg_2],[0.3e-3 0.6e-3 0.9e-3 1.2e-3 1.5e-3 1.8e-3 2.1e-3 2.4e-3 2.7e-3 3e-3],[latency_0_3_avg_3 latency_0_6_avg_3 latency_0_9_avg_3 latency_1_2_avg_3 latency_1_5_avg_3 latency_1_8_avg_3 latency_2_1_avg_3 latency_2_4_avg_3 latency_2_7_avg_3 latency_3_avg_3],'-*', 'Linewidth', 2)
-hold on
-    grid on
-    title('Single Thread - 3 topic - Latency')
-    xlabel('Callback Busy-Loop (s)')
-    ylabel('Latency (s)')
-    legend('Topic 1', 'Topic 2', 'Topic 3')
-    axis([0 3.5e-3 0 12e-3])
-figure
-plot([0.3e-3 0.6e-3 0.9e-3 1.2e-3 1.5e-3 1.8e-3 2.1e-3 2.4e-3 2.7e-3 3e-3],[latency_0_3_std_1 latency_0_6_std_1 latency_0_9_std_1 latency_1_2_std_1 latency_1_5_std_1 latency_1_8_std_1 latency_2_1_std_1 latency_2_4_std_1 latency_2_7_std_1 latency_3_std_1],[0.3e-3 0.6e-3 0.9e-3 1.2e-3 1.5e-3 1.8e-3 2.1e-3 2.4e-3 2.7e-3 3e-3],[latency_0_3_std_2 latency_0_6_std_2 latency_0_9_std_2 latency_1_2_std_2 latency_1_5_std_2 latency_1_8_std_2 latency_2_1_std_2 latency_2_4_std_2 latency_2_7_std_2 latency_3_std_2],[0.3e-3 0.6e-3 0.9e-3 1.2e-3 1.5e-3 1.8e-3 2.1e-3 2.4e-3 2.7e-3 3e-3],[latency_0_3_std_3 latency_0_6_std_3 latency_0_9_std_3 latency_1_2_std_3 latency_1_5_std_3 latency_1_8_std_3 latency_2_1_std_3 latency_2_4_std_3 latency_2_7_std_3 latency_3_std_3],'-*', 'Linewidth', 2)
-hold on
-    grid on
-    title('Single Thread - 3 topic - Jitter')
-    xlabel('Callback Busy-Loop (s)')
-    ylabel('Jitter (s)')
-    legend('Topic 1', 'Topic 2', 'Topic 3')
-    axis([0 3.5e-3 0 2e-3])
-figure
-plot([0.3e-3 0.6e-3 0.9e-3 1.2e-3 1.5e-3 1.8e-3 2.1e-3 2.4e-3 2.7e-3 3e-3],[tl_0_3_avg_1 tl_0_6_avg_1 tl_0_9_avg_1 tl_1_2_avg_1 tl_1_5_avg_1 tl_1_8_avg_1 tl_2_1_avg_1 tl_2_4_avg_1 tl_2_7_avg_1 tl_3_avg_1],[0.3e-3 0.6e-3 0.9e-3 1.2e-3 1.5e-3 1.8e-3 2.1e-3 2.4e-3 2.7e-3 3e-3],[tl_0_3_avg_2 tl_0_6_avg_2 tl_0_9_avg_2 tl_1_2_avg_2 tl_1_5_avg_2 tl_1_8_avg_2 tl_2_1_avg_2 tl_2_4_avg_2 tl_2_7_avg_2 tl_3_avg_2],[0.3e-3 0.6e-3 0.9e-3 1.2e-3 1.5e-3 1.8e-3 2.1e-3 2.4e-3 2.7e-3 3e-3],[tl_0_3_avg_3 tl_0_6_avg_3 tl_0_9_avg_3 tl_1_2_avg_3 tl_1_5_avg_3 tl_1_8_avg_3 tl_2_1_avg_3 tl_2_4_avg_3 tl_2_7_avg_3 tl_3_avg_3],'-*', 'Linewidth', 2)
-hold on
-    grid on
-    title('Single Thread - 3 topic - Topic Loss')
-    xlabel('Callback Busy-Loop (s)')
-    ylabel('Topic Loss')
-    legend('Topic 1', 'Topic 2', 'Topic 3')
-    axis([0 3.5e-3 0 80])
+lat_single_3_1_rl = [latency_0_3_avg_1 latency_0_6_avg_1 latency_0_9_avg_1 latency_1_2_avg_1 latency_1_5_avg_1 latency_1_8_avg_1 latency_2_1_avg_1 latency_2_4_avg_1 latency_2_7_avg_1 latency_3_avg_1].*1e3;
+lat_single_3_2_rl = [latency_0_3_avg_2 latency_0_6_avg_2 latency_0_9_avg_2 latency_1_2_avg_2 latency_1_5_avg_2 latency_1_8_avg_2 latency_2_1_avg_2 latency_2_4_avg_2 latency_2_7_avg_2 latency_3_avg_2].*1e3;
+lat_single_3_3_rl = [latency_0_3_avg_3 latency_0_6_avg_3 latency_0_9_avg_3 latency_1_2_avg_3 latency_1_5_avg_3 latency_1_8_avg_3 latency_2_1_avg_3 latency_2_4_avg_3 latency_2_7_avg_3 latency_3_avg_3].*1e3;
+jit_single_3_1_rl = [latency_0_3_std_1 latency_0_6_std_1 latency_0_9_std_1 latency_1_2_std_1 latency_1_5_std_1 latency_1_8_std_1 latency_2_1_std_1 latency_2_4_std_1 latency_2_7_std_1 latency_3_std_1].*1e3;
+jit_single_3_2_rl = [latency_0_3_std_2 latency_0_6_std_2 latency_0_9_std_2 latency_1_2_std_2 latency_1_5_std_2 latency_1_8_std_2 latency_2_1_std_2 latency_2_4_std_2 latency_2_7_std_2 latency_3_std_2].*1e3;
+jit_single_3_3_rl = [latency_0_3_std_3 latency_0_6_std_3 latency_0_9_std_3 latency_1_2_std_3 latency_1_5_std_3 latency_1_8_std_3 latency_2_1_std_3 latency_2_4_std_3 latency_2_7_std_3 latency_3_std_3].*1e3;
+tl_single_3_1_rl = [tl_0_3_avg_1 tl_0_6_avg_1 tl_0_9_avg_1 tl_1_2_avg_1 tl_1_5_avg_1 tl_1_8_avg_1 tl_2_1_avg_1 tl_2_4_avg_1 tl_2_7_avg_1 tl_3_avg_1];
+tl_single_3_2_rl = [tl_0_3_avg_2 tl_0_6_avg_2 tl_0_9_avg_2 tl_1_2_avg_2 tl_1_5_avg_2 tl_1_8_avg_2 tl_2_1_avg_2 tl_2_4_avg_2 tl_2_7_avg_2 tl_3_avg_2];
+tl_single_3_3_rl = [tl_0_3_avg_3 tl_0_6_avg_3 tl_0_9_avg_3 tl_1_2_avg_3 tl_1_5_avg_3 tl_1_8_avg_3 tl_2_1_avg_3 tl_2_4_avg_3 tl_2_7_avg_3 tl_3_avg_3];
 
-figure
-subplot(3,1,1)
-plot([0.3e-3 0.6e-3 0.9e-3 1.2e-3 1.5e-3 1.8e-3 2.1e-3 2.4e-3 2.7e-3 3e-3],[latency_0_3_avg_1 latency_0_6_avg_1 latency_0_9_avg_1 latency_1_2_avg_1 latency_1_5_avg_1 latency_1_8_avg_1 latency_2_1_avg_1 latency_2_4_avg_1 latency_2_7_avg_1 latency_3_avg_1],[0.3e-3 0.6e-3 0.9e-3 1.2e-3 1.5e-3 1.8e-3 2.1e-3 2.4e-3 2.7e-3 3e-3],[latency_0_3_avg_2 latency_0_6_avg_2 latency_0_9_avg_2 latency_1_2_avg_2 latency_1_5_avg_2 latency_1_8_avg_2 latency_2_1_avg_2 latency_2_4_avg_2 latency_2_7_avg_2 latency_3_avg_2],[0.3e-3 0.6e-3 0.9e-3 1.2e-3 1.5e-3 1.8e-3 2.1e-3 2.4e-3 2.7e-3 3e-3],[latency_0_3_avg_3 latency_0_6_avg_3 latency_0_9_avg_3 latency_1_2_avg_3 latency_1_5_avg_3 latency_1_8_avg_3 latency_2_1_avg_3 latency_2_4_avg_3 latency_2_7_avg_3 latency_3_avg_3],'-*', 'Linewidth', 2)
-hold on
-    grid on
-    title('Single Thread - 3 topic - Latency')
-    xlabel('Callback Busy-Loop (s)')
-    ylabel('Latency (s)')
-    legend('Topic 1', 'Topic 2', 'Topic 3','Location','eastoutside')
-    axis([0 3.5e-3 0 12e-3])
+t_single_3_rl = [0.3e-3 0.6e-3 0.9e-3 1.2e-3 1.5e-3 1.8e-3 2.1e-3 2.4e-3 2.7e-3 3e-3].*1e3;
 
-subplot(3,1,2)
-plot([0.3e-3 0.6e-3 0.9e-3 1.2e-3 1.5e-3 1.8e-3 2.1e-3 2.4e-3 2.7e-3 3e-3],[latency_0_3_std_1 latency_0_6_std_1 latency_0_9_std_1 latency_1_2_std_1 latency_1_5_std_1 latency_1_8_std_1 latency_2_1_std_1 latency_2_4_std_1 latency_2_7_std_1 latency_3_std_1],[0.3e-3 0.6e-3 0.9e-3 1.2e-3 1.5e-3 1.8e-3 2.1e-3 2.4e-3 2.7e-3 3e-3],[latency_0_3_std_2 latency_0_6_std_2 latency_0_9_std_2 latency_1_2_std_2 latency_1_5_std_2 latency_1_8_std_2 latency_2_1_std_2 latency_2_4_std_2 latency_2_7_std_2 latency_3_std_2],[0.3e-3 0.6e-3 0.9e-3 1.2e-3 1.5e-3 1.8e-3 2.1e-3 2.4e-3 2.7e-3 3e-3],[latency_0_3_std_3 latency_0_6_std_3 latency_0_9_std_3 latency_1_2_std_3 latency_1_5_std_3 latency_1_8_std_3 latency_2_1_std_3 latency_2_4_std_3 latency_2_7_std_3 latency_3_std_3],'-*', 'Linewidth', 2)
-hold on
-    grid on
-    title('Single Thread - 3 topic - Jitter')
-    xlabel('Callback Busy-Loop (s)')
-    ylabel('Jitter (s)')
-    legend('Topic 1', 'Topic 2', 'Topic 3','Location','eastoutside')
-    axis([0 3.5e-3 0 2e-3])
-
-subplot(3,1,3)
-plot([0.3e-3 0.6e-3 0.9e-3 1.2e-3 1.5e-3 1.8e-3 2.1e-3 2.4e-3 2.7e-3 3e-3],[tl_0_3_avg_1 tl_0_6_avg_1 tl_0_9_avg_1 tl_1_2_avg_1 tl_1_5_avg_1 tl_1_8_avg_1 tl_2_1_avg_1 tl_2_4_avg_1 tl_2_7_avg_1 tl_3_avg_1],[0.3e-3 0.6e-3 0.9e-3 1.2e-3 1.5e-3 1.8e-3 2.1e-3 2.4e-3 2.7e-3 3e-3],[tl_0_3_avg_2 tl_0_6_avg_2 tl_0_9_avg_2 tl_1_2_avg_2 tl_1_5_avg_2 tl_1_8_avg_2 tl_2_1_avg_2 tl_2_4_avg_2 tl_2_7_avg_2 tl_3_avg_2],[0.3e-3 0.6e-3 0.9e-3 1.2e-3 1.5e-3 1.8e-3 2.1e-3 2.4e-3 2.7e-3 3e-3],[tl_0_3_avg_3 tl_0_6_avg_3 tl_0_9_avg_3 tl_1_2_avg_3 tl_1_5_avg_3 tl_1_8_avg_3 tl_2_1_avg_3 tl_2_4_avg_3 tl_2_7_avg_3 tl_3_avg_3],'-*', 'Linewidth', 2)
-hold on
-    grid on
-    title('Single Thread - 3 topic - Topic Loss')
-    xlabel('Callback Busy-Loop (s)')
-    ylabel('Topic Loss')
-    legend('Topic 1', 'Topic 2', 'Topic 3','Location','eastoutside')
-    axis([0 3.5e-3 0 80])
+save('lat_single_3_1_rl.mat','lat_single_3_1_rl');
+save('lat_single_3_2_rl.mat','lat_single_3_2_rl');
+save('lat_single_3_3_rl.mat','lat_single_3_3_rl');
+save('jit_single_3_1_rl.mat','jit_single_3_1_rl');
+save('jit_single_3_2_rl.mat','jit_single_3_2_rl');
+save('jit_single_3_3_rl.mat','jit_single_3_3_rl');
+save('tl_single_3_1_rl.mat','tl_single_3_1_rl');
+save('tl_single_3_2_rl.mat','tl_single_3_2_rl');
+save('tl_single_3_3_rl.mat','tl_single_3_3_rl');
+save('t_single_3_rl.mat','t_single_3_rl');
