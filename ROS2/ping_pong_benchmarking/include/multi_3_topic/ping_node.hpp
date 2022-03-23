@@ -38,6 +38,8 @@ class Ping : public rclcpp::Node{
 
         std::chrono::nanoseconds ping_period;
 
+        int ping_send;
+        
         int ping_1_send;
         int pong_1_recived;
         int topic_1_loss;

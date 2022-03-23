@@ -20,7 +20,7 @@ Ping::Ping() : rclcpp::Node("ping","ros2"){
 
     auto default_qos = rclcpp::QoS(rclcpp::SystemDefaultsQoS());
 
-    ping_period = 10000000ns;
+    ping_period = 50000000ns;
 
     callback_group_pong_1 = this->create_callback_group(rclcpp::CallbackGroupType::MutuallyExclusive);
     callback_group_pong_2 = this->create_callback_group(rclcpp::CallbackGroupType::MutuallyExclusive);
@@ -42,6 +42,7 @@ Ping::Ping() : rclcpp::Node("ping","ros2"){
     pong_3_sub = this->create_subscription<std_msgs::msg::UInt32>("/pong_3", default_qos, std::bind(&Ping::onPong3Callback, this, _1),pong_3_sub_opt);
     ping_3_pub = this->create_publisher<std_msgs::msg::UInt32>("/ping_3", default_qos);
 
+    ping_send = 0;
     ping_1_send = 0;
     pong_1_recived = 0;
     latency_average_1 = 0;
@@ -63,12 +64,13 @@ Ping::~Ping(){
 void Ping::onTimerPing(){
     std_msgs::msg::UInt32 msg;
     msg.data = static_cast<uint32_t>(send_recive_data_1.size());
-
-    send_recive_data_1.push_back(std::make_pair(now(), now()));
-    send_recive_data_2.push_back(std::make_pair(now(), now()));
-    send_recive_data_3.push_back(std::make_pair(now(), now()));
-
-    if(ping_1_send<1000){
+    
+    ping_send++;
+    
+    if(ping_send<=200){
+        send_recive_data_1.push_back(std::make_pair(now(), now()));
+        send_recive_data_2.push_back(std::make_pair(now(), now()));
+        send_recive_data_3.push_back(std::make_pair(now(), now()));
         ping_1_pub->publish(msg);
         ping_2_pub->publish(msg);
         ping_3_pub->publish(msg);
@@ -76,7 +78,7 @@ void Ping::onTimerPing(){
         ping_2_send++;
         ping_3_send++;
     }
-    else{
+    else if (ping_send >= 240){
         parse_data();
         store_data();
         rclcpp::shutdown();
