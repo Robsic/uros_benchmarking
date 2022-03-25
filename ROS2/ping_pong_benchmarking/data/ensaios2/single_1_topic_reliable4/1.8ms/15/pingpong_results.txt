@@ -1,4 +1,4 @@
-Latency Average: 7.72975e+07
+Latency Average: 9.91187e+06
 
 Latency Standard Deviation: -nan
 
