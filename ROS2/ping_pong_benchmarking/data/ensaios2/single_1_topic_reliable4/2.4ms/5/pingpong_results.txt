@@ -1,6 +1,6 @@
-Latency Average: 2.27296e+07
+Latency Average: 1.09696e+07
 
-Latency Standard Deviation: 9.18844e-05
+Latency Standard Deviation: 1.4988e-05
 
 Topic loss: 1
 
